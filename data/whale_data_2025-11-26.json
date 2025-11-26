@@ -1,0 +1,81 @@
+[
+  {
+    "timestamp": "2025-11-26T11:30:01.257260",
+    "collector": "MempoolCollector",
+    "data": {
+      "mempool": {},
+      "fees": {},
+      "whale_stats": {
+        "total_whale_tx_count": 0,
+        "total_volume_btc": 0,
+        "avg_tx_size_btc": 0,
+        "max_tx_size_btc": 0,
+        "blocks_analyzed": 0
+      },
+      "recent_blocks": [],
+      "whale_threshold_btc": 200
+    }
+  },
+  {
+    "timestamp": "2025-11-26T11:30:41.099274",
+    "collector": "MempoolCollector",
+    "data": {
+      "mempool": {
+        "tx_count": 47717,
+        "vsize_mb": 23.87,
+        "total_fee_btc": 0.0529
+      },
+      "fees": {
+        "fastest_sat_vb": 2,
+        "half_hour_sat_vb": 1,
+        "hour_sat_vb": 1,
+        "economy_sat_vb": 1,
+        "minimum_sat_vb": 1
+      },
+      "whale_stats": {
+        "total_whale_tx_count": 1,
+        "total_volume_btc": 215.18,
+        "avg_tx_size_btc": 215.18,
+        "max_tx_size_btc": 215.18,
+        "blocks_analyzed": 10,
+        "top_whales": [
+          {
+            "txid": "7fa99bcb0efe8b63...",
+            "value_btc": 215.18,
+            "fee_btc": 0.000107
+          }
+        ]
+      },
+      "recent_blocks": [
+        {
+          "height": 925260,
+          "timestamp": 1764156071,
+          "tx_count": 4232,
+          "whale_tx_count": 0,
+          "whale_txs": []
+        },
+        {
+          "height": 925259,
+          "timestamp": 1764155869,
+          "tx_count": 2076,
+          "whale_tx_count": 1,
+          "whale_txs": [
+            {
+              "txid": "7fa99bcb0efe8b63...",
+              "value_btc": 215.18,
+              "fee_btc": 0.000107
+            }
+          ]
+        },
+        {
+          "height": 925258,
+          "timestamp": 1764155255,
+          "tx_count": 2255,
+          "whale_tx_count": 0,
+          "whale_txs": []
+        }
+      ],
+      "whale_threshold_btc": 200
+    }
+  }
+]
