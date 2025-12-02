@@ -8,12 +8,6 @@ venv/
 .venv/
 env/
 
-# Environment variables
-.env
-
-# Data files (optional - remove if you want to track data)
-# data/
-
 # IDE
 .vscode/
 .idea/
@@ -21,3 +15,7 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# Data files werden getrackt für GitHub Actions
+# Wenn du sie lokal ignorieren willst, auskommentieren:
+# data/*.json
