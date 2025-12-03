@@ -6,10 +6,9 @@ Minimalistischer Python-Collector für Bitcoin Whale Transactions (>200 BTC).
 
 - 🐋 **Whale Tracking**: Erfasst Bitcoin-Transfers >200 BTC
 - 📊 **Mempool.space API**: Analysiert letzte 10 Blöcke alle 30 Minuten  
-- 💾 **Simple JSON Storage**: Eine Datei, Top 100 Whales, Duplikat-Erkennung
+- 💾 **Simple JSON Storage**: Eine Datei, Top 500 Whales, Duplikat-Erkennung
 - 📈 **Daily Aggregations**: Tagesmetriken für Backend/Analytics
 - 🌐 **Proxy Support**: Funktioniert hinter Corporate Proxies (optional)
-- ⚡ **Single Script**: Alles in einem ~180 Zeilen Skript
 - 🤖 **GitHub Actions Ready**: Läuft automatisch in der Cloud
 
 ## Schnellstart
@@ -55,7 +54,9 @@ python whale_collector.py --help
 **Optionen:**
 - `-t, --threshold`: Whale-Schwellwert in BTC (default: 200)
 - `-i, --interval`: Collection-Intervall in Minuten (default: 30)
-- `-p, --proxy`: Proxy URL falls hinter Firewall
+- `-p, --proxy`: Proxy URL falls hinter Firewall (optional)
+- `--once`: Einmalige Collection (für Cron/GitHub Actions)
+- `--max-tx-per-block`: Max TXs pro Block (0 = alle, default: 0)
 
 ## Output
 
@@ -74,7 +75,7 @@ python whale_collector.py --help
 }
 ```
 
-**Top 100 Whales**, sortiert nach Wert, Duplikat-Erkennung via TX-ID Set.
+**Top 500 Whales** (FIFO), sortiert nach Timestamp (neueste zuerst), Duplikat-Erkennung via TX-ID Set.
 
 ### 2. Daily Metrics (`data/daily_metrics.json`)
 
@@ -103,10 +104,11 @@ python whale_collector.py --help
 ## Wie es funktioniert
 
 1. **Alle 30 Minuten**: Fragt Mempool.space API ab
-2. **Analysiert**: Letzte 10 Blöcke nach Whale TXs (>200 BTC)
+2. **Analysiert**: Letzte 10 Blöcke nach Whale TXs (>200 BTC), alle TXs pro Block
 3. **Duplikat-Check**: TX-ID bereits bekannt? → Skip
-4. **Speichert**: Neue Whale TXs, hält Top 100
+4. **Speichert**: Neue Whale TXs (Max 500, FIFO)
 5. **Aggregiert**: Daily Metrics aus Rohdaten
+6. **Retry-Mechanismus**: 3 Versuche mit Exponential Backoff bei API-Fehlern
 
 ⚠️ **Wichtig**: Mempool-Daten sind ephemer - TXs verschwinden nach Block-Inclusion. Daher kontinuierliche Collection alle 30 Min essentiell!
 
@@ -157,9 +159,17 @@ wai-collector/
 │   └── workflows/
 │       └── collect.yml     # GitHub Actions Config
 └── data/
-    ├── whale_data.json     # Whale TXs (Top 100)
+    ├── whale_data.json     # Whale TXs (Top 500, FIFO)
     └── daily_metrics.json  # Aggregierte Tagesmetriken
 ```
+
+## Performance & Reliability
+
+- ✅ **Batch API Requests**: 10 Requests statt 1000 (alle TXs eines Blocks auf einmal)
+- ✅ **Retry-Mechanismus**: 3 Versuche mit Exponential Backoff (1s, 2s)
+- ✅ **Exception Handling**: Robuste Fehlerbehandlung für Netzwerkprobleme
+- ✅ **FIFO Storage**: 500 Whale TXs, älteste werden automatisch entfernt
+- ✅ **Duplikat-Erkennung**: Set-basiert, O(1) Lookup
 
 ## Dependencies
 
