@@ -40,10 +40,6 @@ def aggregate_daily_metrics():
     data = load_whale_data()
     whale_txs = data.get("whale_transactions", [])
     
-    if not whale_txs:
-        print("⚠️  Keine Whale TXs zum Aggregieren gefunden")
-        return
-    
     # Gruppiere nach Tag
     daily_groups = defaultdict(list)
     
@@ -57,6 +53,11 @@ def aggregate_daily_metrics():
         except ValueError:
             print(f"⚠️  Ungültiger Timestamp: {timestamp}")
             continue
+    
+    # Füge immer einen Eintrag für heute hinzu (auch wenn 0)
+    today = datetime.now().date().isoformat()
+    if today not in daily_groups:
+        daily_groups[today] = []
     
     # Berechne Metriken pro Tag
     daily_metrics = []

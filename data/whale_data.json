@@ -42,5 +42,10 @@
       "fee_btc": 0.000108,
       "timestamp": "2025-12-02T16:15:43.190332"
     }
-  ]
+  ],
+  "metadata": {
+    "last_collection": "2025-12-03T12:53:08.464088",
+    "total_collections": 1,
+    "last_collection_found_new": 0
+  }
 }

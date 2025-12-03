@@ -61,10 +61,23 @@ if PROXY:
 def load_whale_data():
     """Lade existierende Whale TXs"""
     if not DATA_FILE.exists():
-        return {"whale_transactions": []}
+        return {
+            "whale_transactions": [],
+            "metadata": {
+                "last_collection": None,
+                "total_collections": 0
+            }
+        }
     
     with open(DATA_FILE, 'r') as f:
-        return json.load(f)
+        data = json.load(f)
+        # Füge Metadata hinzu falls nicht vorhanden (Backwards Compatibility)
+        if "metadata" not in data:
+            data["metadata"] = {
+                "last_collection": None,
+                "total_collections": 0
+            }
+        return data
 
 def save_whale_data(data):
     """Speichere Whale TXs"""
@@ -164,9 +177,11 @@ def collect_whale_transactions():
                     new_whales.append(whale_tx)
                     print(f"🐋 Whale gefunden: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
         
+        # Lade Daten (immer, auch wenn keine neuen Whales)
+        data = load_whale_data()
+        
         # Speichere neue Whales
         if new_whales:
-            data = load_whale_data()
             data["whale_transactions"].extend(new_whales)
             
             # Sortiere nach Timestamp (neueste zuerst für bessere Übersicht)
@@ -182,12 +197,23 @@ def collect_whale_transactions():
                 removed = len(data["whale_transactions"]) - MAX_WHALE_TXS
                 data["whale_transactions"] = data["whale_transactions"][:MAX_WHALE_TXS]
             
+            # Update Metadata
+            data["metadata"]["last_collection"] = datetime.now().isoformat()
+            data["metadata"]["total_collections"] = data["metadata"].get("total_collections", 0) + 1
+            data["metadata"]["last_collection_found_new"] = len(new_whales)
+            
             save_whale_data(data)
             print(f"\n✅ {len(new_whales)} neue Whale TXs gespeichert!")
             if removed > 0:
                 print(f"   FIFO: {removed} älteste TXs entfernt (Max: {MAX_WHALE_TXS})")
             print(f"   Total: {len(data['whale_transactions'])} TXs im Speicher")
         else:
+            # Update Metadata auch wenn keine neuen TXs
+            data["metadata"]["last_collection"] = datetime.now().isoformat()
+            data["metadata"]["total_collections"] = data["metadata"].get("total_collections", 0) + 1
+            data["metadata"]["last_collection_found_new"] = 0
+            save_whale_data(data)
+            
             print(f"\n✅ Keine neuen Whale TXs gefunden")
         
         if duplicates > 0:
