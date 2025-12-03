@@ -24,7 +24,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Parse Command Line Arguments
 parser = argparse.ArgumentParser(
     prog='Whale Transaction Collector',
-    description='Sammelt Bitcoin Whale Transactions (>t BTC) von Mempool.space'
+    description='Sammelt Bitcoin Whale Transactions (>threshold BTC) von Mempool.space'
 )
 parser.add_argument('-t', '--threshold', type=float, default=200,
                     help='Whale-Schwellwert in BTC (default: 200)')
@@ -34,14 +34,20 @@ parser.add_argument('-p', '--proxy', type=str, default=None,
                     help='Proxy URL falls hinter Corporate Firewall (z.B. http://proxy:8080)')
 parser.add_argument('--once', action='store_true',
                     help='Einmalige Collection (kein Scheduler, gut für Cron/GitHub Actions)')
+parser.add_argument('--max-tx-per-block', type=int, default=0,
+                    help='Max TXs pro Block analysieren (0 = alle, default: 0)')
 args = parser.parse_args()
 
 # Config aus Args
 WHALE_THRESHOLD_BTC = args.threshold
 COLLECTION_INTERVAL_MINUTES = args.interval
 PROXY = args.proxy
+MAX_TX_PER_BLOCK = args.max_tx_per_block
 MEMPOOL_API = "https://mempool.space/api"
 DATA_FILE = Path("data/whale_data.json")
+
+# Storage Config
+MAX_WHALE_TXS = 500  # Maximale Anzahl Whale TXs (FIFO wenn voll)
 
 # Setze Proxy nur wenn angegeben
 if PROXY:
@@ -93,6 +99,10 @@ def collect_whale_transactions():
             
         recent_blocks = response.json()[:10]  # Letzte 10 Blöcke
         print(f"   Analysiere {len(recent_blocks)} Blöcke...")
+        if MAX_TX_PER_BLOCK > 0:
+            print(f"   Limit: {MAX_TX_PER_BLOCK} TXs pro Block")
+        else:
+            print(f"   Analysiere ALLE TXs pro Block")
         
         whale_threshold_satoshi = WHALE_THRESHOLD_BTC * 100_000_000
         new_whales = []
@@ -103,22 +113,30 @@ def collect_whale_transactions():
         for block in recent_blocks:
             block_id = block.get("id")
             
-            txids_response = session.get(f"{MEMPOOL_API}/block/{block_id}/txids", timeout=30)
+            # Hole alle TXs des Blocks (batch statt einzeln) mit Retry
+            txs_response = None
+            for retry in range(3):  # Max 3 Versuche
+                txs_response = session.get(f"{MEMPOOL_API}/block/{block_id}/txs", timeout=30)
+                
+                if txs_response.status_code == 200:
+                    break
+                    
+                if retry < 2:  # Nicht beim letzten Versuch
+                    wait_time = 2 ** retry  # Exponential backoff: 1s, 2s
+                    print(f"   Retry {retry + 1}/3 für Block {block_id[:8]}... (warte {wait_time}s)")
+                    time.sleep(wait_time)
             
-            if txids_response.status_code != 200:
-                print(f"⚠️  Block {block_id[:8]}... nicht verfügbar")
+            if txs_response.status_code != 200:
+                print(f"⚠️  Block {block_id[:8]}... nicht verfügbar nach 3 Versuchen (Status: {txs_response.status_code})")
                 continue
                 
-            txids = txids_response.json()
+            txs = txs_response.json()
             
-            for txid in txids[:100]:  # Erste 100 TXs pro Block
-                # Hole TX Details
-                tx_response = session.get(f"{MEMPOOL_API}/tx/{txid}", timeout=30)
-                
-                if tx_response.status_code != 200:
-                    continue
-                    
-                tx = tx_response.json()
+            # Analysiere TXs (alle oder limitiert)
+            txs_to_check = txs if MAX_TX_PER_BLOCK == 0 else txs[:MAX_TX_PER_BLOCK]
+            
+            for tx in txs_to_check:
+                txid = tx.get("txid")
                 total_output = sum(out.get("value", 0) for out in tx.get("vout", []))
                 
                 if total_output >= whale_threshold_satoshi:
@@ -132,7 +150,7 @@ def collect_whale_transactions():
                         "txid": txid,
                         "value_btc": round(total_output / 100_000_000, 2),
                         "fee_btc": round(tx.get("fee", 0) / 100_000_000, 6) if tx.get("fee") else 0,
-                        "timestamp": datetime.now().isoformat()
+                        "timestamp": datetime.fromtimestamp(block.get("timestamp")).isoformat() if block.get("timestamp") else datetime.now().isoformat()
                     }
                     new_whales.append(whale_tx)
                     print(f"🐋 Whale gefunden: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
@@ -142,15 +160,24 @@ def collect_whale_transactions():
             data = load_whale_data()
             data["whale_transactions"].extend(new_whales)
             
-            # Sortiere nach Wert (größte zuerst) und behalte Top 100
+            # Sortiere nach Timestamp (neueste zuerst für bessere Übersicht)
             data["whale_transactions"] = sorted(
                 data["whale_transactions"], 
-                key=lambda x: x["value_btc"], 
+                key=lambda x: x.get("timestamp", ""), 
                 reverse=True
-            )[:100]
+            )
+            
+            # FIFO: Wenn mehr als MAX_WHALE_TXS, entferne älteste
+            removed = 0
+            if len(data["whale_transactions"]) > MAX_WHALE_TXS:
+                removed = len(data["whale_transactions"]) - MAX_WHALE_TXS
+                data["whale_transactions"] = data["whale_transactions"][:MAX_WHALE_TXS]
             
             save_whale_data(data)
             print(f"\n✅ {len(new_whales)} neue Whale TXs gespeichert!")
+            if removed > 0:
+                print(f"   FIFO: {removed} älteste TXs entfernt (Max: {MAX_WHALE_TXS})")
+            print(f"   Total: {len(data['whale_transactions'])} TXs im Speicher")
         else:
             print(f"\n✅ Keine neuen Whale TXs gefunden")
         
