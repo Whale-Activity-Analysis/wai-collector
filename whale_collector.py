@@ -116,16 +116,25 @@ def collect_whale_transactions():
             # Hole alle TXs des Blocks (batch statt einzeln) mit Retry
             txs_response = None
             for retry in range(3):  # Max 3 Versuche
-                txs_response = session.get(f"{MEMPOOL_API}/block/{block_id}/txs", timeout=30)
-                
-                if txs_response.status_code == 200:
-                    break
+                try:
+                    txs_response = session.get(f"{MEMPOOL_API}/block/{block_id}/txs", timeout=30)
+                    
+                    if txs_response.status_code == 200:
+                        break
+                        
+                except requests.exceptions.RequestException as e:
+                    print(f"   ⚠️  Request-Fehler für Block {block_id[:8]}: {type(e).__name__}")
+                    txs_response = None
                     
                 if retry < 2:  # Nicht beim letzten Versuch
                     wait_time = 2 ** retry  # Exponential backoff: 1s, 2s
                     print(f"   Retry {retry + 1}/3 für Block {block_id[:8]}... (warte {wait_time}s)")
                     time.sleep(wait_time)
             
+            if txs_response is None:
+                print(f"⚠️  Block {block_id[:8]}... keine Antwort nach 3 Versuchen")
+                continue
+                
             if txs_response.status_code != 200:
                 print(f"⚠️  Block {block_id[:8]}... nicht verfügbar nach 3 Versuchen (Status: {txs_response.status_code})")
                 continue
@@ -163,7 +172,7 @@ def collect_whale_transactions():
             # Sortiere nach Timestamp (neueste zuerst für bessere Übersicht)
             data["whale_transactions"] = sorted(
                 data["whale_transactions"], 
-                key=lambda x: x.get("timestamp", ""), 
+                key=lambda x: x.get("timestamp", "1970-01-01T00:00:00"), 
                 reverse=True
             )
             
