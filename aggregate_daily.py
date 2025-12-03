@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Daily Whale Transaction Aggregator
-Erzeugt Tagesmetriken aus whale_data.json
+Generates daily metrics from whale_data.json
 """
 
 import json
@@ -20,7 +20,7 @@ DAILY_METRICS_FILE = Path("data/daily_metrics.json")
 # ============================================================
 
 def load_whale_data():
-    """Lade Whale TXs"""
+    """Load whale TXs"""
     if not WHALE_DATA_FILE.exists():
         return {"whale_transactions": []}
     
@@ -28,41 +28,41 @@ def load_whale_data():
         return json.load(f)
 
 def save_daily_metrics(metrics):
-    """Speichere Daily Metrics"""
+    """Save daily metrics"""
     DAILY_METRICS_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DAILY_METRICS_FILE, 'w') as f:
         json.dump(metrics, f, indent=2)
 
 def aggregate_daily_metrics():
-    """Aggregiere Whale TXs zu Tagesmetriken"""
-    print("📊 Aggregiere Whale Transactions zu Tagesmetriken...")
+    """Aggregate whale TXs to daily metrics"""
+    print("📊 Aggregating whale transactions to daily metrics...")
     
     data = load_whale_data()
     whale_txs = data.get("whale_transactions", [])
     
-    # Gruppiere nach Tag
+    # Group by day
     daily_groups = defaultdict(list)
     
     for tx in whale_txs:
-        # Parse Timestamp (ISO format: "2025-12-02T15:52:25.685738")
+        # Parse timestamp (ISO format: "2025-12-02T15:52:25.685738")
         timestamp = tx.get("timestamp", "")
         try:
             dt = datetime.fromisoformat(timestamp)
             date = dt.date().isoformat()  # "2025-12-02"
             daily_groups[date].append(tx)
         except ValueError:
-            print(f"⚠️  Ungültiger Timestamp: {timestamp}")
+            print(f"⚠️  Invalid timestamp: {timestamp}")
             continue
     
-    # Füge immer einen Eintrag für heute hinzu (auch wenn 0)
+    # Always add entry for today (even if 0)
     today = datetime.now().date().isoformat()
     if today not in daily_groups:
         daily_groups[today] = []
     
-    # Berechne Metriken pro Tag
+    # Calculate metrics per day
     daily_metrics = []
     
-    for date in sorted(daily_groups.keys(), reverse=True):  # Neueste zuerst
+    for date in sorted(daily_groups.keys(), reverse=True):  # Newest first
         txs = daily_groups[date]
         
         whale_tx_count = len(txs)
@@ -81,7 +81,7 @@ def aggregate_daily_metrics():
         daily_metrics.append(metric)
         print(f"   {date}: {whale_tx_count} TXs, {whale_tx_volume_btc:,.2f} BTC")
     
-    # Speichere Metriken
+    # Save metrics
     output = {
         "generated_at": datetime.now().isoformat(),
         "total_days": len(daily_metrics),
@@ -89,7 +89,7 @@ def aggregate_daily_metrics():
     }
     
     save_daily_metrics(output)
-    print(f"\n✅ {len(daily_metrics)} Tages-Metriken gespeichert: {DAILY_METRICS_FILE}")
+    print(f"\n✅ {len(daily_metrics)} daily metrics saved: {DAILY_METRICS_FILE}")
     
     return output
 
@@ -101,9 +101,9 @@ if __name__ == "__main__":
     try:
         metrics = aggregate_daily_metrics()
         
-        # Zeige letzte 5 Tage
+        # Show last 5 days
         if metrics and metrics.get("daily_metrics"):
-            print("\n📈 Letzte 5 Tage:")
+            print("\n📈 Last 5 days:")
             print("-" * 80)
             for day in metrics["daily_metrics"][:5]:
                 print(f"{day['date']}: {day['whale_tx_count']:>3} TXs | "
@@ -111,6 +111,6 @@ if __name__ == "__main__":
                       f"Max: {day['max_whale_tx_btc']:>8,.2f} BTC")
             
     except Exception as e:
-        print(f"❌ Fehler: {e}")
+        print(f"❌ Error: {e}")
         import traceback
         traceback.print_exc()

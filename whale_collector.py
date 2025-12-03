@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Bitcoin Whale Transaction Collector
-Sammelt Whale Transactions (>200 BTC) von Mempool.space alle 30 Minuten
+Collects whale transactions (>200 BTC) from Mempool.space every 30 minutes
 """
 
 import os
@@ -14,7 +14,7 @@ import argparse
 from datetime import datetime
 from pathlib import Path
 
-# Disable SSL warnings für Corporate Proxies
+# Disable SSL warnings for corporate proxies
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ============================================================
@@ -24,21 +24,21 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Parse Command Line Arguments
 parser = argparse.ArgumentParser(
     prog='Whale Transaction Collector',
-    description='Sammelt Bitcoin Whale Transactions (>threshold BTC) von Mempool.space'
+    description='Collects Bitcoin whale transactions (>threshold BTC) from Mempool.space'
 )
 parser.add_argument('-t', '--threshold', type=float, default=200,
-                    help='Whale-Schwellwert in BTC (default: 200)')
+                    help='Whale threshold in BTC (default: 200)')
 parser.add_argument('-i', '--interval', type=int, default=30,
-                    help='Collection-Intervall in Minuten (default: 30)')
+                    help='Collection interval in minutes (default: 30)')
 parser.add_argument('-p', '--proxy', type=str, default=None,
-                    help='Proxy URL falls hinter Corporate Firewall (z.B. http://proxy:8080)')
+                    help='Proxy URL if behind corporate firewall (e.g. http://proxy:8080)')
 parser.add_argument('--once', action='store_true',
-                    help='Einmalige Collection (kein Scheduler, gut für Cron/GitHub Actions)')
+                    help='Single collection run (no scheduler, good for cron/GitHub Actions)')
 parser.add_argument('--max-tx-per-block', type=int, default=0,
-                    help='Max TXs pro Block analysieren (0 = alle, default: 0)')
+                    help='Max TXs to analyze per block (0 = all, default: 0)')
 args = parser.parse_args()
 
-# Config aus Args
+# Config from Args
 WHALE_THRESHOLD_BTC = args.threshold
 COLLECTION_INTERVAL_MINUTES = args.interval
 PROXY = args.proxy
@@ -47,9 +47,9 @@ MEMPOOL_API = "https://mempool.space/api"
 DATA_FILE = Path("data/whale_data.json")
 
 # Storage Config
-MAX_WHALE_TXS = 500  # Maximale Anzahl Whale TXs (FIFO wenn voll)
+MAX_WHALE_TXS = 500  # Maximum number of whale TXs (FIFO when full)
 
-# Setze Proxy nur wenn angegeben
+# Set proxy only if specified
 if PROXY:
     os.environ["HTTP_PROXY"] = PROXY
     os.environ["HTTPS_PROXY"] = PROXY
@@ -59,7 +59,7 @@ if PROXY:
 # ============================================================
 
 def load_whale_data():
-    """Lade existierende Whale TXs"""
+    """Load existing whale TXs"""
     if not DATA_FILE.exists():
         return {
             "whale_transactions": [],
@@ -71,7 +71,7 @@ def load_whale_data():
     
     with open(DATA_FILE, 'r') as f:
         data = json.load(f)
-        # Füge Metadata hinzu falls nicht vorhanden (Backwards Compatibility)
+        # Add metadata if not present (backwards compatibility)
         if "metadata" not in data:
             data["metadata"] = {
                 "last_collection": None,
@@ -80,55 +80,55 @@ def load_whale_data():
         return data
 
 def save_whale_data(data):
-    """Speichere Whale TXs"""
+    """Save whale TXs"""
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, 'w') as f:
         json.dump(data, f, indent=2)
 
 def get_existing_txids():
-    """Hole Set aller bekannten TX-IDs für Duplikat-Check"""
+    """Get set of all known TX-IDs for duplicate check"""
     data = load_whale_data()
     return {tx["txid"] for tx in data.get("whale_transactions", [])}
 
 def collect_whale_transactions():
-    """Sammle Whale TXs von Mempool.space"""
+    """Collect whale TXs from Mempool.space"""
     print(f"\n{'='*60}")
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starte Collection...")
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting collection...")
     print(f"{'='*60}")
     
     try:
         session = requests.Session()
         if PROXY:
             session.proxies = {"http": PROXY, "https": PROXY}
-            session.verify = False  # Für Corporate Proxies
+            session.verify = False  # For corporate proxies
         
-        # Hole letzte 10 Blöcke
-        print("📡 Hole letzte Blöcke von Mempool.space...")
+        # Get last 10 blocks
+        print("📡 Fetching recent blocks from Mempool.space...")
         response = session.get(f"{MEMPOOL_API}/blocks", timeout=30)
         
         if response.status_code != 200:
             print(f"❌ API Error: {response.text[:200]}")
             return
             
-        recent_blocks = response.json()[:10]  # Letzte 10 Blöcke
-        print(f"   Analysiere {len(recent_blocks)} Blöcke...")
+        recent_blocks = response.json()[:10]  # Last 10 blocks
+        print(f"   Analyzing {len(recent_blocks)} blocks...")
         if MAX_TX_PER_BLOCK > 0:
-            print(f"   Limit: {MAX_TX_PER_BLOCK} TXs pro Block")
+            print(f"   Limit: {MAX_TX_PER_BLOCK} TXs per block")
         else:
-            print(f"   Analysiere ALLE TXs pro Block")
+            print(f"   Analyzing ALL TXs per block")
         
         whale_threshold_satoshi = WHALE_THRESHOLD_BTC * 100_000_000
         new_whales = []
         existing_txids = get_existing_txids()
         duplicates = 0
         
-        # Analysiere letzte 10 Blöcke
+        # Analyze last 10 blocks
         for block in recent_blocks:
             block_id = block.get("id")
             
-            # Hole alle TXs des Blocks (batch statt einzeln) mit Retry
+            # Get all TXs of the block (batch instead of individual) with retry
             txs_response = None
-            for retry in range(3):  # Max 3 Versuche
+            for retry in range(3):  # Max 3 attempts
                 try:
                     txs_response = session.get(f"{MEMPOOL_API}/block/{block_id}/txs", timeout=30)
                     
@@ -136,25 +136,25 @@ def collect_whale_transactions():
                         break
                         
                 except requests.exceptions.RequestException as e:
-                    print(f"   ⚠️  Request-Fehler für Block {block_id[:8]}: {type(e).__name__}")
+                    print(f"   ⚠️  Request error for block {block_id[:8]}: {type(e).__name__}")
                     txs_response = None
                     
-                if retry < 2:  # Nicht beim letzten Versuch
+                if retry < 2:  # Not on last attempt
                     wait_time = 2 ** retry  # Exponential backoff: 1s, 2s
-                    print(f"   Retry {retry + 1}/3 für Block {block_id[:8]}... (warte {wait_time}s)")
+                    print(f"   Retry {retry + 1}/3 for block {block_id[:8]}... (waiting {wait_time}s)")
                     time.sleep(wait_time)
             
             if txs_response is None:
-                print(f"⚠️  Block {block_id[:8]}... keine Antwort nach 3 Versuchen")
+                print(f"⚠️  Block {block_id[:8]}... no response after 3 attempts")
                 continue
                 
             if txs_response.status_code != 200:
-                print(f"⚠️  Block {block_id[:8]}... nicht verfügbar nach 3 Versuchen (Status: {txs_response.status_code})")
+                print(f"⚠️  Block {block_id[:8]}... not available after 3 attempts (Status: {txs_response.status_code})")
                 continue
                 
             txs = txs_response.json()
             
-            # Analysiere TXs (alle oder limitiert)
+            # Analyze TXs (all or limited)
             txs_to_check = txs if MAX_TX_PER_BLOCK == 0 else txs[:MAX_TX_PER_BLOCK]
             
             for tx in txs_to_check:
@@ -162,12 +162,12 @@ def collect_whale_transactions():
                 total_output = sum(out.get("value", 0) for out in tx.get("vout", []))
                 
                 if total_output >= whale_threshold_satoshi:
-                    # Check Duplikat
+                    # Check duplicate
                     if txid in existing_txids:
                         duplicates += 1
                         continue
                     
-                    # Neue Whale TX gefunden!
+                    # New whale TX found!
                     whale_tx = {
                         "txid": txid,
                         "value_btc": round(total_output / 100_000_000, 2),
@@ -175,86 +175,86 @@ def collect_whale_transactions():
                         "timestamp": datetime.fromtimestamp(block.get("timestamp")).isoformat() if block.get("timestamp") else datetime.now().isoformat()
                     }
                     new_whales.append(whale_tx)
-                    print(f"🐋 Whale gefunden: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
+                    print(f"🐋 Whale found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
         
-        # Lade Daten (immer, auch wenn keine neuen Whales)
+        # Load data (always, even if no new whales)
         data = load_whale_data()
         
-        # Speichere neue Whales
+        # Save new whales
         if new_whales:
             data["whale_transactions"].extend(new_whales)
             
-            # Sortiere nach Timestamp (neueste zuerst für bessere Übersicht)
+            # Sort by timestamp (newest first for better overview)
             data["whale_transactions"] = sorted(
                 data["whale_transactions"], 
                 key=lambda x: x.get("timestamp", "1970-01-01T00:00:00"), 
                 reverse=True
             )
             
-            # FIFO: Wenn mehr als MAX_WHALE_TXS, entferne älteste
+            # FIFO: If more than MAX_WHALE_TXS, remove oldest
             removed = 0
             if len(data["whale_transactions"]) > MAX_WHALE_TXS:
                 removed = len(data["whale_transactions"]) - MAX_WHALE_TXS
                 data["whale_transactions"] = data["whale_transactions"][:MAX_WHALE_TXS]
             
-            # Update Metadata
+            # Update metadata
             data["metadata"]["last_collection"] = datetime.now().isoformat()
             data["metadata"]["total_collections"] = data["metadata"].get("total_collections", 0) + 1
             data["metadata"]["last_collection_found_new"] = len(new_whales)
             
             save_whale_data(data)
-            print(f"\n✅ {len(new_whales)} neue Whale TXs gespeichert!")
+            print(f"\n✅ {len(new_whales)} new whale TXs saved!")
             if removed > 0:
-                print(f"   FIFO: {removed} älteste TXs entfernt (Max: {MAX_WHALE_TXS})")
-            print(f"   Total: {len(data['whale_transactions'])} TXs im Speicher")
+                print(f"   FIFO: {removed} oldest TXs removed (Max: {MAX_WHALE_TXS})")
+            print(f"   Total: {len(data['whale_transactions'])} TXs in storage")
         else:
-            # Update Metadata auch wenn keine neuen TXs
+            # Update metadata even if no new TXs
             data["metadata"]["last_collection"] = datetime.now().isoformat()
             data["metadata"]["total_collections"] = data["metadata"].get("total_collections", 0) + 1
             data["metadata"]["last_collection_found_new"] = 0
             save_whale_data(data)
             
-            print(f"\n✅ Keine neuen Whale TXs gefunden")
+            print(f"\n✅ No new whale TXs found")
         
         if duplicates > 0:
-            print(f"ℹ️  {duplicates} Duplikate übersprungen")
+            print(f"ℹ️  {duplicates} duplicates skipped")
         
-        # Statistik
+        # Statistics
         data = load_whale_data()
         total_whales = len(data["whale_transactions"])
         total_volume = sum(tx["value_btc"] for tx in data["whale_transactions"])
         
-        print(f"\n📊 Gesamt: {total_whales} Whale TXs | {total_volume:,.2f} BTC")
+        print(f"\n📊 Total: {total_whales} whale TXs | {total_volume:,.2f} BTC")
         print(f"{'='*60}\n")
         
     except Exception as e:
-        print(f"❌ Fehler: {e}")
+        print(f"❌ Error: {e}")
 
 # ============================================================
 # SCHEDULER
 # ============================================================
 
 def run_scheduler():
-    """Starte kontinuierliche Collection"""
+    """Start continuous collection"""
     print(f"""
 ══════════════════════════════════════════════════════════
      Bitcoin Whale Transaction Collector                  
                                                           
   Threshold: {WHALE_THRESHOLD_BTC} BTC                    
-  Interval:  {COLLECTION_INTERVAL_MINUTES} Minuten        
+  Interval:  {COLLECTION_INTERVAL_MINUTES} minutes        
   API:       Mempool.space                                
   Storage:   {DATA_FILE}                                  
 ══════════════════════════════════════════════════════════
     """)
     
-    # Erste Collection sofort
+    # First collection immediately
     collect_whale_transactions()
     
-    # Schedule alle 30 Minuten
+    # Schedule every N minutes
     schedule.every(COLLECTION_INTERVAL_MINUTES).minutes.do(collect_whale_transactions)
     
-    print(f"⏰ Scheduler läuft - nächste Collection in {COLLECTION_INTERVAL_MINUTES} Minuten")
-    print("   (Strg+C zum Beenden)\n")
+    print(f"⏰ Scheduler running - next collection in {COLLECTION_INTERVAL_MINUTES} minutes")
+    print("   (Ctrl+C to stop)\n")
     
     while True:
         schedule.run_pending()
@@ -267,10 +267,10 @@ def run_scheduler():
 if __name__ == "__main__":
     try:
         if args.once:
-            # Einmalige Collection (für Cron/GitHub Actions)
+            # Single collection run (for cron/GitHub Actions)
             collect_whale_transactions()
         else:
-            # Kontinuierlicher Scheduler Mode
+            # Continuous scheduler mode
             run_scheduler()
     except KeyboardInterrupt:
-        print("\n\n👋 Collector gestoppt")
+        print("\n\n👋 Collector stopped")

@@ -1,17 +1,17 @@
 # 🐋 Bitcoin Whale Transaction Collector
 
-Minimalistischer Python-Collector für Bitcoin Whale Transactions (>200 BTC).
+Minimalist Python collector for Bitcoin whale transactions (>threshold BTC).
 
 ## Features
 
-- 🐋 **Whale Tracking**: Erfasst Bitcoin-Transfers >200 BTC
-- 📊 **Mempool.space API**: Analysiert letzte 10 Blöcke alle 30 Minuten  
-- 💾 **Simple JSON Storage**: Eine Datei, Top 500 Whales, Duplikat-Erkennung
-- 📈 **Daily Aggregations**: Tagesmetriken für Backend/Analytics
-- 🌐 **Proxy Support**: Funktioniert hinter Corporate Proxies (optional)
-- 🤖 **GitHub Actions Ready**: Läuft automatisch in der Cloud
+- 🐋 **Whale Tracking**: Captures Bitcoin transfers >threshold BTC
+- 📊 **Mempool.space API**: Analyzes last 10 blocks every 30 minutes  
+- 💾 **Simple JSON Storage**: Single file, Top 500 whales, duplicate detection
+- 📈 **Daily Aggregations**: Daily metrics for backend/analytics
+- 🌐 **Proxy Support**: Works behind corporate proxies (optional)
+- 🤖 **GitHub Actions Ready**: Runs automatically in the cloud
 
-## Schnellstart
+## Quick Start
 
 ```bash
 # 1. Clone & Setup
@@ -26,37 +26,37 @@ venv\Scripts\activate  # Windows
 # 3. Dependencies
 pip install -r requirements.txt
 
-# 4. Starten
+# 4. Run
 python whale_collector.py
 
-# 5. Daily Metriken erzeugen
+# 5. Generate daily metrics
 python aggregate_daily.py
 ```
 
-## Konfiguration
+## Configuration
 
 ### Whale Collector
 
 ```bash
-# Standard (200 BTC, 30 Min, kein Proxy)
+# Default (200 BTC, 30 min, no proxy)
 python whale_collector.py
 
-# Custom Threshold & Interval
+# Custom threshold & interval
 python whale_collector.py -t 500 -i 15
 
-# Mit Corporate Proxy
+# With corporate proxy
 python whale_collector.py -p http://proxy:8080
 
-# Alle Optionen
+# All options
 python whale_collector.py --help
 ```
 
-**Optionen:**
-- `-t, --threshold`: Whale-Schwellwert in BTC (default: 200)
-- `-i, --interval`: Collection-Intervall in Minuten (default: 30)
-- `-p, --proxy`: Proxy URL falls hinter Firewall (optional)
-- `--once`: Einmalige Collection (für Cron/GitHub Actions)
-- `--max-tx-per-block`: Max TXs pro Block (0 = alle, default: 0)
+**Options:**
+- `-t, --threshold`: Whale threshold in BTC (default: 200)
+- `-i, --interval`: Collection interval in minutes (default: 30)
+- `-p, --proxy`: Proxy URL if behind firewall (optional)
+- `--once`: Single collection run (for cron/GitHub Actions)
+- `--max-tx-per-block`: Max TXs per block (0 = all, default: 0)
 
 ## Output
 
@@ -75,7 +75,7 @@ python whale_collector.py --help
 }
 ```
 
-**Top 500 Whales** (FIFO), sortiert nach Timestamp (neueste zuerst), Duplikat-Erkennung via TX-ID Set.
+**Top 500 Whales** (FIFO), sorted by timestamp (newest first), duplicate detection via TX-ID set.
 
 ### 2. Daily Metrics (`data/daily_metrics.json`)
 
@@ -95,89 +95,56 @@ python whale_collector.py --help
 }
 ```
 
-**Pflichtmetriken pro Tag:**
-- `whale_tx_count` - Anzahl Whale TXs
-- `whale_tx_volume_btc` - Gesamtvolumen
-- `avg_whale_fee_btc` - Durchschnittliche Fee
-- `max_whale_tx_btc` - Größte Whale TX
+**Required metrics per day:**
+- `whale_tx_count` - Number of whale TXs
+- `whale_tx_volume_btc` - Total volume
+- `avg_whale_fee_btc` - Average fee
+- `max_whale_tx_btc` - Largest whale TX
 
-## Wie es funktioniert
+## How It Works
 
-1. **Alle 30 Minuten**: Fragt Mempool.space API ab
-2. **Analysiert**: Letzte 10 Blöcke nach Whale TXs (>200 BTC), alle TXs pro Block
-3. **Duplikat-Check**: TX-ID bereits bekannt? → Skip
-4. **Speichert**: Neue Whale TXs (Max 500, FIFO)
-5. **Aggregiert**: Daily Metrics aus Rohdaten
-6. **Retry-Mechanismus**: 3 Versuche mit Exponential Backoff bei API-Fehlern
+1. **Every 30 minutes**: Queries Mempool.space API
+2. **Analyzes**: Last 10 blocks for whale TXs (>200 BTC), all TXs per block
+3. **Duplicate check**: TX-ID already known? → Skip
+4. **Stores**: New whale TXs (Max 500, FIFO)
+5. **Aggregates**: Daily metrics from raw data
+6. **Retry mechanism**: 3 attempts with exponential backoff on API errors
 
-⚠️ **Wichtig**: Mempool-Daten sind ephemer - TXs verschwinden nach Block-Inclusion. Daher kontinuierliche Collection alle 30 Min essentiell!
+⚠️ **Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 30 min is essential!
 
-## GitHub Actions (Empfohlen)
+## GitHub Actions
 
-Der Collector läuft automatisch in GitHub Actions - **kein Server nötig!**
+The collector runs automatically in GitHub Actions - **no server needed!**
 
 **Setup:**
-1. Repo auf GitHub pushen
-2. GitHub Actions wird automatisch aktiviert
-3. Läuft alle 30 Minuten
-4. Committed Daten zurück ins Repo
+1. Push repo to GitHub
+2. GitHub Actions automatically activates
+3. Runs every 30 minutes
+4. Commits data back to repo
 
-Siehe `.github/workflows/collect.yml` für Details.
+See `.github/workflows/collect.yml` for details.
 
-## Deployment Optionen
-
-### Option 1: GitHub Actions ✅ (Empfohlen)
-- ✅ Kostenlos (2000 Min/Monat)
-- ✅ Kein Server nötig
-- ✅ Automatische Backups via Git
-- ✅ Einfaches Setup
-
-### Option 2: Server/VPS
-```bash
-# Cron Job (Linux)
-*/30 * * * * /path/to/venv/bin/python /path/to/whale_collector.py
-
-# Task Scheduler (Windows)
-# Alle 30 Min: whale_collector.py ausführen
-```
-
-### Option 3: Lokal (Development)
-```bash
-# Läuft endlos, alle 30 Min
-python whale_collector.py
-```
-
-## Projektstruktur
+## Project Structure
 
 ```
 wai-collector/
-├── whale_collector.py      # Hauptskript - sammelt Whale TXs
-├── aggregate_daily.py      # Erzeugt Daily Metrics
+├── whale_collector.py      # Main script - collects whale TXs
+├── aggregate_daily.py      # Generates daily metrics
 ├── requirements.txt        # Dependencies
 ├── README.md
 ├── .github/
 │   └── workflows/
-│       └── collect.yml     # GitHub Actions Config
+│       └── collect.yml     # GitHub Actions config
 └── data/
     ├── whale_data.json     # Whale TXs (Top 500, FIFO)
-    └── daily_metrics.json  # Aggregierte Tagesmetriken
+    └── daily_metrics.json  # Aggregated daily metrics
 ```
 
 ## Performance & Reliability
 
-- ✅ **Batch API Requests**: 10 Requests statt 1000 (alle TXs eines Blocks auf einmal)
-- ✅ **Retry-Mechanismus**: 3 Versuche mit Exponential Backoff (1s, 2s)
-- ✅ **Exception Handling**: Robuste Fehlerbehandlung für Netzwerkprobleme
-- ✅ **FIFO Storage**: 500 Whale TXs, älteste werden automatisch entfernt
-- ✅ **Duplikat-Erkennung**: Set-basiert, O(1) Lookup
+- ✅ **Batch API Requests**: 10 requests instead of 1000 (all TXs of a block at once)
+- ✅ **Retry Mechanism**: 3 attempts with exponential backoff (1s, 2s)
+- ✅ **Exception Handling**: Robust error handling for network issues
+- ✅ **FIFO Storage**: 500 whale TXs, oldest are automatically removed
+- ✅ **Duplicate Detection**: Set-based, O(1) lookup
 
-## Dependencies
-
-- `requests` - HTTP Client für Mempool.space API
-- `schedule` - Cron-like Job Scheduling
-- `urllib3` - HTTP Connection Pooling
-- Python 3.10+
-
-## Lizenz
-
-MIT
