@@ -1,6 +1,30 @@
 {
   "whale_transactions": [
     {
+      "txid": "36aae5029bf5e989484017a23baf4cfb95212f2953d7c7f8f3bc94c562aec122",
+      "value_btc": 343.25,
+      "fee_btc": 0.000168,
+      "timestamp": "2025-12-09T03:16:00"
+    },
+    {
+      "txid": "30c673981d2513d5b85de402d69ee8f9e3976dfa0f121c38d403ec6d8847bf9e",
+      "value_btc": 244.25,
+      "fee_btc": 0.000168,
+      "timestamp": "2025-12-09T03:16:00"
+    },
+    {
+      "txid": "9f26864ffc29ae66c4608f2554f16c0054cf26c57476adef5d69073388e6fcb4",
+      "value_btc": 1318.3,
+      "fee_btc": 2e-05,
+      "timestamp": "2025-12-09T02:14:01"
+    },
+    {
+      "txid": "286f61cc7298ec23f46472d9c834848acbff4cd8ec9715c035079d9c462207cc",
+      "value_btc": 19612.35,
+      "fee_btc": 4.7e-05,
+      "timestamp": "2025-12-09T02:14:01"
+    },
+    {
       "txid": "7c7786a551b57cf46c555f2a5f589eceb1ac3aa47f82feeeb2223c4166ef5eb2",
       "value_btc": 492.47,
       "fee_btc": 0.000165,
@@ -524,8 +548,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2025-12-09T01:49:11.901813",
-    "total_collections": 212,
-    "last_collection_found_new": 0
+    "last_collection": "2025-12-09T03:20:35.651891",
+    "total_collections": 213,
+    "last_collection_found_new": 4
   }
 }
