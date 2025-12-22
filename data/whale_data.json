@@ -1,6 +1,12 @@
 {
   "whale_transactions": [
     {
+      "txid": "56f93af00137a15cc01116f88828515477689bc8de72b9333c5fbe7fc4723a88",
+      "value_btc": 270.07,
+      "fee_btc": 0.00012,
+      "timestamp": "2025-12-22T06:10:38"
+    },
+    {
       "txid": "b04e66baac4510e6924ebbc0ecaa59d91e6bece3eda3983014a9646b9da180fa",
       "value_btc": 257.87,
       "fee_btc": 6.6e-05,
@@ -1934,8 +1940,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2025-12-22T05:48:34.401853",
-    "total_collections": 695,
-    "last_collection_found_new": 0
+    "last_collection": "2025-12-22T06:38:47.497977",
+    "total_collections": 696,
+    "last_collection_found_new": 1
   }
 }
