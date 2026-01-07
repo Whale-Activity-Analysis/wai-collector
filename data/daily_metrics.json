@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-01-07T01:55:10.351958",
+  "generated_at": "2026-01-07T03:41:08.113990",
   "total_days": 34,
   "daily_metrics": [
     {
       "date": "2026-01-07",
-      "whale_tx_count": 0,
-      "whale_tx_volume_btc": 0,
-      "avg_whale_fee_btc": 0,
-      "max_whale_tx_btc": 0
+      "whale_tx_count": 1,
+      "whale_tx_volume_btc": 483.42,
+      "avg_whale_fee_btc": 0.000123,
+      "max_whale_tx_btc": 483.42
     },
     {
       "date": "2026-01-06",
@@ -235,9 +235,9 @@
     },
     {
       "date": "2025-12-05",
-      "whale_tx_count": 14,
-      "whale_tx_volume_btc": 11435.25,
-      "avg_whale_fee_btc": 0.000383,
+      "whale_tx_count": 13,
+      "whale_tx_volume_btc": 10908.03,
+      "avg_whale_fee_btc": 0.000335,
       "max_whale_tx_btc": 4950.47
     }
   ]
