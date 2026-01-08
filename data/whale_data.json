@@ -1,6 +1,30 @@
 {
   "whale_transactions": [
     {
+      "txid": "de2b6009255ea51e1e8c5429200a220c2fdfa26bf36cb51f2ae574a595c2e9d8",
+      "value_btc": 372.0,
+      "fee_btc": 0.000318,
+      "timestamp": "2026-01-08T17:13:22"
+    },
+    {
+      "txid": "7e6b130b5d84746663d24acbb85ec554f18aaf7b105a03ff8d391ae6105aa2ab",
+      "value_btc": 300.0,
+      "fee_btc": 0.000437,
+      "timestamp": "2026-01-08T17:13:22"
+    },
+    {
+      "txid": "2988340f36cccc1392fa07f77983a13fe449cfe2e5a4d47f6dc7e14232291c48",
+      "value_btc": 1000.0,
+      "fee_btc": 0.000264,
+      "timestamp": "2026-01-08T16:56:37"
+    },
+    {
+      "txid": "3e18e9e50cac06edb59eba5efaa76d0e530c4b6855f677dbbef85094d4a457b3",
+      "value_btc": 1300.0,
+      "fee_btc": 0.000264,
+      "timestamp": "2026-01-08T16:56:37"
+    },
+    {
       "txid": "d422b4326e7dc73eb9264c033e009f3a228de13961f3a5dc367e9bb56248412d",
       "value_btc": 217.78,
       "fee_btc": 0.000108,
@@ -2975,35 +2999,11 @@
       "value_btc": 944.97,
       "fee_btc": 0.000301,
       "timestamp": "2025-12-08T02:47:03"
-    },
-    {
-      "txid": "0b571c6069285699748edd3abb4c6523fc6de8d076e375dbfd16ca738c5e5d6c",
-      "value_btc": 502.98,
-      "fee_btc": 0.000147,
-      "timestamp": "2025-12-08T01:17:59"
-    },
-    {
-      "txid": "1e7ef9b18d1b4d103ce4a426afa8087fb386eab50eed696d8393a385e31fb73f",
-      "value_btc": 205.9,
-      "fee_btc": 0.000108,
-      "timestamp": "2025-12-08T00:47:14"
-    },
-    {
-      "txid": "b883ca05e8b844be0f7b82580aa009384946e3ca51691994ff05e782f46b61db",
-      "value_btc": 210.09,
-      "fee_btc": 0.000108,
-      "timestamp": "2025-12-07T22:47:34"
-    },
-    {
-      "txid": "e60b1be92ef2fe9a9a8c9543e65352365e8c5b67e1d771f6ea37f4894a65e77c",
-      "value_btc": 252.1,
-      "fee_btc": 0.000108,
-      "timestamp": "2025-12-07T20:13:12"
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-08T16:33:39.017257",
-    "total_collections": 1316,
-    "last_collection_found_new": 0
+    "last_collection": "2026-01-08T17:28:59.422288",
+    "total_collections": 1317,
+    "last_collection_found_new": 4
   }
 }
