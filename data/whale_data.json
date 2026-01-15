@@ -1,6 +1,56 @@
 {
   "whale_transactions": [
     {
+      "txid": "1ef75c003796590b9f259fc713bb4c707ac7faf95fff9efceb5753a82beb287d",
+      "value_btc": 800.0,
+      "fee_btc": 0.000251,
+      "timestamp": "2026-01-15T13:13:39",
+      "vin_addresses": [
+        {
+          "address": "bc1qarj6362spzyfmx35huvq99mvggke524l2nn226lxmvcygv3ah0fqyhjh6l",
+          "value": 299.9995276
+        },
+        {
+          "address": "bc1qa0fzd05xvxunl5jcvtn3dn2njkccuk9eunc9k40grfg3kj3py5kq6zl9s7",
+          "value": 299.9994244
+        },
+        {
+          "address": "bc1qedf7xt09n6pvz4t2e3ceng6ezjjaglw5ft0e2w5yw8k0wl9sll7qh6e98d",
+          "value": 199.9994932
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1q57g4ram4x6xhnkrangd7y6k7tr7apugakzhl82d4esdhufu8cd2qjnw750",
+          "value": 100.0
+        },
+        {
+          "address": "bc1qzkpgpk3q30rmlhfu6fccrdfwt96qpefhjn03arzrkgxewhr0s49q0zhgvs",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q8al4wnweepx40z5g9hv20ma8gfquqcufl3z968qsmhrfultmyvsswmcsuw",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q37h59uryp3s42l5aljke0l7u8j6mx8vy58r3vjuszxghdtpu6tus4mu5yv",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q04lldszkmn2jklgs2vwj0r2w77ju9r6j2grd40m44ulty9ur4stswgelwk",
+          "value": 100.0
+        },
+        {
+          "address": "bc1qjwk73u5eefmwn9jkm2gsdlm0rfm2euc3paaf3un46t2aj2evrqpq2zd6u0",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q4cu48qh3lgj72hq8hxzf4pqu49ads87mptzhlj48r0d2mj98lr6sz6088f",
+          "value": 199.9981944
+        }
+      ]
+    },
+    {
       "txid": "4987677b2cfa35e671a5862e258c8397a53045a68862b313398ea5639a90484e",
       "value_btc": 474.72,
       "fee_btc": 0.0001,
@@ -2993,17 +3043,11 @@
       "value_btc": 528.62,
       "fee_btc": 0.001,
       "timestamp": "2025-12-16T16:08:06"
-    },
-    {
-      "txid": "ffbd3949a771a221482b572d1c4c935e24361219cbb6045eff582932a29c1119",
-      "value_btc": 528.79,
-      "fee_btc": 0.001,
-      "timestamp": "2025-12-16T14:55:50"
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-15T11:43:21.375029",
-    "total_collections": 1550,
-    "last_collection_found_new": 0
+    "last_collection": "2026-01-15T13:36:30.606901",
+    "total_collections": 1551,
+    "last_collection_found_new": 1
   }
 }

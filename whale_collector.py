@@ -167,12 +167,35 @@ def collect_whale_transactions():
                         duplicates += 1
                         continue
                     
+                    # Extract vin addresses
+                    vin_addresses = []
+                    for vin in tx.get("vin", []):
+                        if "prevout" in vin and vin["prevout"]:
+                            address = vin["prevout"].get("scriptpubkey_address", "unknown")
+                            value = round(vin["prevout"].get("value", 0) / 100_000_000, 8)
+                            vin_addresses.append({
+                                "address": address,
+                                "value": value
+                            })
+                    
+                    # Extract vout addresses
+                    vout_addresses = []
+                    for vout in tx.get("vout", []):
+                        address = vout.get("scriptpubkey_address", "unknown")
+                        value = round(vout.get("value", 0) / 100_000_000, 8)
+                        vout_addresses.append({
+                            "address": address,
+                            "value": value
+                        })
+                    
                     # New whale TX found!
                     whale_tx = {
                         "txid": txid,
                         "value_btc": round(total_output / 100_000_000, 2),
                         "fee_btc": round(tx.get("fee", 0) / 100_000_000, 6) if tx.get("fee") else 0,
-                        "timestamp": datetime.fromtimestamp(block.get("timestamp")).isoformat() if block.get("timestamp") else datetime.now().isoformat()
+                        "timestamp": datetime.fromtimestamp(block.get("timestamp")).isoformat() if block.get("timestamp") else datetime.now().isoformat(),
+                        "vin_addresses": vin_addresses,
+                        "vout_addresses": vout_addresses
                     }
                     new_whales.append(whale_tx)
                     print(f"🐋 Whale found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
