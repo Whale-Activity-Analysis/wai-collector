@@ -51,6 +51,28 @@
       ]
     },
     {
+      "txid": "93c02ce28f342d9e1e7a350bb64baf8b5cb2ffa32f5a41dd4620a26616fef57f",
+      "value_btc": 500.0,
+      "fee_btc": 0.000131,
+      "timestamp": "2026-01-15T12:47:41",
+      "vin_addresses": [
+        {
+          "address": "182PN12px7XYE31jqa9DzzwSgFEsNUeDZT",
+          "value": 500.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1KsHhPNfrSNZ1xNwj7P7Lp62T6yShT2gbu",
+          "value": 168.29
+        },
+        {
+          "address": "1NCVVYBmUK1XVmEg5qsHsWCRVfXFoskLFs",
+          "value": 331.7098686
+        }
+      ]
+    },
+    {
       "txid": "4987677b2cfa35e671a5862e258c8397a53045a68862b313398ea5639a90484e",
       "value_btc": 474.72,
       "fee_btc": 0.0001,
@@ -3037,17 +3059,11 @@
       "value_btc": 406.59,
       "fee_btc": 0.00107,
       "timestamp": "2025-12-16T17:07:11"
-    },
-    {
-      "txid": "bbc716cefc8e748088c9cca66f92cca07623b75a0186141d73b2bc52bead3a89",
-      "value_btc": 528.62,
-      "fee_btc": 0.001,
-      "timestamp": "2025-12-16T16:08:06"
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-15T13:36:30.606901",
-    "total_collections": 1551,
+    "last_collection": "2026-01-15T12:51:44.917313",
+    "total_collections": 1552,
     "last_collection_found_new": 1
   }
 }
