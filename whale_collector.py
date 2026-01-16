@@ -28,8 +28,8 @@ parser = argparse.ArgumentParser(
 )
 parser.add_argument('-t', '--threshold', type=float, default=200,
                     help='Whale threshold in BTC (default: 200)')
-parser.add_argument('-i', '--interval', type=int, default=30,
-                    help='Collection interval in minutes (default: 30)')
+parser.add_argument('-i', '--interval', type=int, default=10,
+                    help='Collection interval in minutes (default: 10)')
 parser.add_argument('-p', '--proxy', type=str, default=None,
                     help='Proxy URL if behind corporate firewall (e.g. http://proxy:8080)')
 parser.add_argument('--once', action='store_true',
