@@ -2,8 +2,8 @@ name: Collect Whale Transactions
 
 on:
   schedule:
-    # Alle 30 Minuten
-    - cron: '*/30 * * * *'
+    # Alle 10 Minuten
+    - cron: '*/10 * * * *'
   workflow_dispatch:  # Manuell triggern
 
 permissions:
