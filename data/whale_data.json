@@ -1,6 +1,56 @@
 {
   "whale_transactions": [
     {
+      "txid": "70b57ff71c97d53ab5c233f870467e6fa5517cf48fdffa1d64b56a912cc65d42",
+      "value_btc": 207.65,
+      "fee_btc": 0.000299,
+      "timestamp": "2026-01-16T10:26:27",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 32.3
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 32.4
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 33.9
+        },
+        {
+          "address": "3Cwkt4DrKG8WD8YHJF23YSdxtjXd96quWu",
+          "value": 50.0
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 32.5
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 7.48287499
+        },
+        {
+          "address": "31pha48EDxPJ1XgmcKRqyLWLxpYYjrMsAb",
+          "value": 10.31989
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 8.74443343
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 4.27482971
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 203.37206996
+        }
+      ]
+    },
+    {
       "txid": "71c1eb125e4ab9fb0e54932c5b4f7b6c05559a308b6d89d39b37f6e609142419",
       "value_btc": 469.79,
       "fee_btc": 0.0001,
@@ -19793,45 +19843,11 @@
           "value": 517.38075502
         }
       ]
-    },
-    {
-      "txid": "402f215c53bb2d9056e096ef1a4185a57216d8ce73972d2f70a70d640a50fcc2",
-      "value_btc": 516.36,
-      "fee_btc": 0.000123,
-      "timestamp": "2025-12-18T06:32:01",
-      "vin_addresses": [
-        {
-          "address": "17fwVfAU8AW2rBbPXUZu1DsaxzMJ488WBo",
-          "value": 154.86822199
-        },
-        {
-          "address": "17fwVfAU8AW2rBbPXUZu1DsaxzMJ488WBo",
-          "value": 79.8986865
-        },
-        {
-          "address": "17fwVfAU8AW2rBbPXUZu1DsaxzMJ488WBo",
-          "value": 25.73895897
-        },
-        {
-          "address": "17fwVfAU8AW2rBbPXUZu1DsaxzMJ488WBo",
-          "value": 100.98412923
-        },
-        {
-          "address": "17fwVfAU8AW2rBbPXUZu1DsaxzMJ488WBo",
-          "value": 154.86822199
-        }
-      ],
-      "vout_addresses": [
-        {
-          "address": "16SY6D9HAVcB36JheW3m8W5owHXDDTdV3m",
-          "value": 516.35809518
-        }
-      ]
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-16T09:55:09.967431",
-    "total_collections": 1583,
-    "last_collection_found_new": 0
+    "last_collection": "2026-01-16T10:30:55.029137",
+    "total_collections": 1584,
+    "last_collection_found_new": 1
   }
 }
