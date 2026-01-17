@@ -1,6 +1,32 @@
 {
   "whale_transactions": [
     {
+      "txid": "9ad8b1804d3dd8e0f6e66fb3e23d923f2004baaac1aa9c22a381cd9c432fc420",
+      "value_btc": 223.18,
+      "fee_btc": 5e-06,
+      "timestamp": "2026-01-17T06:21:46",
+      "vin_addresses": [
+        {
+          "address": "bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d",
+          "value": 223.18297625
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qlx87a27s84ngdyveaqmcanxre8n4pk6lw998kfncqkndeqdmuuzs74zh0v",
+          "value": 10.0
+        },
+        {
+          "address": "bc1qn2cpj0hrl37wqh5q94kwrlhtj2lx8ahtw7ef5rg35tswxsqtvufqfmmrq2",
+          "value": 110.0
+        },
+        {
+          "address": "bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d",
+          "value": 103.18297117
+        }
+      ]
+    },
+    {
       "txid": "f15d2f7bc9b0de28307458d904c07620bef099082122109c3f8b42593ec00889",
       "value_btc": 13043.32,
       "fee_btc": 0.001,
@@ -20041,37 +20067,11 @@
           "value": 250.68986531
         }
       ]
-    },
-    {
-      "txid": "20d8252b5df03a609fdf7d7842c8828a904150af3b060d88e9d69c110baeb3a8",
-      "value_btc": 237.02,
-      "fee_btc": 0.000171,
-      "timestamp": "2025-12-19T02:32:17",
-      "vin_addresses": [
-        {
-          "address": "37SC1MvdygH7QCPrEHGFtphpsbJm5963t2",
-          "value": 199.999
-        },
-        {
-          "address": "37SC1MvdygH7QCPrEHGFtphpsbJm5963t2",
-          "value": 37.01790075
-        }
-      ],
-      "vout_addresses": [
-        {
-          "address": "33aVBjX4uYjBCD9p2drkBMDQeYt5iyBed4",
-          "value": 199.999
-        },
-        {
-          "address": "37SC1MvdygH7QCPrEHGFtphpsbJm5963t2",
-          "value": 37.01772975
-        }
-      ]
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-17T05:57:39.923691",
-    "total_collections": 1621,
-    "last_collection_found_new": 0
+    "last_collection": "2026-01-17T06:42:08.805427",
+    "total_collections": 1622,
+    "last_collection_found_new": 1
   }
 }
