@@ -1,15 +1,15 @@
-# 🐋 Bitcoin Whale Transaction Collector
+# Bitcoin Whale Transaction Collector
 
 Minimalist Python collector for Bitcoin whale transactions (>threshold BTC).
 
 ## Features
 
-- 🐋 **Whale Tracking**: Captures Bitcoin transfers >threshold BTC
-- 📊 **Mempool.space API**: Analyzes last 10 blocks every 10 minutes  
-- 💾 **Simple JSON Storage**: Single file, Top 500 whales, duplicate detection
-- 📈 **Daily Aggregations**: Daily metrics for backend/analytics
-- 🌐 **Proxy Support**: Works behind corporate proxies (optional)
-- 🤖 **GitHub Actions Ready**: Runs automatically in the cloud
+- **Whale Tracking**: Captures Bitcoin transfers >threshold BTC
+- **Mempool.space API**: Analyzes last 10 blocks every 10 minutes  
+- **Simple JSON Storage**: Single file, Top 500 whales, duplicate detection
+- **Daily Aggregations**: Daily metrics for backend/analytics
+- **Proxy Support**: Works behind corporate proxies (optional)
+- **GitHub Actions Ready**: Runs automatically in the cloud
 
 ## Quick Start
 
@@ -144,7 +144,7 @@ python whale_collector.py --help
 Notes on exchange metrics:
 - For `mixed` transactions (both input and output include exchanges), volume is not allocated to inflow/outflow to avoid double counting; they still increase `exchange_whale_tx_count`.
 
-⚠️ **Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 10 min is essential!
+**Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 10 min is essential!
 
 ### Change Output Handling
 
@@ -184,9 +184,9 @@ wai-collector/
 
 ## Performance & Reliability
 
-- ✅ **Batch API Requests**: 10 requests instead of 1000 (all TXs of a block at once)
-- ✅ **Retry Mechanism**: 3 attempts with exponential backoff (1s, 2s)
-- ✅ **Exception Handling**: Robust error handling for network issues
-- ✅ **FIFO Storage**: 500 whale TXs, oldest are automatically removed
-- ✅ **Duplicate Detection**: Set-based, O(1) lookup
+- **Batch API Requests**: 10 requests instead of 1000 (all TXs of a block at once)
+- **Retry Mechanism**: 3 attempts with exponential backoff (1s, 2s)
+- **Exception Handling**: Robust error handling for network issues
+- **FIFO Storage**: 500 whale TXs, oldest are automatically removed
+- **Duplicate Detection**: Set-based, O(1) lookup
 
