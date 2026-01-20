@@ -67,15 +67,38 @@ python whale_collector.py --help
   "whale_transactions": [
     {
       "txid": "5694cdc618f05ec8cc4a92221e8be10fb10cc3d1bd57f083ce8605b2c1fac5fe",
-      "value_btc": 862.29,
+      "value_btc": 574.00,
       "fee_btc": 0.000013,
-      "timestamp": "2025-12-02T15:52:25.685738"
+      "timestamp": "2026-01-20T08:16:47",
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6",
+        "exchange_name": "Binance"
+      },
+      "vin_addresses": [
+        {
+          "address": "3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6",
+          "value": 574.00
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qa7r5lqe5zsgqlsvvjvfus5gve0rhw2x80m7e2d",
+          "value": 574.00
+        }
+      ]
     }
   ]
 }
 ```
 
-**Top 500 Whales** (FIFO), sorted by timestamp (newest first), duplicate detection via TX-ID set.
+**Top 500 Whales** (FIFO), sorted by timestamp (newest first).
+
+**Classification Types:**
+- `outflow` - BTC leaving an exchange
+- `inflow` - BTC entering an exchange
+- `mixed` - Both inputs and outputs to exchanges
+- `unknown` - No exchange involvement detected
 
 ### 2. Daily Metrics (`data/daily_metrics.json`)
 
@@ -100,6 +123,11 @@ python whale_collector.py --help
 - `whale_tx_volume_btc` - Total volume
 - `avg_whale_fee_btc` - Average fee
 - `max_whale_tx_btc` - Largest whale TX
+ - `exchange_inflow_btc` - Whale → Exchange total BTC (sum of inflow TXs)
+ - `exchange_outflow_btc` - Exchange → Whale total BTC (sum of outflow TXs)
+ - `exchange_netflow_btc` - Outflow − Inflow (positive = net leaving exchanges)
+ - `exchange_flow_ratio` - Inflow / (Inflow + Outflow), null if no flow
+ - `exchange_whale_tx_count` - Count of whale TXs with exchange involvement (inflow, outflow, mixed)
 
 ## How It Works
 
@@ -107,10 +135,14 @@ python whale_collector.py --help
 2. **Analyzes**: Last 10 blocks for whale TXs (>200 BTC), all TXs per block
 3. **Change Detection**: Outputs going back to input addresses are excluded (change outputs)
 4. **Net Transfer Calculation**: Only counts BTC actually transferred to NEW addresses
-5. **Duplicate check**: TX-ID already known? → Skip
-6. **Stores**: New whale TXs (Max 500, FIFO)
-7. **Aggregates**: Daily metrics from raw data
-8. **Retry mechanism**: 3 attempts with exponential backoff on API errors
+5. **Classification**: Checks inputs/outputs against 200+ known exchange addresses (Binance, OKX, etc.)
+6. **Duplicate check**: TX-ID already known? → Skip
+7. **Stores**: New whale TXs (Max 500, FIFO)
+8. **Aggregates**: Daily metrics from raw data
+9. **Retry mechanism**: 3 attempts with exponential backoff on API errors
+
+Notes on exchange metrics:
+- For `mixed` transactions (both input and output include exchanges), volume is not allocated to inflow/outflow to avoid double counting; they still increase `exchange_whale_tx_count`.
 
 ⚠️ **Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 10 min is essential!
 

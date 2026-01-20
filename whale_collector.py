@@ -54,11 +54,77 @@ DATA_FILE = Path("data/whale_data.json")
 
 # Storage Config
 MAX_WHALE_TXS = 500  # Maximum number of whale TXs (FIFO when full)
+EXCHANGES_FILE = Path("data/exchange_wallet_adresses.json")
+EXCHANGE_MAP = {}  # Will be loaded on first use
 
 # Set proxy only if specified
 if PROXY:
     os.environ["HTTP_PROXY"] = PROXY
     os.environ["HTTPS_PROXY"] = PROXY
+
+# ============================================================
+# EXCHANGE CLASSIFICATION
+# ============================================================
+
+def load_exchange_map():
+    """Load exchange addresses for classification"""
+    global EXCHANGE_MAP
+    if EXCHANGE_MAP:
+        return EXCHANGE_MAP
+    
+    if not EXCHANGES_FILE.exists():
+        return {}
+    
+    try:
+        with open(EXCHANGES_FILE, 'r') as f:
+            data = json.load(f)
+        
+        for entry in data.get("addresses", []):
+            address = entry["address"]
+            label = entry["label"]
+            EXCHANGE_MAP[address] = label
+        
+        return EXCHANGE_MAP
+    except Exception as e:
+        print(f"[WARNING] Could not load exchange addresses: {e}")
+        return {}
+
+def classify_transaction(tx, exchange_map):
+    """
+    Classify transaction as inflow/outflow based on exchange addresses
+    Returns: (classification, exchange_details)
+    """
+    vin_addresses = {addr["address"] for addr in tx.get("vin_addresses", [])}
+    vout_addresses = {addr["address"] for addr in tx.get("vout_addresses", [])}
+    
+    exchange_inputs = {addr: exchange_map[addr] for addr in vin_addresses if addr in exchange_map}
+    exchange_outputs = {addr: exchange_map[addr] for addr in vout_addresses if addr in exchange_map}
+    
+    exchange_details = {}
+    
+    if exchange_inputs and exchange_outputs:
+        classification = "mixed"
+        exchange_details = {
+            "outflow_exchanges": exchange_inputs,
+            "inflow_exchanges": exchange_outputs
+        }
+    elif exchange_inputs:
+        classification = "outflow"
+        exchange_details = {
+            "exchange_address": list(exchange_inputs.keys())[0],
+            "exchange_name": list(exchange_inputs.values())[0]
+        }
+    elif exchange_outputs:
+        classification = "inflow"
+        exchange_details = {
+            "exchange_address": list(exchange_outputs.keys())[0],
+            "exchange_name": list(exchange_outputs.values())[0]
+        }
+    else:
+        classification = "unknown"
+        exchange_details = {}
+    
+    return classification, exchange_details
 
 # ============================================================
 # COLLECTOR
@@ -101,6 +167,13 @@ def collect_whale_transactions():
     print(f"\n{'='*60}")
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting collection...")
     print(f"{'='*60}")
+    
+    # Load exchange map once at start of collection
+    global EXCHANGE_MAP
+    if not EXCHANGE_MAP:
+        EXCHANGE_MAP = load_exchange_map()
+        if EXCHANGE_MAP:
+            print(f"[INFO] Loaded {len(EXCHANGE_MAP)} exchange addresses\n")
     
     try:
         session = requests.Session()
@@ -212,8 +285,15 @@ def collect_whale_transactions():
                         "vin_addresses": vin_addresses,
                         "vout_addresses": vout_addresses
                     }
+                    
+                    # Classify transaction (inflow/outflow/mixed/unknown)
+                    classification, exchange_details = classify_transaction(whale_tx, EXCHANGE_MAP)
+                    whale_tx["classification"] = classification
+                    if exchange_details:
+                        whale_tx["exchange_details"] = exchange_details
+                    
                     new_whales.append(whale_tx)
-                    print(f"[WHALE] Found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
+                    print(f"[WHALE] Found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...) [{classification}]")
         
         # Load data (always, even if no new whales)
         data = load_whale_data()

@@ -1,7 +1,8 @@
 {
   "meta": {
     "source": "coincarp.com",
-    "last_updated": "2026-01-07"
+    "last_updated": "2026-01-07",
+    "source2": "https://blog.cex.io/wallet-address-list"
   },
   "addresses": [
     { "address": "34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo", "label": "Binance" },
@@ -217,6 +218,10 @@
     { "address": "bc1qkvrddql6hh00apslzsxnysl75hhnm5fpqdah37", "label": "Bitunix" },
     { "address": "bc1q8gfcwysj7f53say2jyzqaqngct5jt94rwuae76", "label": "FameEX" },
     { "address": "bc1qs7yen7ljpvyw7vn58ql6zfaddqf4rcjalsgmt5", "label": "Fastex" },
-    { "address": "bc1qkvrddql6hh00apslzsxnysl75hhnm5fpqdah37", "label": "UEX" }
+    { "address": "bc1qkvrddql6hh00apslzsxnysl75hhnm5fpqdah37", "label": "UEX" },
+    { "address": "3HfJ6brzer2fZob1ZZCyeUUUTD6vzXWdJv", "label": "CEX.IO" },
+    { "address": "3FnBbsWjxLejVsMMHEqDt6B19dEupBaZwK", "label": "CEX.IO" },
+    { "address": "32L7Yo5JzwnGtRgeGxrXxc8LT6CpQsL3d4", "label": "CEX.IO" },
+    { "address": "3E4ujC6LQVFxhEcZ1E7ZTGYhcb67WFAuoC", "label": "CEX.IO" }
   ]
 }

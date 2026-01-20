@@ -28,7 +28,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 384.73750475
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b099fb6f23494d16bf787d0710312a7b34c2faa5a370621f6861cfc79841d56b",
@@ -62,7 +63,8 @@
           "address": "1K62EVoML9LX77iePdKKPayxHqEXZLjzxT",
           "value": 482.33411081
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "073705500a2fe8cfebeac3cec457e0c13cf0219507429716174f97988da7b312",
@@ -200,7 +202,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 248.3370107
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "d7663dd35a09470eef1baf916347e60c4eee0eef878a1df67bae2168c15fc2b6",
@@ -334,7 +341,12 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 250.96651675
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "0814d6343695898115b3b463efc42829451588db60f40d23d8aa9315c4d45ff2",
@@ -476,7 +488,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 262.97424028
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "6706372135a91807044238e5104e9254362d31b100bdaa3f794d885ab89436b5",
@@ -590,7 +607,8 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 270.67864879
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "bc4d4315619082e9bed36539f226ba0be06c0b99da350ed8618b87d2904d5159",
@@ -748,7 +766,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 272.02885762
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c3179912d100976862a94e5e765de5547f9033d8df1a2ef7d2eea47e079b4612",
@@ -770,7 +789,8 @@
           "address": "3Q8StmtPCgxNeeeM6Ue9errkDgZ9SiLHE4",
           "value": 180.58709228
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "53eb3f7aa56f61d1ddf0349393e74d65ead1f4d94ee95a182ff5911f17f37f8e",
@@ -812,7 +832,8 @@
           "address": "3Q8StmtPCgxNeeeM6Ue9errkDgZ9SiLHE4",
           "value": 400.58739228
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "177d0bf9966c5a7843ef4010a84edce6263cf49546e91714a54f742356fae880",
@@ -990,7 +1011,8 @@
           "address": "3Ky9RNarFTwZ4SywztDuBbaLAr5dqTujkt",
           "value": 2.5960395
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "fbc414ad7d3f57a7976330d67076aa551ab399a5def792513badeee8ce1e2fc8",
@@ -1028,7 +1050,8 @@
           "address": "1Mi7Jp9ysWGEefpfZdPYC1gNWbrv6Q7Lby",
           "value": 473.11725122
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "fcadf818e8e21a2bf5496e7882acd74045bc8cd624cd3a122b9ba71bec1e6078",
@@ -1058,7 +1081,8 @@
           "address": "1JZXbwcwd1ZxkLpNp4CATeRLhZ8qf2caNm",
           "value": 471.94114873
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2b045cce92185fc61b5bd3e8af4f7d0f147d54af6323fa2b9999dbc46feb1e5c",
@@ -1264,7 +1288,8 @@
           "address": "bc1qyy30guv6m5ez7ntj0ayr08u23w3k5s8vg3elmxdzlh8a3xskupyqn2lp5w",
           "value": 0.00219692
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "16ded93cba7ad98ce9470dfed9e69f055a2303defd1de6742c14f71157345f97",
@@ -1298,7 +1323,8 @@
           "address": "1FJVJB2edZdhvH3piXJTrAZ5uCTAvxyqB1",
           "value": 472.10719947
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7aefdf297d5bacae6bea0c70c29d71f6cb74a7c1435127e5234d6927b2c7cbf5",
@@ -1344,7 +1370,8 @@
           "address": "1C5CoKHu8jWyjpHZzgt5B1orYmsLw5gMrB",
           "value": 472.22453591
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2cffae65ed731b5d869f82f1d9282c21c00f0ab282ad52d83c48c0498cec2a3e",
@@ -1434,7 +1461,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 209.917115
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "bbb63d0a2ff920ddd9e17beba5f83b2cfe08aa60247a530bef711cd688e26507",
@@ -1520,7 +1552,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 259.29846654
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "31c43d1aa0993012884d18499273c837942534ad2683c55620cf75a955cd3597",
@@ -1594,7 +1627,8 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 259.53285951
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9ff7ae7ce3c3f206c387aca5285b4080df82e1a65375573b0558888e609dbb6c",
@@ -1616,7 +1650,8 @@
           "address": "bc1q0jz2sywu9ha9yfrw4teh5gqvzpsyzvexkn8wla408f2s7jqr3pas26chku",
           "value": 97.99995716
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b3f03d4222725098d884a835e9a4d4a61118a9a74947c8c1346041861e45f9fd",
@@ -1638,7 +1673,8 @@
           "address": "bc1qc7ekd9army8qntkewha94sq846uyneawtgt540ddc54pa4ut5r3qnwyccu",
           "value": 98.99995716
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f70958b704f9809589ee3dc5b940e7d0d6ff272065d9a4beabc7c09995939fc8",
@@ -1668,7 +1704,8 @@
           "address": "121kFJBtuGS7YBvbpM31JDnuJQT1pbVoyx",
           "value": 471.5110494
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ee8ebb23c1ab67efe20d03d45f52ff2fe815a763def052d9c63a9e94fb9f104e",
@@ -1698,7 +1735,8 @@
           "address": "17p6ciRNHtbjjkGKt38shJ7sPEDD4yoNKz",
           "value": 471.5110494
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8bb966fe70ad8ee2fbb77efe1bd9dfee09cad3dd84456e2739d7b29a6b72e11b",
@@ -1732,7 +1770,8 @@
           "address": "1DuhrcVpEYEMtMHPaiHqWNAbD9Cmg4aVeg",
           "value": 471.5109772
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f3e7a649f5fc31c48e651e79b6ea8e7bce4003da903aaa99a8dbcdb334f325bc",
@@ -1762,7 +1801,8 @@
           "address": "bc1qfhfs6faglykx68g9gavp2pu8gylxt0nha258mysgrzkkv8gvlnrs6js5gv",
           "value": 17.9971145
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5323f4782badc321bbf4ea4625aeabbd6a2f8204095f0827f50d916b8b6527b0",
@@ -1792,7 +1832,8 @@
           "address": "15vvj3wp7cSUWTRiBSGqQ3rKeehtAa5yrN",
           "value": 471.33988877
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8f5bf2219f25c72d593f56103e5c4f04b91705b169d171dfb3bd565c65549ff9",
@@ -1862,7 +1903,8 @@
           "address": "bc1quz002mp9t4t9c0h7xmjesk0um8zu9k3pp8utrxul6cexuyxpxa4qudah4t",
           "value": 166.66599786
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0461140d39d7d6517896bf70a007d339c7e298fb2e4fcae1da300681af233352",
@@ -1928,7 +1970,8 @@
           "address": "bc1qxpcn08a0dgcm5r7hc82l0xwjjpkdw5e8jhck75c79lv50qlql9jsueahec",
           "value": 33.33105454
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2fa34daee1644cc7a29f21c9088b728af76b73ad6bd3f245ae6d8668fa5303ce",
@@ -1950,7 +1993,8 @@
           "address": "19oLGXykNUBj8f7w1tT9emuaEbaSFj1p27",
           "value": 3108.71058769
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1de5157d86a61fa0078e2f391b627b16d3e133bb3fa36ef96cbbaf32d4ced89b",
@@ -1976,7 +2020,8 @@
           "address": "1Fh3uu6UjtWWrPMEph2kMK1FQ6zor3ovQZ",
           "value": 88.9999
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "70b57ff71c97d53ab5c233f870467e6fa5517cf48fdffa1d64b56a912cc65d42",
@@ -2026,7 +2071,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 203.37206996
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "71c1eb125e4ab9fb0e54932c5b4f7b6c05559a308b6d89d39b37f6e609142419",
@@ -2056,7 +2102,8 @@
           "address": "1EyzHpbgwwoyBWXu7L9kqBhPvRWAKneBmH",
           "value": 469.79178479
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a79b159282f2a853ffc97914eb563990f5f88f8296643c5f23045e4003d034f4",
@@ -2078,7 +2125,8 @@
           "address": "3Ky9RNarFTwZ4SywztDuBbaLAr5dqTujkt",
           "value": 299.4997
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ffd50a345273b1883ebc924f54868f376bf6696975a324c22c3d40cfae4c9d65",
@@ -2100,7 +2148,8 @@
           "address": "1NCVVYBmUK1XVmEg5qsHsWCRVfXFoskLFs",
           "value": 264.9998686
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "80e818d6303f5c5929b045674d0da3ec09017e32cd5173fb72744fb06da07c5e",
@@ -2130,7 +2179,8 @@
           "address": "1EDhPt8XFkrixfKiWEmswPvfTMh76o2dw5",
           "value": 466.77132091
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c3b4ccc8e84c7e0d39c13ea7dcb53ac85427c993927e875b943419faec305c75",
@@ -2148,7 +2198,8 @@
           "address": "bc1q88krdz7yy4ny20dpecv25ye7j4tr8caxt54ttl",
           "value": 459.99952862
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "826f02d33478909ac0392578a6981cdf6b9b8af01d3512ed0f2d0929bd2f2ec9",
@@ -2190,7 +2241,8 @@
           "address": "bc1qdnmlvc8uvrkng4jy2sxau6t3psm63et4wqdwlefsa67hj00n3dms2hexxm",
           "value": 282.0993984
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a62ccad1e6ed06fee0578e4dcab2d9a701fb5b7eabeab158279f24bf3f7a02dc",
@@ -2232,7 +2284,8 @@
           "address": "bc1qc4a9atszjfee8nejttzc77svqpty0rnplz6tn56u64pupajuw5jsypk22z",
           "value": 144.4493984
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c133bc783fe1bf743265ec3ff0b317c265e51a71d38c9e6694355668d0a67082",
@@ -2274,7 +2327,8 @@
           "address": "bc1q9e5jurr3xx7mztjwseq07e43ucvdn67zzx0p3zzglw5mhl34cfnsxyklcp",
           "value": 554.9974553
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4e7838f75f24938a5b37be5fbc8d854439671174f22b3865bffe5783da37b997",
@@ -2316,7 +2370,8 @@
           "address": "bc1qlwkpzel8y76tm6m8d7qugyqld6qve4ueh7455r5nfewvu4rmhdzsjmn860",
           "value": 18.99940069
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b1356eb7849c47a5c04361729492dc8364a3d3d8b591cb19d9dad23318bb4930",
@@ -2358,7 +2413,8 @@
           "address": "bc1qanuyjgg029urtd5g8xucy0zqt3uzr847anaxq3l8za5dvjcs3v2s3xl9gl",
           "value": 654.9981412
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7ee314ae55b90c8f8dc69960a3d121c2af08dfcfdc71524d05290f0837049fd5",
@@ -2400,7 +2456,8 @@
           "address": "bc1qzqzzh5pmmd3mrgmvpeu9nxhgsnmlrxxu07dzakvzuezq932905kstw37v2",
           "value": 869.99735629
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b2dd5298c2bf3ccba7e4eb55a8d60f19aa36db3539efd6057ebddcc35b871cbf",
@@ -2458,7 +2515,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 237.9004195
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9d70b446d1a7feb22574a1b9f9b1f1a40bb8c9689349a2c75eae375dcc1c2a23",
@@ -2496,7 +2554,8 @@
           "address": "bc1q2u5hs8nauvsxp29n9enzysq6qpul94yv0ceg6qzja0tgqccx6uqqz98sxe",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "340e9b64116952e1fe40fb47b81f87364b7139d26778a9b5d005906e5f712aa2",
@@ -2534,7 +2593,8 @@
           "address": "bc1qwwknqvr5gvtn95gea03p3mwjf483szd9kmx0lhfvs6ehpsx83u5sh7zstz",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e85dbb10a144afba85149965b0043b351caf2cd011f9571b831f493c479933dc",
@@ -2572,7 +2632,8 @@
           "address": "bc1qqw767g5r8n6jjn88s9ggumf49s95drtswhwaydxynde309egdyjsyldqnw",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7471661aa035cd07db0e3e319ba4750dfe66c2f81300e2491948a12edc1e8589",
@@ -2610,7 +2671,8 @@
           "address": "bc1qhxxh7efvtwry2r6t6gt8yxnmsa6pv5d759kdt9h357p9s75909mq2036v0",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8da1445aff9c8682aa80be69689e6c04c20d3652b678aa183971a29765714d8e",
@@ -2648,7 +2710,8 @@
           "address": "bc1qd64yntf78fse7kq59k7fvepgzt0d8kqtk6650juv6fqkhq34rg8scpukvs",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "785a6211dfff740a6539a130e33660d979001113b975f2262e7ac5eb7c35f7d2",
@@ -2722,7 +2785,8 @@
           "address": "1NCVVYBmUK1XVmEg5qsHsWCRVfXFoskLFs",
           "value": 0.99749525
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c4c1468213174f3084c772c6a57c1f604cd1b3e978045cd4932c5d1bef1b9030",
@@ -2760,7 +2824,8 @@
           "address": "bc1qlcytf0n7fg7dtcf9w0ngtrc56yz3puvjqex5dke4ajq288q2vctqnw9927",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "86a4cc006a2a65fe8b2e59dfb34baa1b7afff5478c150e844172586e7cf90329",
@@ -2790,7 +2855,8 @@
           "address": "1HCtWRUQHBtNa6ridspsbSu3JCi1BjW6BX",
           "value": 466.15734686
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e92f7031d4022a182b1782e1560b9a3d8750b2521c3f3a6b1c82822544fff86c",
@@ -2828,7 +2894,8 @@
           "address": "bc1qh4gs0jp8fywmkvwzeh3kq845vhtqu2z65rkjqyw47p59jzpujp8qmu7prr",
           "value": 54.9896748
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d2f1d3c1da4a2ca8fa942e594bde23540f4ff08d9ed281f89671c4a37b233290",
@@ -2858,7 +2925,8 @@
           "address": "1Kw7iNkakjZV7mbf2RyDPuSDUgnwzPjU7q",
           "value": 467.04447745
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "254202eff7cb8731f9ad8341a7133243a5a8942a7047855a13b35efd41936713",
@@ -2892,7 +2960,8 @@
           "address": "1FUYgZYzTSxAF5ZQf31acSKDHoY6nKVoCz",
           "value": 466.39549207
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "123d3ae33629f225c582f9e596583c5e1687ed9f968b57f84a926b2250956e5e",
@@ -2926,7 +2995,8 @@
           "address": "1JtovWANtQ2KCc6VMssZMuVTkVQnWekE9V",
           "value": 473.17597316
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "410a54039017c422f01874fac69abc648618b6764d5b00d3872be74f42150620",
@@ -2960,7 +3030,8 @@
           "address": "1MtVfGj2QGgU4Rm1P68JnFqjuqnsN8A9eU",
           "value": 472.635116
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "928fcbbdd6618211122a99ae1ff56d5396baf46f95f9748e16b8cec6f6186aa7",
@@ -2990,7 +3061,8 @@
           "address": "1Cb3J3uCJnx3ewxgbZuAueqxwbFc2bAqdg",
           "value": 473.75177201
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "79d30414fd76b2082252b93374a04e783337a90ede44426823d3b27e056b09db",
@@ -3020,7 +3092,8 @@
           "address": "1KVbtBC58CMFro9SWXBkVjobPpZAyQGQ31",
           "value": 473.75177201
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1ef75c003796590b9f259fc713bb4c707ac7faf95fff9efceb5753a82beb287d",
@@ -3070,7 +3143,8 @@
           "address": "bc1q4cu48qh3lgj72hq8hxzf4pqu49ads87mptzhlj48r0d2mj98lr6sz6088f",
           "value": 199.9981944
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "48303a33973a676d0a9e37faa2933ac521e4cb4457fceb8aab481fadd55a420c",
@@ -3092,7 +3166,8 @@
           "address": "1NCVVYBmUK1XVmEg5qsHsWCRVfXFoskLFs",
           "value": 31.7097372
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "93c02ce28f342d9e1e7a350bb64baf8b5cb2ffa32f5a41dd4620a26616fef57f",
@@ -3114,7 +3189,8 @@
           "address": "1NCVVYBmUK1XVmEg5qsHsWCRVfXFoskLFs",
           "value": 331.7098686
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4987677b2cfa35e671a5862e258c8397a53045a68862b313398ea5639a90484e",
@@ -3144,7 +3220,8 @@
           "address": "1JXPDSb8g1VskwVecCyRudeqovei7z4qr8",
           "value": 474.72028746
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4049bf2fed1fa5044b6cb767ce41033905cbd6a1e145cd4f30d7ea6d56b3b69b",
@@ -3166,7 +3243,8 @@
           "address": "35e9UeNq38gyPjmZtywSwZVAWp9mhMfgFY",
           "value": 92.78464062
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c37ea8bddd855729ffbd9e8f3e915da2215294a985813a7ff900c59c1dad42f2",
@@ -3192,7 +3270,8 @@
           "address": "bc1qn2cpj0hrl37wqh5q94kwrlhtj2lx8ahtw7ef5rg35tswxsqtvufqfmmrq2",
           "value": 21.8999258
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a320436287bbad770b1b90f2621824a73ce277e9916aa9b07e08d325329e338f",
@@ -3218,7 +3297,8 @@
           "address": "bc1qn2cpj0hrl37wqh5q94kwrlhtj2lx8ahtw7ef5rg35tswxsqtvufqfmmrq2",
           "value": 19.7999258
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e9009ed3b2679461b489d680d4a43922c0a790aabbf3d755ac645e96d4f5721a",
@@ -3364,7 +3444,8 @@
           "address": "15uG6TkgppvAU8WteyuHPSE9jb99haPbpj",
           "value": 3495.89347197
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "38050d81f6ac1467ad7f21ad145483998e80d9aa4ffac221e4b8a5cb08ffd33a",
@@ -3402,7 +3483,8 @@
           "address": "bc1qwwwqj85nlgd4327t280hdvgz9rrq7d9npfq0du",
           "value": 576.85421576
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8edd251407acb556e92f1a80544925cf98c423b9d237f5dd1e6ba5026a81c07f",
@@ -3440,7 +3522,8 @@
           "address": "1KnAKzfPSeyKGN1zoxMz296D8FCPCYz4uz",
           "value": 476.00292234
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3a67f3a1bb942fee1ba4eb0b9f68c550e313459f2dc5849623ca528af400f421",
@@ -3470,7 +3553,8 @@
           "address": "1PWYUXVhuLazdtHcoX1WPdsVec4eArSSjg",
           "value": 489.31574134
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e578c1738768cbd3d3eef571e0646b738c5a217e983fc4ca2392e08b193c5681",
@@ -3500,7 +3584,8 @@
           "address": "1Pn2RVxqpV9fam96d5wDbHFhNubXDEj586",
           "value": 489.31574134
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0d12fb6a91c31baccfab5fd625562d4f582a2026bc24d2b2fd97d2369efd196e",
@@ -3798,7 +3883,8 @@
           "address": "bc1qc8paptx4202lvqtsp6avw3enw0xlqgstxss5lk",
           "value": 10.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5ee58e6da9b0af34a915dbef61cf03f54e28daa8f454e1baaf409439edd48360",
@@ -3828,7 +3914,8 @@
           "address": "19FR3KF6ptfAECPyLxVfzN8xK5r2rWCGdN",
           "value": 490.44142296
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "00e8a68d4a4bf4bbbfc65a3a2c90b59b38c35d7a750912cb00723cdd3a7d0da7",
@@ -3870,7 +3957,8 @@
           "address": "17aoxXuaHDtRprwUMMEM9P4jUtQjPrEWX",
           "value": 705.65534
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4237a2871bda7027852ecf25a28fa144e372e5b9e3bef1ef2f88864572e8398d",
@@ -3928,7 +4016,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 276.600254
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2c40de8f3699314c6aa8db53f9e817d85eb803b0b9f0b619f199d628d23305ba",
@@ -3978,7 +4067,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 300.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1d53069193261826792d86f8aeac9a55259c39661a9b5918586ff414496809f2",
@@ -4036,7 +4126,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 213.78505981
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "740c3916799a126a668a0608a1229f0e458f7c8519e290047ab3b4402728c388",
@@ -4074,7 +4165,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 363.00806914
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f46d0b31ada9de6b113cafb0bd770d2d01d9dfeff49a80adbed5e8618232df51",
@@ -4108,7 +4200,8 @@
           "address": "164DKbkBz97Q4ChCMyJiscrFMC1VJ11tva",
           "value": 482.55928911
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e8621238b8b3cc2a942de252514379c414e41d4af3c852f8b32b371e291950df",
@@ -4138,7 +4231,8 @@
           "address": "1KXc3afB5TT7kPVdAzazw2axZcyemXUYND",
           "value": 494.69975439
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "345be51bb0980593a542a7044187011176f95de2f4f583cb8b60a0cedd583959",
@@ -4172,7 +4266,8 @@
           "address": "1CCiwg4wSJ93yU5emUqFwxjC6CSdzB9aGh",
           "value": 483.92112514
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3cd499b6270c0ee942cc5ad9e91af1312c1cba4857b51457cb98b441b8bf4b1a",
@@ -4202,7 +4297,8 @@
           "address": "18vxS6gyyjj6RHrT6yBXBUBNQpmU1euu8V",
           "value": 493.86962827
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1c3a44468e661b68ee0e7efd028fb97385c8b4d15c25b72360f427a2212f5b11",
@@ -4232,7 +4328,8 @@
           "address": "17DJnjbo5YLNTL8JJFRWWBZ7yoP9QCLFES",
           "value": 494.68102889
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3d4ba3040c3187d8d9174aa5d716a6daf9ac562a53effc31adb289a89265d3a4",
@@ -4262,7 +4359,8 @@
           "address": "1ThapS1uwcFbBHQS7qipnnGpRc1R1VAjA",
           "value": 493.86962827
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "53f8cceb956c7951d513f330de9b416a9db035f60e681f9f0ce5c7b4957fb522",
@@ -4304,7 +4402,8 @@
           "address": "bc1qn878vf8699p32y3ehq2wwaq876uu7yye5m5ahc",
           "value": 145.29929135
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "24dd4bfac4ba09c39015cf3c587d76d9d7d0a2c90d078b136d2ec067017cb545",
@@ -4338,7 +4437,8 @@
           "address": "12rQVCHDNXRS5jKRPKDbYXen4rouj9kYUv",
           "value": 494.69979009
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5c8706af5f0575ddf55653a718f9a8808eaf0be617c8bd14718a5bb50a53abbd",
@@ -4368,7 +4468,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 365.11256909
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "fcba11363993665e2cf168d8256b9ce2f08d8cec446135f286ae69b7ed3c0edb",
@@ -4398,7 +4499,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 357.60730972
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "55b9fb2930df3e0eb0133b7e5d0687dc38bf4f833882e2ad8978b667f464832c",
@@ -4448,7 +4550,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 244.27488108
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "965924fa21142616107dc702ced9e4b57a12fd4f7aa6b00979dabcff716814f9",
@@ -4478,7 +4581,8 @@
           "address": "1Mo4Hq1wKrdEPcPSs82jtmau9ohJQdBpg4",
           "value": 494.6236023
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4a868a6debbb18d7d89c961621f6d367895217de85fef84a95b9438d67b297a1",
@@ -4512,7 +4616,8 @@
           "address": "1HuTAD67VBGqfGo7TLexgwTamctmQGQioR",
           "value": 496.29019878
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dad58180b0346f48b23cdb5e76e027933a30e1e039abe8ca42662234f8883e67",
@@ -4550,7 +4655,8 @@
           "address": "1E281SgbWH5wyAuTXVWg6YjemEoWPzugzj",
           "value": 496.12756255
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ed519d4cb4f3a24133034ac2360f3c56941fe4e0caa3a9cfd65004978f2dac4d",
@@ -4588,7 +4694,8 @@
           "address": "1JJ8cnTCdsetM5vxFZhjc8KyApNpe49WWP",
           "value": 493.14719221
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "711325d48a547bb2bce2ba8ea73b64cc54ed0052f72f815c2749efd9b91078d3",
@@ -4622,7 +4729,8 @@
           "address": "1Hs5qUjKUeWkEU85JWp5dR7AjnRrdxBAia",
           "value": 497.01541333
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c1858d76e6dd9b899f4407a9ec41e7dc7811699e393fa54fa05c00e0dd487325",
@@ -4680,7 +4788,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 300.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "74e6b967d5f81d68ec568cc0099804b9edcbf6612862d5b1cb904fd166f5af3d",
@@ -4710,7 +4819,8 @@
           "address": "16UQeDgYFFW5Bcfcaqe4z987DdyBn9TQnp",
           "value": 497.00827865
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "54b4fc6537614cf5ea7a79131da9a6c8a5d08dd1a8b4b64cb72087c699bdf789",
@@ -4736,7 +4846,8 @@
           "address": "bc1q58r47sgvu87u99asswfh56pqp6dw0lu2j8tkqx",
           "value": 0.00214532
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f42acc564b7a9e569c71ffd5195c1a2ff632f00ec22c62378978d1eb5d468f61",
@@ -4766,7 +4877,8 @@
           "address": "16ki1J4HWhpcKJzkcsLnhKfjcGpKysrrvC",
           "value": 497.00827865
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "acfd9e946b93bcb19191d64badffda91bcfe02d391b9ba2b5c0db37db1474095",
@@ -4796,7 +4908,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 416.82810206
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3162e966993354202d6b10e527b41aea973d45cfa47794e3bfeecc9935b50ca3",
@@ -4830,7 +4943,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 430.99318431
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f509b074a179f515e53b024338f9f3dde30891a2da85f75ea70dc69581114574",
@@ -4868,7 +4982,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 432.81963131
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1adaffa4314fa5714a9cf488c8fc73ebc5fd5bfcf3d6a30b2e64a3d1d66f2a0e",
@@ -4890,7 +5005,8 @@
           "address": "bc1qpsmh26ja0fzzf286zulmt9eywujc2pggj40wzm",
           "value": 71.80020451
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5ec672f5b1902afd8a79c6b476521c190df74a263ea6b7ed682a446c30589fbf",
@@ -4936,7 +5052,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 437.50507213
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f02eb64243af6eb013062fe570dce23f1b11cbeee6722f9fc4942ba4a4a74066",
@@ -4978,7 +5095,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 438.39015451
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8b66fc7f4a077149b02c2ce7b06d62b99e170d661db2dca33139b6c86e531131",
@@ -5008,7 +5126,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 438.39020111
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c61316f9c74b0be1ed6a01e240babcfb4d8d1faf6dcfee23a5c38cc57346a122",
@@ -5042,7 +5161,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 426.50475932
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e4278448f6412eb151ab17883685a994f0634d3281d0054cefba3de18eb98ef5",
@@ -5076,7 +5196,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 440.39562447
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d5f05e5ae201f51d4188da9367bae58bce12aae74bc6ad25f8cad47aa370e35e",
@@ -5110,7 +5231,8 @@
           "address": "1MiJNVCgVZcC6TYYSu5b4kxYCN3iJDSZen",
           "value": 496.35045519
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d7bedbf3c70f6547f0ac190d6cdcd35c9a1a7163751f8ef48db0f838d7971597",
@@ -5152,7 +5274,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 433.15797999
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "6b832e74f4ff9fe4d7474a6667b9944ea06693c0886a1d6615377d8afda3daca",
@@ -5190,7 +5313,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 446.69818569
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "53e1a96effc41a1ecf516856b7da599848f6df02a473d77743721b0b6f3ca393",
@@ -5228,7 +5352,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 464.79110697
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dc3443c109ef8d814b738d1fedc081e263bca5867fdd5515f1567884390ee494",
@@ -5406,7 +5531,8 @@
           "address": "bc1qpsmh26ja0fzzf286zulmt9eywujc2pggj40wzm",
           "value": 1000.49948774
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0b4fc3e5575418d898ce8f251d844e0cf520f9913b223b446944b491b08b1b38",
@@ -5548,7 +5674,8 @@
           "address": "bc1qluxw46r55wf3dnk9c652vrt4duadm3hpuktf86",
           "value": 459.99962762
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "33810e70efa97c9c476ec0af5b424535e4639ec7b2872fe2b2d228b4e01f0963",
@@ -5590,7 +5717,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.75223758
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1d0f5436e2cbfd278b76a4593e8bc17742b32f7ee1eba3e2903f090b2238e6c8",
@@ -5640,7 +5768,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.43063267
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "55f18e0d702b18bbb9eaff383f883e3392041eedc999b616823a8fbeb4f8f3fd",
@@ -5682,7 +5811,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.23936154
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "6cd3ff611567e909796669138a1d99dde0bc20a8b7f1680f0023ffedccf7f2e8",
@@ -5728,7 +5858,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 466.85157508
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f71d128df72fdb5b0bcf6da58a15b772ce753b97027774f13ecabe31a5261bcc",
@@ -5770,7 +5901,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.0575217
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "585425118f7b5872410a4cb7a92fa540b4999144594999981066494387d666f8",
@@ -5812,7 +5944,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 440.8503298
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b629a1e98b9137428b7024b49cd20091344e54aba0ba4128e1e7fa9111daa5c7",
@@ -5850,7 +5983,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 442.83151299
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "be3063934ace5200d22d5ea4e3f86251945732be5b185b232ea4e279a42f3a42",
@@ -5888,7 +6022,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 471.91315614
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0c6f4b727ed24e00a2dd76fa984498dd8caa4272ae74aa1f74a3061c8e57ceb8",
@@ -5918,7 +6053,16 @@
           "address": "bc1qmtl499lclce4gvjcgn38gehmmkh2kekywkc273ghhmcfl2s93jzq3wt9w4",
           "value": 0.0050382
         }
-      ]
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd": "OKX"
+        },
+        "inflow_exchanges": {
+          "3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd": "OKX"
+        }
+      }
     },
     {
       "txid": "6ada6992929ef68647d69771a1db588c6ff5e7e9d787c98b23e4e8188a629f37",
@@ -5956,7 +6100,8 @@
           "address": "1D2jxWC3aJmfCpw52HegaU8bGEbKtpBBrb",
           "value": 485.60885253
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c5020d31b5e3ec0b6231ae2994d40ea635fc1e686f3f0c0d2f569cacf8d49385",
@@ -5990,7 +6135,8 @@
           "address": "1MoVNzZ9ZQswoSmD6ybUtiC7Zp2RNqKmtj",
           "value": 493.31457944
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7e6946d59148d4c43e22e5f40765cd1f250a5f2850c260eba57aa4f7f1bd6208",
@@ -6012,7 +6158,8 @@
           "address": "bc1qdrudj07kqcd26lr8tgus58hvffwzkthp0l969l2ymmcuvj8gvv2qj8t7xl",
           "value": 1.9993725
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a3d903e5d049e52bf3f8a2c9525479a65ca15d9c201a5932a909c91254f3a956",
@@ -6034,7 +6181,8 @@
           "address": "bc1qzsakmkxd6nzzlankn0f3z375m085kxyccklsz00txl0w4xuh0esser5tqr",
           "value": 1.9993725
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "bef1fa5d6a435111c96d635a2dbed2f06dc0ef1751095d9738657a7d5dcd6b9b",
@@ -6056,7 +6204,8 @@
           "address": "bc1q7pkrw0h2ah8vhyy32s3433zr7mwtzxqy4exswf7z89kqy9jkcuysje7tpt",
           "value": 0.8893725
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d7233a42d0051509f75e2a5d9b2f077f6edbe9ac6ca04e9efe069556ac852af5",
@@ -6090,7 +6239,8 @@
           "address": "1CesD8SMZzzyieFiDhAdNYq8uYb4ecLbSQ",
           "value": 496.34076963
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5dbd85d11465fc8bc708262bb1330ebcf6f4838a5d0e2bce33956c42723a30de",
@@ -6120,7 +6270,8 @@
           "address": "1NySMzPLDRXXG8tjhbhw732JxJoHL5dc9w",
           "value": 496.92480119
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "adecdefd8cd4353ee2a0cbde138f3a4b80681dcd49273e94bf1da0ae4d57ee91",
@@ -6162,7 +6313,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.09661946
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5f3790f60ee5080a2e081598a28ea04cdb431390894b1c46312fd48cc23bfd07",
@@ -6196,7 +6348,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.09668161
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "067ea47e1efac73a8c1de34ce4fedd47a1191b0887a5a2efff9eebd374a8a298",
@@ -6242,7 +6395,8 @@
           "address": "bc1qv48m3pscx3kf7xpfeeuwkk0e6zx5q6skckcasl03vyjk3y35jm6qh5z3pt",
           "value": 14.37684358
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9dfe2f871413e5c53e4ffcfe14a295ec9fa02e286c5bae033946769a6c84ca11",
@@ -6272,7 +6426,8 @@
           "address": "bc1q0d3k8zue8z5ztqt0r35rsd7gua5z4ser6gt46c",
           "value": 0.00034674
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "6b8958e72bf22b4e54ac3cdae05fd1d6ebd787199a5cd959ada23e92358d6e52",
@@ -6302,7 +6457,8 @@
           "address": "1Aq61Gt3vAE38CrNNidoH1CUVTtWFrTnZW",
           "value": 497.10910453
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "807cc53c23926950499ea677e07b4c935d7cf97a75ebcd7b551feb27bb038eda",
@@ -6344,7 +6500,8 @@
           "address": "bc1qrtgpv9c4zdfhmsxycft4gh8vnccevvq3s8k5jx70f0uvffwzs3dsaw5cta",
           "value": 635.76100836
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e79ed74896c8e0be3b2395690f57e3a68877794e5645767cdc2722fd256aa3c6",
@@ -6382,7 +6539,8 @@
           "address": "bc1qx2yx43eqy3gxdn5f528dygygysljm6fj3nehx8",
           "value": 50.2356088
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2a0b13939f57827ce77bc83559647b3879dcaaff5b1ae33444adb6ba963959ae",
@@ -6428,7 +6586,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 471.80223957
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4567a021e74023bd576e6905db2a26ce847ac2c3df2b6f0521bf07c22eb7a29d",
@@ -6462,7 +6621,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 472.1614451
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "80c7b2ac2bdc55158d220a2ff95b0962ffab3a65179fd86726b5681bb4388280",
@@ -6516,7 +6676,8 @@
           "address": "3FsxDJCMnGp2S6Rv7hYT4LbNWtkdPADtjr",
           "value": 50.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0a8ad89f4b80ffd723d95d326b1bd36b53263bbfc040c070d5bc234457a62dd2",
@@ -6574,7 +6735,8 @@
           "address": "3QasRLpkdY2uEC4fVe2i32Q4UEi12Bv28J",
           "value": 50.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "931a32602530ac4f5e4f9f216ff3c81ba95b643904c6d3f598cad85933bded45",
@@ -6636,7 +6798,8 @@
           "address": "343AU2wcgzDWyysFbP48R1dZhimpQrhAvb",
           "value": 23.78908672
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "de2b6009255ea51e1e8c5429200a220c2fdfa26bf36cb51f2ae574a595c2e9d8",
@@ -6678,7 +6841,8 @@
           "address": "32HUgwonc4BQQR6JNMQHKfdHgScNnxp5T2",
           "value": 121.99725001
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7e6b130b5d84746663d24acbb85ec554f18aaf7b105a03ff8d391ae6105aa2ab",
@@ -6724,7 +6888,8 @@
           "address": "36PCXJhFeVVhJucxS6Uf3TUxK6ojmC3Fm8",
           "value": 49.99569485
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2988340f36cccc1392fa07f77983a13fe449cfe2e5a4d47f6dc7e14232291c48",
@@ -6782,7 +6947,8 @@
           "address": "3FHHZ4t1h5emWX9HeEetDHLYr95cYb8qur",
           "value": 499.9997364
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3e18e9e50cac06edb59eba5efaa76d0e530c4b6855f677dbbef85094d4a457b3",
@@ -6840,7 +7006,8 @@
           "address": "3DER1yXg23ZmrYFCXScWBKpFTd67QAg1pr",
           "value": 799.9997364
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9ef07548a6142d422a2c7ba2682b20f7e3cf18a96b69e74d25d30517f745e00a",
@@ -6870,7 +7037,8 @@
           "address": "3J7cUjBZxvGRCwFBz3q23zAsnhFfZrDSSU",
           "value": 0.00014445
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7906d8769dcc4341305690ad7c8bbfbdb72c5502c82080ec1b1809098aa97e38",
@@ -6900,7 +7068,8 @@
           "address": "3J7cUjBZxvGRCwFBz3q23zAsnhFfZrDSSU",
           "value": 0.00014445
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "84ff33ea83e0bfe7ad800032b526891f41e34930c3ed706a321191b29268a5fa",
@@ -6930,7 +7099,8 @@
           "address": "3J7cUjBZxvGRCwFBz3q23zAsnhFfZrDSSU",
           "value": 0.00014445
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d5b15759e99aedc3a10c32fee9a09663be5f996203f1a985d79a9ce407bf090b",
@@ -6960,7 +7130,8 @@
           "address": "3J7cUjBZxvGRCwFBz3q23zAsnhFfZrDSSU",
           "value": 0.00014445
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "acd3758ed3736793927932549c7b8eea2f47c8001c88459ed7c4a8c4adb58ff7",
@@ -6990,7 +7161,8 @@
           "address": "15hzgLdfzHBSpN5V9B4hQDV5gZMQrb1AJB",
           "value": 488.40737763
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "84d24cdd09c5b6402c707a3124a8618dcb8608b4da3586455c773c88ba484de4",
@@ -7020,7 +7192,8 @@
           "address": "1GdiRDb9wi9dtQ95kfhds4tBCRz7kVDexN",
           "value": 488.40737763
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4ee12273dce47fbf967f4f88d51f91f9e6341ac4d17ff7e54ec688280fd36725",
@@ -7054,7 +7227,8 @@
           "address": "37ZTMCtJqSAAnw4nvLGivquDGjWGHAF4RS",
           "value": 172.69948714
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "850f3df81789c3d82c0999bdbdb6953a9723460bcd0ed1208c808e58995a9bef",
@@ -7084,7 +7258,8 @@
           "address": "3Cc8tT4voCbxjHixuedUcZ74X8RMdUk1KH",
           "value": 337.53914358
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c88f8b4f63c2e194f0769a71a2499d499c1f43402b8e6a3ae4d0b99b6dd91fc9",
@@ -7110,7 +7285,8 @@
           "address": "3QDvuLEaDep7fN8GfnWoaYWWyaaKB4aCEZ",
           "value": 777.6396073
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "077c4aeaaa9ae796b9f27e979163eb8df3e0ce324aa0f9076bae0e974568a524",
@@ -7140,7 +7316,8 @@
           "address": "1rTyuHb6cxsKS2KVEXVMVtDNmgEq6FNNX",
           "value": 488.40734423
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3498ccf77abc91f97a2f9d109f3c212309e0c228e5007c09077eebfffde32a17",
@@ -7186,7 +7363,8 @@
           "address": "bc1qm6kjp2f9zntgt3v0lxqxsm3gwnemreeklwrg9f",
           "value": 10.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "560fdd69ebbf93f290f04c5d31d99e66d67e9f405182febd7e2ff62f8345ee76",
@@ -7236,7 +7414,8 @@
           "address": "3N4u7TBx9NzE3ZDpLLoqayhqCW9qQoskJw",
           "value": 49.999338
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d9961aad6fec6428463e2dbcda9ee9197f4e14f4789c99b009e90ed8ce41ba03",
@@ -7278,7 +7457,8 @@
           "address": "3HtwVdpXZufjH9GKNKmBmRy2nevv7ZBGPE",
           "value": 99.9993376
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9744b5c6313eb00af8095b495ee762a870df84ac4f9ed11a64bc790f008ef67e",
@@ -7320,7 +7500,8 @@
           "address": "3KzbYvBXC236qvX5pyvohX9prM6wkiBFAQ",
           "value": 79.398049
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "565140114d11a9bcaafc23d9bda874077d9c817c78bf8bce38d91e425ce6eeaa",
@@ -7402,7 +7583,8 @@
           "address": "35KB1t6F9tjNXGdCUGZgbYH2FikyDJByTb",
           "value": 49.9988116
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a878e9007464f04cf77e71398e18783453c1dd8ae77b5d3b404e8a1975dc62b7",
@@ -7436,7 +7618,8 @@
           "address": "1CeCsPkacEqwyYrcZkqGjcaNoDZWGg61xx",
           "value": 483.42191572
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a9fe369b846345ba007b85fdd8e520b81ef56f1b456072683ac6ccd2ba5cf1fa",
@@ -7466,7 +7649,8 @@
           "address": "1P8D3MY6vDisTGm5KFd9q4nUxwdSjGxzZY",
           "value": 481.81981909
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b70880114eb037db35a636b49ed143b06898a9b1bcb543275ae144901b787c1e",
@@ -7496,7 +7680,8 @@
           "address": "1A4UpZyDG3wdKFpc5kgSMwAEfoKR2QDLYs",
           "value": 481.24605376
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9d7a160a1a07bafecbed374789e212fbc20e1d3c65745c5fd8a5ba0589ddbeab",
@@ -7530,7 +7715,8 @@
           "address": "1N6g8FvnnEomx15BJkPzHgMZnRbdS7wp3A",
           "value": 480.48203275
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b0be2a132bd7e18ff5d691a2b34077c4b3b0ba65b77c3c6a021d00155eb3525e",
@@ -7560,7 +7746,8 @@
           "address": "1CySuEcVqmA9JwkUGea4ibTXywwHJucnDv",
           "value": 481.14820757
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8e1695072ec899bf457e1d279a5d91212f0e13cbcd5d90b2f0943c168e27d71e",
@@ -7594,7 +7781,8 @@
           "address": "1Q2WtpAjQY1GLdHcKsshxD7uVFD2U3QQ4y",
           "value": 481.17174344
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "04eeea083d811b31667eb8896c814bd9e48e96f3ddc00252bc445070c81300bf",
@@ -7624,7 +7812,8 @@
           "address": "1DnDa35LJycwKcQpKeeESiMRxnomm1LdvQ",
           "value": 485.50605879
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c1971d950cf3e9faa2510bcf37bc1e19d748a06b78dc6cc24bc8dc0dc4771a4d",
@@ -7654,7 +7843,8 @@
           "address": "1Ftyn8ms8V9813Z73EuVFz1zA9kZnQSLHd",
           "value": 486.34883012
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b8e01719257bf9da429ef653205b0c1e7be407a479f04b919614a3da7db4fc0b",
@@ -7684,7 +7874,8 @@
           "address": "1E1otC2rva8S3MR1s2TNX9qdLp2BAsdyuq",
           "value": 486.34883012
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "96080e5c27864686e68c7bbd1fae0aa5b95819a62ae19ca5dfde122d66140f32",
@@ -7726,7 +7917,8 @@
           "address": "1BYDt1Q9TD6LXkpm5gdKaqdBkU8xyFwiJN",
           "value": 487.44958639
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b6ba911bd4fdbb69a79bdf9bc0c9a7dc6f50e35750fc014d2680483ee59565f2",
@@ -7756,7 +7948,8 @@
           "address": "189dSzeKZGjbaRJX1QYscEq4ZWuUcB7g4w",
           "value": 476.59349237
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "cb2e156a108e587e96198b8cbcaf48a3e06095eebc35858558c243d0ec1838e1",
@@ -7786,7 +7979,8 @@
           "address": "17aoxXuaHDtRprwUMMEM9P4jUtQjPrEWX",
           "value": 551.99994
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1d821c501dc53558249532925747dd5a850939b7abe34de7420eab42b7e71d62",
@@ -8312,7 +8506,16 @@
           "address": "bc1qmtl499lclce4gvjcgn38gehmmkh2kekywkc273ghhmcfl2s93jzq3wt9w4",
           "value": 0.0023442
         }
-      ]
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "39wVd42giU95ca39sEPkbPTpWygvsBDuA5": "OKX"
+        },
+        "inflow_exchanges": {
+          "39wVd42giU95ca39sEPkbPTpWygvsBDuA5": "OKX"
+        }
+      }
     },
     {
       "txid": "e9aed88beb5e277426d92ff0ec266f45983b0ad32fa9b4d87219b1669719c92a",
@@ -8346,7 +8549,8 @@
           "address": "13tNdWU3dKrPTSRZVFXHuqasXv1A2vX9W8",
           "value": 493.14101575
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dd7f4c89512c4db003524e67e381684d58db4622012d47fe5f5b557b2f247bde",
@@ -8368,7 +8572,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 173.25474697
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4358d0e2054915948e9bd5005c9548496d319cff4fefd3bcb1c735dcc915390e",
@@ -8406,7 +8611,8 @@
           "address": "17wFgEnNhUkj4yRwtrGqZNK5aEC7QzznJq",
           "value": 493.76867959
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "571f7ea0e275585815f81124b500e25036758088ac8bdae6eaa93f3ab0c5058f",
@@ -8440,7 +8646,8 @@
           "address": "1DwYCnxe84GmsibQgcVshx4a1CUf3XMUt3",
           "value": 504.16774413
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "88b070add2e3209da76049a9377f3bc0c1a05c6362d64a6ad9b7359b0f36ab19",
@@ -8470,7 +8677,8 @@
           "address": "1DjZ7WAe9WP4ot7BMbbEJzGsbqBTkMQsp5",
           "value": 498.78058688
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d1b1f55630711e1d62b614d1058552c449782c9b07f87741a9f74ee6b22ce07d",
@@ -8500,7 +8708,8 @@
           "address": "1NCsHyRBR9fSeZMGjZfLdWK14Y983tjLxC",
           "value": 505.4008047
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "34ec8d03e33987fe541b72fa881ae64e3749054f86b45c07a3f5c920ee793beb",
@@ -8522,7 +8731,8 @@
           "address": "bc1q74lqun7j4r23fjn4un5ghyexhzsxc6yuptqpsr",
           "value": 220.85827761
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "88f3e752c168a8a61d5d015d91946aaf2ff5920c04f02d9530ebc4db60e451fd",
@@ -8552,7 +8762,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 203.91558892
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "58d4495416138d1571f486761a4561d4ead1e99ac0f04a7264fa59868a91b2ee",
@@ -8586,7 +8797,8 @@
           "address": "15QyUe6e591zWLWUak1eLXo8cvYme2qJpG",
           "value": 505.80492097
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e41084ac64121f085379e5eb9530955fd558ecb4e18fd42448ba4739f99cc268",
@@ -8616,7 +8828,8 @@
           "address": "1KkgatskveWYNUx4ZsczXE3qXr4wcHfAQZ",
           "value": 506.59566817
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1febbe9ae0c207df68018325c574a0115ecdc1dc79e370a9065b12ca746a66dd",
@@ -8650,7 +8863,8 @@
           "address": "125cHsuvocTq5VtMGFz3GVrX4ZXkkrz8zg",
           "value": 498.7069896
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ba6ea93a7595b1fde677a87b76a05e2823ba55c771eb28d861e8f9bc2660acf9",
@@ -8680,7 +8894,8 @@
           "address": "17aoxXuaHDtRprwUMMEM9P4jUtQjPrEWX",
           "value": 461.87224
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "22e404a0fdbcb2b3ab557a31d718a7884c200e8f192afa5e9643351b79f7c55d",
@@ -8718,7 +8933,8 @@
           "address": "1BFNNuhX3kLEQSrNLQC6BkVqBLJtBugAAw",
           "value": 508.51041369
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "56b156c8c89d55fab6f43a5f4864d937cdcb493ecca3b39a7544a001198b5e37",
@@ -8772,7 +8988,8 @@
           "address": "37UQrPLSGa7GC1CRGXthqNgyMEhrMbsxAG",
           "value": 99.9995434
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "bb4cf37767c6815313871013c68dee01fad9cb3a700c2e764e693f785059fc0a",
@@ -8822,7 +9039,8 @@
           "address": "35XjQBquqyioLQkafgNGK11Nwn86bWZ34F",
           "value": 599.99762685
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ba0664b523a38c5331864e5bdfb1cc7acdb2915b22ee55ba9c658c1e5ddb530a",
@@ -8852,7 +9070,8 @@
           "address": "12f73tMdc95KwmfaMw7rtKqTGs9Mf1uX9V",
           "value": 512.68680822
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "823cc6132bf6be470bdb8e7ddf1e1b9080b3d936b35b751ce76dbd15f2248131",
@@ -8874,7 +9093,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 256.67745082
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "393e139370866d3b31a9bed2d35468df4ac4f73628c6971cd0ca95fead951eda",
@@ -8912,7 +9132,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 294.85875071
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7c3028524117154293b560de2824731091e809bdf29f3e5f692cb18411a6ae3b",
@@ -8954,7 +9175,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 296.5603606
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a84a7588ca02e6a2aa785e95a424b0c21ce9bc46009a267d1474cb03d4650547",
@@ -9352,7 +9574,16 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 2.05966109
         }
-      ]
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        },
+        "inflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        }
+      }
     },
     {
       "txid": "f973a13a0461ee5352726695eb88e2c4dd24297b36ae34dee138a1b4379b4f26",
@@ -9470,7 +9701,16 @@
           "address": "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h",
           "value": 27.55582933
         }
-      ]
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+        },
+        "inflow_exchanges": {
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+        }
+      }
     },
     {
       "txid": "198b3fc928de8786bcece6a5a3765a63900ac5b2bd15a6596f9ab74602769ce2",
@@ -9488,7 +9728,8 @@
           "address": "3APYdZLAacEBU9XvYXEUUP8HHTYFhYv1iJ",
           "value": 997.9999308
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "60179c96338f23239f73a4af490302116b822f8159a1f8d678b899cffd9b8078",
@@ -9506,7 +9747,8 @@
           "address": "3CABp1GesCNydBuXfCJ9HMtbps5mabk35G",
           "value": 997.99991004
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4148ce4f8248cd00ce486711b7710012e743c7897199e6212ccd592992d1932b",
@@ -9536,7 +9778,8 @@
           "address": "1GYyi3Fj8iiPLJygq9PX7uviYgTKSo9vQb",
           "value": 511.16889474
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a7b5d8459c9c382998624e6340adcdb1a2062181cb7d0c0213076f0ebdc08ca5",
@@ -9566,7 +9809,8 @@
           "address": "177FFbhKXVs1R64BM6Ge3BSfyFy3uW4i2D",
           "value": 511.16889474
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f52e052833040695849dd36dd003e1e1bfe478049537fcb246e424173776776f",
@@ -9592,7 +9836,8 @@
           "address": "187f5QV6QqxrcFJdyG6qf1xNVxn6Ka6hNb",
           "value": 199.99994
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a5a9bddb202795e3d2c6840e5d6d1229cdf5fa7ae228fb6755284344a3169310",
@@ -9766,7 +10011,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 300.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "278bc806693ba4741b7e81d83dd974605f6c2aa78d1380ce4c4f1df6cc74943b",
@@ -9796,7 +10042,8 @@
           "address": "15pCUNBCR7AbM2nGhuqLA7K2yCYB5ugeSA",
           "value": 508.69680813
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "384fae1e9a761acfde04fa47801c00f67df898ae27cf395c9f334a58a5c53a0f",
@@ -9826,7 +10073,8 @@
           "address": "1JJRsHrA7fNFdMgTwrYacxWz7sJnPZ72C4",
           "value": 510.14722099
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4af20f38c822cdaa9780bf6dff0a0b9346fcd819e428a021973c6e47dfecf9bb",
@@ -9860,7 +10108,8 @@
           "address": "16vkkTCv4JGNqbMnnSXNEmoVx64jkmBuz2",
           "value": 510.4891919
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "32904ebdab56396813eccdcadee35862aface8b6f6c088e3d2baf5e8b7bf047b",
@@ -9878,7 +10127,8 @@
           "address": "bc1qwxl6mxjnptkcyyzfvfhn897vq99034m93g2ftr",
           "value": 1177.64282921
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2d1a0a2b69bdfe0747349ad79fdf193bfe125a35d5b4d4c729a91472c72e6632",
@@ -9900,7 +10150,8 @@
           "address": "bc1qqextsxasayl6gnxszm05tr5mk4dz75e2cmfr0uge4vmg4nzxzzpspjtzls",
           "value": 224.9948686
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "99b8c6652ef785177e87795ee4fd3170ea3a30eb257661195ffe5dfed92eb2f1",
@@ -9922,7 +10173,8 @@
           "address": "bc1qq86anafyfa0a6suwzu74pwwea5d0na0a6afhnsw36jy79k4p4mmsv44urc",
           "value": 1999.67999514
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9c7208d2c0573b7d292ccb5c11a7ce254c76a5bc6e38689cd0a5bea446d62c34",
@@ -9976,7 +10228,8 @@
           "address": "bc1qeulwa0xzeeme65m62w4twe5mz5reu75mrfxnel",
           "value": 2.75771807
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c964b0789a447784425219f03dcca22613ef4f4ae95640402c3f23885cf2aa41",
@@ -10030,7 +10283,8 @@
           "address": "bc1quq29mutxkgxmjfdr7ayj3zd9ad0ld5mrhh89l2",
           "value": 13.23066967
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "768f1d2a9eb90a2b890947c5cc5b713ce7d98217b9d3eccd5c547c3e91060a84",
@@ -10060,7 +10314,8 @@
           "address": "1DYQ9X4kxz5hCP1SpgXTYjLj8zcZNw8mRG",
           "value": 511.70366972
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "28d1ef4a14b4290fed4107ee75416d6838f57558602d04c630ffb1f7deb0e330",
@@ -10090,7 +10345,8 @@
           "address": "1QBLFK2dehK7XQTLeEuLbdTxDL5vcwqS1z",
           "value": 511.70366972
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "cdffe6a90b22b3fe91d8118a2f9e47f9b1360b81686b595fb12b6d00b28760fd",
@@ -10152,7 +10408,8 @@
           "address": "34dVKwZtnadn3GokTJ19VCMZ5D8Hk9kBJj",
           "value": 27.1261399
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d2b962fefa197cff12624d06ea336cc009e56b61a4adc0c011a7448cc9a43f97",
@@ -10214,7 +10471,8 @@
           "address": "3N9EzgjMB3UntZjkzc7e8XmgEDKDWLg5rK",
           "value": 38.4999772
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4d6d7c745f3136f513ac8375fabb92efeb208c0e9f5913b75e2009a19f654e7b",
@@ -10248,7 +10506,8 @@
           "address": "1GFgcSyfYMxqzPX9jFnE9uoKoCeiQ8bgzD",
           "value": 512.61900837
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "25e2352076d1d0f73add46a43381ff2f49b8d4f9a36bc335b58bea5ce9d7e8bd",
@@ -10270,7 +10529,8 @@
           "address": "35e9UeNq38gyPjmZtywSwZVAWp9mhMfgFY",
           "value": 859.87398652
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "294075632fc7445b3f930c3227418035038effd81cb4bc0c5e43920975454959",
@@ -10296,7 +10556,8 @@
           "address": "37JhCNABfMibQvSbPMn4giBpfTUaypLBPx",
           "value": 995.999869
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5a808874cd34b194b93ef698aba989823e333a272ca47dd269a26b495b88d4d7",
@@ -10326,7 +10587,8 @@
           "address": "15Yd6vkJRPeXwDgZ2M5q723Pkswjb9SU36",
           "value": 513.9632295
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "760b8cce33dad885c5a176168cae25db125655235957c4858d42fa65b8b758f2",
@@ -10360,7 +10622,8 @@
           "address": "1MHsU5NJPQuxjWRTm73FvtfYR9vSxRhGra",
           "value": 514.15836597
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0b0a5f62005b71f1d165783bb9a3435d9b92427503a7ac5434e8b2201ca3b716",
@@ -10386,7 +10649,8 @@
           "address": "39aeQtUhz3qfgiYAMRU5LiiNy5rbq2E8aV",
           "value": 898.9198344
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1caf198fdaae6539ddda3aa58df8cf1dc2eef28f105722376845466244756a46",
@@ -10412,7 +10676,8 @@
           "address": "34orbqGmQ8vt52DadyVPrTsjuvtKt2cQvH",
           "value": 898.979869
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f4de5ef5259caad3698ab5b6a6de0de8ef523b2735c20585fab9f813f1270183",
@@ -10438,7 +10703,8 @@
           "address": "392Ty3pvHuC5ajN21y71dM3UxvUvHKQySL",
           "value": 896.839869
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3a4c9ccf33f1a4b08f57fc2850b8be493323ce2f658e3587364dbe75e0cf0a98",
@@ -10480,7 +10746,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 226.86871833
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "18bd2ba694377a132fbc80ee9607c7fc2e240f37011dc50c086ae8729f0ccd66",
@@ -10518,7 +10785,8 @@
           "address": "12edQDc5SaMknxfu2QiwXzBn28pA6bHYp9",
           "value": 511.57104878
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7da3b0d32abfa3a8a5c4d63791f50d5071caa30be4eca9fd4582b51bf612a2fb",
@@ -11336,7 +11604,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 239.4530014
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c5ca0064be7462207cc781bad434fbdcaee0a3bccb508f42fc6389ac7a46fce8",
@@ -11366,7 +11635,8 @@
           "address": "19gt9LTKNbcrHDHcefWxWtKC1vDdqKXcrR",
           "value": 510.82960767
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0eafc4c437d2eb24f5a20bc4bd2b1b2832deb3fb9d0485d36f14b79b2f39c85e",
@@ -11400,7 +11670,8 @@
           "address": "19DJXH7p2nvUSZHDYDcwkvGfQ575sLoTKU",
           "value": 508.3883493
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "34e194cd42e693a5f53e43cd5c48bbc6182ac0b1c0d2df44329dc95b7d2ef94e",
@@ -11430,7 +11701,16 @@
           "address": "bc1qmtl499lclce4gvjcgn38gehmmkh2kekywkc273ghhmcfl2s93jzq3wt9w4",
           "value": 0.0053382
         }
-      ]
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd": "OKX"
+        },
+        "inflow_exchanges": {
+          "3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd": "OKX"
+        }
+      }
     },
     {
       "txid": "00b163917e50d579e061efaca645e4c7bf63c41c26ba6c818b16c155da22d391",
@@ -11464,7 +11744,8 @@
           "address": "155j1ftYUaCNSVvf35wSL8QnArmHZbY1NQ",
           "value": 508.76163783
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "677c5eb2b2ec038e30d0bd0429767d29751428a942a4d0e14ba3b170f21b6784",
@@ -11494,7 +11775,8 @@
           "address": "14dcKU81Ahyd5m435porCZ2T5XgbSvUPYj",
           "value": 512.99717966
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "252c46c9f0074f6423e2782110040de75b71ed1e420913d03eeab40b5d26d8fc",
@@ -11524,7 +11806,8 @@
           "address": "1BGembf5Q4ZYgX4e5fV86rHWLPWVAVniZE",
           "value": 512.3478362
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "981a44817903bd59e8a2f5978b034c3ee4d73cd454a6a07193509a3eac5f4207",
@@ -11550,7 +11833,8 @@
           "address": "bc1q8s3h3vw5xufdas890q29lpuca56r0ezqar0mvs",
           "value": 161.92589837
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f6e08cba52e710005870d445b68fdab56c7bd92a585074aea54d96774a0ebc36",
@@ -11592,7 +11876,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 232.85002906
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dfecaaa39cc3e78a8cae8ef77374bf2c36ccd4df893c9361506ae23bf052c281",
@@ -11622,7 +11907,8 @@
           "address": "1FLF9bE3UW8FYjwHJkF1mMckxYT8FjFu4U",
           "value": 514.30805541
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "36f436f229dba25931ec53037b280a3af3115ee5465180fcd313eea99ba6af8b",
@@ -11652,7 +11938,8 @@
           "address": "12uLiW3SoydRPinQHsXH6zfz5ZubGiCgMB",
           "value": 514.30808881
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "76c77497742152137025ad308a78ae17e040e90e9cae926849656a9852a9a9d8",
@@ -11674,7 +11961,8 @@
           "address": "bc1qrqwfk530j93wk623huaffk4hxdwukcajpxgw2z",
           "value": 113.88019969
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "469bd749cc6a85c3e33a22eb365e8d538b3d71dc8c4a241304add1152056d1d8",
@@ -11748,7 +12036,8 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 236.68904948
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dc29f3b850dba7d9d683412064b6e5f7ead3b1b4fa9ec46101082d5cb2058b8d",
@@ -11834,7 +12123,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 238.18760021
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f16c48aac7ee7e33ec1a84b31ef3028c540e70415873350a4b82c0f67e1583a1",
@@ -11896,7 +12186,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 240.43738044
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "58253ade39e42a104de1b231f356d87b94aacebb22f0b74ee19b039c836e9eed",
@@ -11942,7 +12237,8 @@
           "address": "bc1q2jskyyqr8tm0s7769g7wk3rdlpmves58fjqztu",
           "value": 316.99993874
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "c9d382d3851f37728a84759f518c2480c0a883ad114901ebc39ddb114d70a5bf",
@@ -11972,7 +12268,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 7.27291311
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "04d46a31ab380f62d78d17a3f51a681594533abef9b515dce11cd84d2ec5bdfa",
@@ -12010,7 +12307,8 @@
           "address": "1P1kkfFxPsmi2RVYBFx3qdvkL68SW9bxBq",
           "value": 510.6687085
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5f5a754afdc29b23737c3f45bbbade635daff044e27fe0d0c414aceefc8d5a43",
@@ -12048,7 +12346,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 223.75821283
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5df7c8e085b108ca9b39f3865ee894e01da7821e310a498bc6b029ee12b8b0cc",
@@ -12082,7 +12381,8 @@
           "address": "1JuN37vYaWrcu1NJmnRt5viUvYhmpFYoQq",
           "value": 509.63257586
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1c860f5fcad2f9fa06eb91e75be970de0c1d293f6f29df73b4c1e2c30893b333",
@@ -12104,7 +12404,8 @@
           "address": "1kBvgsuwW4J4P9Jk1P1H2zBv7gTLr9gq3",
           "value": 272.398507
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3526c13dbf470efa34ef64794d8045338e1b0078bc992b79de96e539f4412cad",
@@ -12138,7 +12439,8 @@
           "address": "bc1qxtfe3jzkgy7m4neeuq4q7tcfg986kgzlgdsnzv",
           "value": 223.27494672
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5689453b23486d5ba357b42a4ea2fc41178260c4b69fb34c7a5fc5280c49e7f7",
@@ -12172,7 +12474,8 @@
           "address": "bc1q9xa5p3r22683gflvxwl78xgeprz6dc9eet3ywj",
           "value": 223.59684724
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e84383e0382cab520d4f31a42a0552e2d19597e12eacb1b823817ef71a1eac58",
@@ -12202,7 +12505,8 @@
           "address": "1EYva2irYoCxqXbmio7psNLvGRvp4pSLHt",
           "value": 515.85204152
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "8a3b59ad541b72f40faef10e8107f3e97f835b2ada963dcb7dfc48dbfe9af5d1",
@@ -12232,7 +12536,8 @@
           "address": "3J7cUjBZxvGRCwFBz3q23zAsnhFfZrDSSU",
           "value": 0.00010827
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "28552119082e74cecae979ddc0f898105a02e100e12be353b96504c95058798f",
@@ -12262,7 +12567,8 @@
           "address": "1DduiRwmck1Utt3ENJuvJR6jDmRbxgR7P1",
           "value": 515.85197477
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "984710442a1e753edd6c9d4d635b1d8449f0a086f9c1611bf6d6179c98bc7d2f",
@@ -12284,7 +12590,8 @@
           "address": "1KXwZRqDrGhZ8nuGSDbdBMQou5p4oBoKZi",
           "value": 1029.413658
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "13ed768f9836460dc1bb10656fb00d8487cea4022d3b33f8b041f4c1cb169c67",
@@ -12318,7 +12625,8 @@
           "address": "1EpSPHRjxvRQp1BnkUfct1d2jMnNVN2xwL",
           "value": 515.79296764
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "12b7b3671321cd87867cd366b23c5419b2281d74268846552690da05c8d6b096",
@@ -12356,7 +12664,8 @@
           "address": "38gLJUrdZpXwPsLoEGG2zZSdURkSMCxiBb",
           "value": 49.99971495
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "49635c289842707d0bc8609d0495a6b721863b13de1d327568f160b88a100c93",
@@ -12414,7 +12723,8 @@
           "address": "37QxKLL5MvEestuJ9FkXNKqsWUhiC2Qsr8",
           "value": 172.7987551
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "52763f07bdee28c874839d3310be99b511eec92f4d6cb11a013c20a0285bc28c",
@@ -12444,7 +12754,8 @@
           "address": "1L7LUd6BkQeWqTbijbtnNYY6svC8NUyDBX",
           "value": 513.83486774
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "b806cd1f63fcd7dcc60f29571bc9f503f24fa93c50bfa3e4390b49a50219bca0",
@@ -12478,7 +12789,12 @@
           "address": "bc1q7cyrfmck2ffu2ud3rn5l5a8yv6f0chkp0zpemf",
           "value": 481.0
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+        "exchange_name": "Crypto.com"
+      }
     },
     {
       "txid": "8b69a46ca0e0de40afdb780b690e10da1cd14fa3d1e9b27a4c443f01953daa97",
@@ -12520,7 +12836,8 @@
           "address": "34QQwmecWwvk6ucErAC9TEkHCUNVV467Ly",
           "value": 999.1693556
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9caca6e62566c6570d00823ea9248bd366a2e7698476e8b62e94a67f3178d11f",
@@ -12562,7 +12879,8 @@
           "address": "3HPevu3avuQhipHdEVdXXe5ickXwP3dpy2",
           "value": 999.47924291
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2905edc58eb283a04eccb28a84a1ec9200271d3feb7fd8c34973ea71e87634e9",
@@ -12604,7 +12922,8 @@
           "address": "3A1w3m3ScX55FC5mKQoPasysdNa6VP8Gbx",
           "value": 999.84621008
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "36b4658b32469663ba1baaba3e60eab42aedcf14c113abf7c5c3136790c6c30c",
@@ -12646,7 +12965,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 300.0
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "19017dc41e06083d6d7d22ba4bd9bc0b25848f02c31dca58a8984be1d760dc22",
@@ -12676,7 +12996,8 @@
           "address": "1Ljdi5BrUMzdueP2R7VSPmbcgX75sxssxZ",
           "value": 513.21698285
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "67955f5cdec61dccf6cf04fe27fa0537a6a88bf5764a16ba04abab07ad172b05",
@@ -12714,7 +13035,8 @@
           "address": "3C8KNkBMbTxqbwA2LSk59QWHtJy23yfE1A",
           "value": 376.29269576
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "7e1b23d2ae6794fb7bbf4344020cf16e838a54813cfd90c01e719dc2f225a504",
@@ -12752,7 +13074,8 @@
           "address": "12AbsLoTuR2qkiCzmxqQfXsav5Bdh41DFu",
           "value": 513.19007379
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "fd358c0c742e6abd452c971a59045d8cc616460a300370c64e8b1615703dd127",
@@ -12770,7 +13093,8 @@
           "address": "3FeLD1jsrFxJ9Q7fGH1JZvrjDndwWc15LZ",
           "value": 999.9899654
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1b6d3ff37dd214c7dec16dc32325885f292e080e6cf38804843d3c7e72fcda7a",
@@ -12820,7 +13144,8 @@
           "address": "3EKS9Qjwx1EzbS7jGrRU7LXHRntNJmYiMp",
           "value": 99.999762
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2e40b7933248f15a22a22b9fcec946f1e0788efe209b356785147fa35be4b894",
@@ -12854,7 +13179,8 @@
           "address": "3NbPGVuNk9Egns6MaLcWxgnRD9HSCB74tE",
           "value": 49.9996136
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "fc1ffcf19a140b408271a881685e507808bedb3c1a23c8968adef6cb110cbd7c",
@@ -12892,7 +13218,8 @@
           "address": "1P3UBKTcudMKNRTC28mot73nBHz1m43JHs",
           "value": 511.39600395
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "47836e6316c933e67260de6c998d4c95973af6a6aa42661a4acff1500315dde0",
@@ -12934,7 +13261,8 @@
           "address": "3QxzWR3KCXK5oHwZFVb1P5p6icQG4tyYCQ",
           "value": 999.2193556
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1bc45bbdec0dd61d881f04624a999f495c9cc85fd76a4c30beb262af9697191d",
@@ -12976,7 +13304,8 @@
           "address": "3KQD6oTwfDZWbmzZjfqSnUvY4mk4R1JDce",
           "value": 999.1593556
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "96d2208d304bd07964e4b71ee8e0c0a021865da2e0bb181f5a0092266a2c9d54",
@@ -13018,7 +13347,8 @@
           "address": "3HA6Th3dcedH2e58HAyUEfu1DiHG8YTw5j",
           "value": 999.0393902
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5f8acf84f5fa2d970028c1ed01eccba749fa1eca99bd27bbc10078ac9f081a32",
@@ -13060,7 +13390,8 @@
           "address": "3NeKBLHE21KparWmvpM4LQPiocbcwCPZmS",
           "value": 998.8894248
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4df7fa126e9e6d6bc3c701404bce1014581432d0ad1605bab69558b21c3e95b9",
@@ -13102,7 +13433,8 @@
           "address": "3KyCVegU1aEHBHAwj32AQaspayjnzAmzFS",
           "value": 998.8394248
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "65bcb73e01d53c1ab13a0e24731a397e0fc048dd154672aa27e4efe371da093a",
@@ -13144,7 +13476,8 @@
           "address": "12DezRFkKToAiLTDNru1g7FuvtAWMwCZ7N",
           "value": 471.80232737
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a4ce7cbf857374f3761439cdabb86ba38c3a82068b12fbc236af2fdcfbc0abff",
@@ -13186,7 +13519,8 @@
           "address": "3KhpTUhUcYQoatTejZTWnfnsdudtYpXmpF",
           "value": 998.7894248
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "3d7230d643ac6b7ac8741fc149266d4b2349035f56b59284d60c39d4cea0f8a6",
@@ -13228,7 +13562,8 @@
           "address": "39kwigedYiSqupVds6trRUTwE4tww2ncuK",
           "value": 998.7394248
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "897458af9831de264832245d729c0359c99efbb7168fb7e8a7e075f05a13a9cb",
@@ -13250,7 +13585,8 @@
           "address": "bc1q32hmnqm77ktfm70avnwy7l7uzavfynssuu8tcc",
           "value": 249.09697357
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ff09628a8cef80aada6b3c2e23360214a28a5ebd2f35e2baca95ff6e7fb89ce7",
@@ -13268,7 +13604,8 @@
           "address": "3LBnKshDNfU2qcehfruQ7xJ4BsnDh4CM5G",
           "value": 498.99990182
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "4b382d7a9e67122f2522875ef7439a76242c3d05fe254d3a6131add6d4d9755b",
@@ -13298,7 +13635,8 @@
           "address": "3DhC1hx74W2k1sqHzMJ88PhGWWPYFWXZeT",
           "value": 672.7990187
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "99024d1f9766c836c83be712eaeb5c42af76f3143b436fc59996df10de935dbc",
@@ -13356,7 +13694,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 202.97621179
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "9b32337c86078bfd90719f28e52fb790641484a58d2da8d7542b03ce6b32b115",
@@ -13394,7 +13733,8 @@
           "address": "3HJZ597kEvewuZFy9ruLZL5yPTtXF9SgGX",
           "value": 0.93469017
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "0f9dd3869b7e5a88224d797e1e707e19cba8c295eac688fb978351c932ecf1b0",
@@ -13416,7 +13756,8 @@
           "address": "3GhEBo8DcpwV3iYgSQE4CN6qGFncUmfoi4",
           "value": 490.38543519
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5704d0499128fed9fcbf6fbf960b020c512c224a97bf465d90b4ec2a8225847b",
@@ -13438,7 +13779,8 @@
           "address": "37rGyM4591o8XKDBtH7kridkMe8hk6iBv4",
           "value": 2951.21613792
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "88e358cf6e95640f9d060e14256b4267cc5a0bdd008ee6e5c26baa15d25b3e33",
@@ -13468,7 +13810,8 @@
           "address": "1JNGv44yXxGithaaroRSFiimRkPCNzviGF",
           "value": 508.70250716
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "229ef6ca733fa3ffcc723c30d58e96d8cb7719f0bdb45fa369834258b4f1a0ff",
@@ -13498,7 +13841,8 @@
           "address": "1LyKsUAjyuZNwi8tUYgVz5dQDV5DDzKCYL",
           "value": 508.70250716
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "27d3f4b660ab0172b34f16f5d96696f43cb873293ed453070e775baf25a863ec",
@@ -13520,7 +13864,8 @@
           "address": "bc1q4tn42jkmnfjd46qhz7c56rxnaz7ruzcsu2pcrc",
           "value": 329.394034
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1d7fb99e06543fdfafa26dd0a10de5d79ed43e47768610029c4dc295b0c0fb5e",
@@ -13554,7 +13899,8 @@
           "address": "17uxUSZ34y7hjDGDp24yCfuMCvz8gBTGiF",
           "value": 507.94828281
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "916a7b33d5e9c5e1f9174cc8c068ba59321c5a3583992a132fb399d2bbdc6252",
@@ -13588,7 +13934,8 @@
           "address": "1DmW6kZ8EeV38ff4QVcJwCQQXzzP4hyD2C",
           "value": 504.70951461
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "51930388027755859487823d128088d3fdb9498a08e910f1a89483356a837970",
@@ -13618,7 +13965,8 @@
           "address": "1EMPX6eRxoNj4F6vmkcL6EQujUexHWjgSR",
           "value": 503.70515749
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "5d707b7f923fe8d5d11211d3a2040fa402da200df4da16bcdcf09087f7287fac",
@@ -13640,7 +13988,8 @@
           "address": "bc1qruje5zuuqz6lxte4tqe69h27z9t940ly66s5ne",
           "value": 394.775549
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "d5ccd735ba6865d10d4254f3ef20580d978b66686e41d09dfcd656ab8090dcfe",
@@ -13658,7 +14007,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 297.5903001
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "1d1cc170a4fd64b2aa79f761e275aa1572fcd701af3ec073b811d6ba09be94b7",
@@ -13688,7 +14038,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 525.84857568
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "6b1f8563a4b04c53ad13eacaf9fd302fe0e01cd867e5ef71bf9a4396274b78d8",
@@ -13710,7 +14061,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 523.20957458
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "487b61897942b67f7a4fe9f2dd1e405802ab29440bcb1f483e185b710c61195e",
@@ -13736,7 +14088,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 521.29185861
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "f1caa77aa7b77408823927f7207c7122b15a64ffbd5643206e576a8a39c3b67c",
@@ -13766,7 +14119,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 521.48212114
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2044eb8b926d4c0b8b4a6e708dc9a697098ac9a47fbd4429f10afc31e587207c",
@@ -13800,7 +14154,8 @@
           "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
           "value": 528.16835706
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "ece616f20b48a1ed55772b633061a0a5ec6ea24efa83def20a357206fb20d6cb",
@@ -13898,7 +14253,8 @@
           "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
           "value": 226.76907035
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "43e813a9245b94eb364ff6812282c060d938849869a7cbb8c09949477d1bdc76",
@@ -13932,7 +14288,8 @@
           "address": "1Q6vUk4yNP4CYfw8oG8fdRRCMWkwBetNxb",
           "value": 510.04904101
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "384cb748ecc5b04830f006feb4f5dea4661b21d136728a9cd6dabe932a63656d",
@@ -13990,7 +14347,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 220.88580495
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "56f93af00137a15cc01116f88828515477689bc8de72b9333c5fbe7fc4723a88",
@@ -14056,7 +14418,8 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 221.31557099
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "730d53779a4fb103ba6791a99b91198346d4b6859bb16e9229c46b43e74a5338",
@@ -14114,7 +14477,12 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 276.66446616
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "807b84efae276e53be4df44878d9e08d35e5ecb54dc9c5b6de0c55d15c9fc736",
@@ -14168,7 +14536,8 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 263.37437326
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "a601381e8d141855b187277c938bbc40dfced475ee8fe95c2f30ddf7dc12ef36",
@@ -14206,7 +14575,12 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 278.31790229
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "fa9dbe4ee185c5b7faab92b5c3563f60e03a6fe502354c577f935e478d37f270",
@@ -14240,7 +14614,8 @@
           "address": "1DCSMKvYkxw8WGcHDG1xDm3bZjYkz6VwDq",
           "value": 511.72326098
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "2659517645fff127a0a8351989517f5b58ddf761704e172accb3addab30e3072",
@@ -14274,7 +14649,8 @@
           "address": "1H9Qu6NAH62Lzx3jUXk3BBgPUMQpRLz32",
           "value": 514.01961992
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "e8b83f02851f3861a83b56f41a73f6e2c5437aaf0780a408dd065d99d4d7593e",
@@ -14360,7 +14736,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 287.71748138
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "3d9be01b59ee882d570578bdc3a14479423e4a43d8d4bcf18b5ff9597fe5ef3b",
@@ -14422,7 +14803,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 279.28867277
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "a3839254e71a6722c499ee94529bb71a48a56eaa916050ee72eabe24744520d0",
@@ -14456,7 +14842,8 @@
           "address": "1DxnYozy4BD3FxLU94JANFPB624zwMDejV",
           "value": 507.90124902
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "6d267580d3156d6ffe56d76ce078b1618c3ebe1f70c6fb9117ecfa0b19e50375",
@@ -14530,7 +14917,8 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 279.51057683
         }
-      ]
+      ],
+      "classification": "unknown"
     },
     {
       "txid": "dfc8c3a520e1b21af7fbf35154494759b55238b4d3347201321930db7e51f1fb",
@@ -14612,7 +15000,12 @@
           "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
           "value": 279.65688561
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "c7fdc9bbe8d2b6e5b2118460c75d0f6bc1e5648f8015d758d0717638d8617c01",
@@ -14674,7 +15067,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 283.64841522
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "ca7804cc7ed56f5ff0f4a5e2711613303bb21c95cecd06838d411518c0ae76a3",
@@ -14736,7 +15134,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 297.71836412
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "3d815eccc8dcdafd01ec1c7bf5642708552f6d5313f07caf343219fe32d62b05",
@@ -14814,7 +15217,12 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 297.7650698
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "0dd8d4a161b4672ad838ea92058d806b541288b6ba37d8f18985cf605f1f1a81",
@@ -14868,7 +15276,12 @@
           "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
           "value": 287.74758746
         }
-      ]
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "3f1eeb85424f5c9e3fa0adb459e2acc9ac5a7d24790ee1092c21dc18330a48b2",
@@ -14934,7 +15347,12 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 297.9488157
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     },
     {
       "txid": "3824258831df136e6c345a4fb45bbce6a36f0074c783c312ee7b70feaf0d764e",
@@ -15012,12 +15430,17 @@
           "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
           "value": 296.65391509
         }
-      ]
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-20T15:44:58.464129",
-    "total_collections": 1780,
+    "last_collection": "2026-01-20T16:20:45.445759",
+    "total_collections": 1779,
     "last_collection_found_new": 0
   }
 }
