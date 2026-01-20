@@ -30,7 +30,11 @@ jobs:
       - name: Collect Whale Transactions
         run: |
           python whale_collector.py --once
-      
+
+      - name: Classify Transactions
+        run: |
+          python classify_whale_movements.py
+          
       - name: Generate Daily Metrics
         run: |
           python aggregate_daily.py

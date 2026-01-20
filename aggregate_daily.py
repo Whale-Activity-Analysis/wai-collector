@@ -69,13 +69,41 @@ def aggregate_daily_metrics():
         whale_tx_volume_btc = round(sum(tx["value_btc"] for tx in txs), 2)
         avg_whale_fee_btc = round(sum(tx["fee_btc"] for tx in txs) / whale_tx_count, 6) if whale_tx_count > 0 else 0
         max_whale_tx_btc = round(max(tx["value_btc"] for tx in txs), 2) if txs else 0
+
+        # Exchange flow metrics
+        exchange_inflow_btc = 0.0
+        exchange_outflow_btc = 0.0
+        exchange_whale_tx_count = 0
+
+        for tx in txs:
+            cls = tx.get("classification", "unknown")
+            if cls != "unknown":
+                exchange_whale_tx_count += 1
+            # Only attribute volume when direction is clear
+            if cls == "inflow":
+                exchange_inflow_btc += tx.get("value_btc", 0.0)
+            elif cls == "outflow":
+                exchange_outflow_btc += tx.get("value_btc", 0.0)
+            # For 'mixed' we do not allocate to in/out volumes to avoid double counting
+
+        exchange_inflow_btc = round(exchange_inflow_btc, 2)
+        exchange_outflow_btc = round(exchange_outflow_btc, 2)
+        exchange_netflow_btc = round(exchange_outflow_btc - exchange_inflow_btc, 2)
+        denom = exchange_inflow_btc + exchange_outflow_btc
+        exchange_flow_ratio = round(exchange_inflow_btc / denom, 4) if denom > 0 else None
         
         metric = {
             "date": date,
             "whale_tx_count": whale_tx_count,
             "whale_tx_volume_btc": whale_tx_volume_btc,
             "avg_whale_fee_btc": avg_whale_fee_btc,
-            "max_whale_tx_btc": max_whale_tx_btc
+            "max_whale_tx_btc": max_whale_tx_btc,
+            # Exchange flow metrics
+            "exchange_inflow_btc": exchange_inflow_btc,
+            "exchange_outflow_btc": exchange_outflow_btc,
+            "exchange_netflow_btc": exchange_netflow_btc,
+            "exchange_flow_ratio": exchange_flow_ratio,
+            "exchange_whale_tx_count": exchange_whale_tx_count
         }
         
         daily_metrics.append(metric)
