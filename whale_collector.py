@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 """
 Bitcoin Whale Transaction Collector
-Collects whale transactions (>200 BTC) from Mempool.space every 30 minutes
+Collects whale transactions (>200 BTC net transfer) from Mempool.space every 10 minutes
+
+Net Transfer Calculation:
+- Identifies all input addresses from a transaction
+- Subtracts outputs going back to input addresses (change outputs)
+- Only counts actual BTC transferred to NEW addresses
+- Example: 2104 BTC input → 2103.99 BTC change + 0.01 BTC transfer = 0.01 BTC net transfer
 """
 
 import os
@@ -103,11 +109,11 @@ def collect_whale_transactions():
             session.verify = False  # For corporate proxies
         
         # Get last 10 blocks
-        print("📡 Fetching recent blocks from Mempool.space...")
+        print("[INFO] Fetching recent blocks from Mempool.space...")
         response = session.get(f"{MEMPOOL_API}/blocks", timeout=30)
         
         if response.status_code != 200:
-            print(f"❌ API Error: {response.text[:200]}")
+            print(f"[ERROR] API Error: {response.text[:200]}")
             return
             
         recent_blocks = response.json()[:10]  # Last 10 blocks
@@ -136,7 +142,7 @@ def collect_whale_transactions():
                         break
                         
                 except requests.exceptions.RequestException as e:
-                    print(f"   ⚠️  Request error for block {block_id[:8]}: {type(e).__name__}")
+                    print(f"   [WARNING] Request error for block {block_id[:8]}: {type(e).__name__}")
                     txs_response = None
                     
                 if retry < 2:  # Not on last attempt
@@ -145,11 +151,11 @@ def collect_whale_transactions():
                     time.sleep(wait_time)
             
             if txs_response is None:
-                print(f"⚠️  Block {block_id[:8]}... no response after 3 attempts")
+                print(f"[WARNING] Block {block_id[:8]}... no response after 3 attempts")
                 continue
                 
             if txs_response.status_code != 200:
-                print(f"⚠️  Block {block_id[:8]}... not available after 3 attempts (Status: {txs_response.status_code})")
+                print(f"[WARNING] Block {block_id[:8]}... not available after 3 attempts (Status: {txs_response.status_code})")
                 continue
                 
             txs = txs_response.json()
@@ -159,46 +165,55 @@ def collect_whale_transactions():
             
             for tx in txs_to_check:
                 txid = tx.get("txid")
-                total_output = sum(out.get("value", 0) for out in tx.get("vout", []))
                 
-                if total_output >= whale_threshold_satoshi:
+                # Extract vin addresses (inputs)
+                vin_addresses = []
+                input_address_set = set()
+                for vin in tx.get("vin", []):
+                    if "prevout" in vin and vin["prevout"]:
+                        address = vin["prevout"].get("scriptpubkey_address", "unknown")
+                        value = round(vin["prevout"].get("value", 0) / 100_000_000, 8)
+                        vin_addresses.append({
+                            "address": address,
+                            "value": value
+                        })
+                        input_address_set.add(address)
+                
+                # Extract vout addresses (outputs) and calculate net transfer
+                # Net transfer = outputs that don't go back to input addresses (change excluded)
+                vout_addresses = []
+                net_transfer_satoshi = 0
+                for vout in tx.get("vout", []):
+                    address = vout.get("scriptpubkey_address", "unknown")
+                    value_satoshi = vout.get("value", 0)
+                    value_btc = round(value_satoshi / 100_000_000, 8)
+                    vout_addresses.append({
+                        "address": address,
+                        "value": value_btc
+                    })
+                    
+                    # Only count outputs that go to NEW addresses (exclude change)
+                    if address not in input_address_set:
+                        net_transfer_satoshi += value_satoshi
+                
+                # Check if net transfer (excluding change) exceeds whale threshold
+                if net_transfer_satoshi >= whale_threshold_satoshi:
                     # Check duplicate
                     if txid in existing_txids:
                         duplicates += 1
                         continue
                     
-                    # Extract vin addresses
-                    vin_addresses = []
-                    for vin in tx.get("vin", []):
-                        if "prevout" in vin and vin["prevout"]:
-                            address = vin["prevout"].get("scriptpubkey_address", "unknown")
-                            value = round(vin["prevout"].get("value", 0) / 100_000_000, 8)
-                            vin_addresses.append({
-                                "address": address,
-                                "value": value
-                            })
-                    
-                    # Extract vout addresses
-                    vout_addresses = []
-                    for vout in tx.get("vout", []):
-                        address = vout.get("scriptpubkey_address", "unknown")
-                        value = round(vout.get("value", 0) / 100_000_000, 8)
-                        vout_addresses.append({
-                            "address": address,
-                            "value": value
-                        })
-                    
                     # New whale TX found!
                     whale_tx = {
                         "txid": txid,
-                        "value_btc": round(total_output / 100_000_000, 2),
+                        "value_btc": round(net_transfer_satoshi / 100_000_000, 2),
                         "fee_btc": round(tx.get("fee", 0) / 100_000_000, 6) if tx.get("fee") else 0,
                         "timestamp": datetime.fromtimestamp(block.get("timestamp")).isoformat() if block.get("timestamp") else datetime.now().isoformat(),
                         "vin_addresses": vin_addresses,
                         "vout_addresses": vout_addresses
                     }
                     new_whales.append(whale_tx)
-                    print(f"🐋 Whale found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
+                    print(f"[WHALE] Found: {whale_tx['value_btc']} BTC (TX: {txid[:16]}...)")
         
         # Load data (always, even if no new whales)
         data = load_whale_data()
@@ -226,7 +241,7 @@ def collect_whale_transactions():
             data["metadata"]["last_collection_found_new"] = len(new_whales)
             
             save_whale_data(data)
-            print(f"\n✅ {len(new_whales)} new whale TXs saved!")
+            print(f"\n[SUCCESS] {len(new_whales)} new whale TXs saved!")
             if removed > 0:
                 print(f"   FIFO: {removed} oldest TXs removed (Max: {MAX_WHALE_TXS})")
             print(f"   Total: {len(data['whale_transactions'])} TXs in storage")
@@ -237,21 +252,21 @@ def collect_whale_transactions():
             data["metadata"]["last_collection_found_new"] = 0
             save_whale_data(data)
             
-            print(f"\n✅ No new whale TXs found")
+            print(f"\n[SUCCESS] No new whale TXs found")
         
         if duplicates > 0:
-            print(f"ℹ️  {duplicates} duplicates skipped")
+            print(f"[INFO] {duplicates} duplicates skipped")
         
         # Statistics
         data = load_whale_data()
         total_whales = len(data["whale_transactions"])
         total_volume = sum(tx["value_btc"] for tx in data["whale_transactions"])
         
-        print(f"\n📊 Total: {total_whales} whale TXs | {total_volume:,.2f} BTC")
+        print(f"\n[STATS] Total: {total_whales} whale TXs | {total_volume:,.2f} BTC")
         print(f"{'='*60}\n")
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"[ERROR] Error: {e}")
 
 # ============================================================
 # SCHEDULER
@@ -276,7 +291,7 @@ def run_scheduler():
     # Schedule every N minutes
     schedule.every(COLLECTION_INTERVAL_MINUTES).minutes.do(collect_whale_transactions)
     
-    print(f"⏰ Scheduler running - next collection in {COLLECTION_INTERVAL_MINUTES} minutes")
+    print(f"[INFO] Scheduler running - next collection in {COLLECTION_INTERVAL_MINUTES} minutes")
     print("   (Ctrl+C to stop)\n")
     
     while True:
@@ -296,4 +311,4 @@ if __name__ == "__main__":
             # Continuous scheduler mode
             run_scheduler()
     except KeyboardInterrupt:
-        print("\n\n👋 Collector stopped")
+        print("\n\n[INFO] Collector stopped")
