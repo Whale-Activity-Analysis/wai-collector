@@ -1,222 +1,215 @@
 {
-  "generated_at": "2026-01-20T13:57:55.816187",
-  "total_days": 31,
+  "generated_at": "2026-01-20T15:30:09.110260",
+  "total_days": 30,
   "daily_metrics": [
     {
       "date": "2026-01-20",
-      "whale_tx_count": 2,
-      "whale_tx_volume_btc": 3063.49,
+      "whale_tx_count": 1,
+      "whale_tx_volume_btc": 574.0,
       "avg_whale_fee_btc": 1.1e-05,
-      "max_whale_tx_btc": 2104.75
+      "max_whale_tx_btc": 574.0
     },
     {
       "date": "2026-01-19",
-      "whale_tx_count": 27,
-      "whale_tx_volume_btc": 8198.12,
-      "avg_whale_fee_btc": 0.000466,
-      "max_whale_tx_btc": 602.7
+      "whale_tx_count": 10,
+      "whale_tx_volume_btc": 3320.58,
+      "avg_whale_fee_btc": 0.000919,
+      "max_whale_tx_btc": 600.1
     },
     {
       "date": "2026-01-18",
-      "whale_tx_count": 3,
-      "whale_tx_volume_btc": 942.68,
-      "avg_whale_fee_btc": 0.001282,
+      "whale_tx_count": 2,
+      "whale_tx_volume_btc": 732.94,
+      "avg_whale_fee_btc": 0.00187,
       "max_whale_tx_btc": 471.94
     },
     {
       "date": "2026-01-17",
-      "whale_tx_count": 14,
-      "whale_tx_volume_btc": 17400.76,
-      "avg_whale_fee_btc": 0.000166,
-      "max_whale_tx_btc": 13043.32
+      "whale_tx_count": 6,
+      "whale_tx_volume_btc": 2675.73,
+      "avg_whale_fee_btc": 0.000115,
+      "max_whale_tx_btc": 998.0
     },
     {
       "date": "2026-01-16",
-      "whale_tx_count": 20,
-      "whale_tx_volume_btc": 12474.4,
-      "avg_whale_fee_btc": 0.000187,
-      "max_whale_tx_btc": 3645.64
+      "whale_tx_count": 15,
+      "whale_tx_volume_btc": 7805.72,
+      "avg_whale_fee_btc": 0.00022,
+      "max_whale_tx_btc": 1018.0
     },
     {
       "date": "2026-01-15",
-      "whale_tx_count": 38,
-      "whale_tx_volume_btc": 45848.18,
-      "avg_whale_fee_btc": 0.00028,
-      "max_whale_tx_btc": 19697.3
+      "whale_tx_count": 28,
+      "whale_tx_volume_btc": 21764.02,
+      "avg_whale_fee_btc": 0.000323,
+      "max_whale_tx_btc": 1815.0
     },
     {
       "date": "2026-01-14",
-      "whale_tx_count": 21,
-      "whale_tx_volume_btc": 11649.02,
-      "avg_whale_fee_btc": 0.000132,
+      "whale_tx_count": 8,
+      "whale_tx_volume_btc": 7217.45,
+      "avg_whale_fee_btc": 0.000205,
       "max_whale_tx_btc": 3495.89
     },
     {
       "date": "2026-01-13",
-      "whale_tx_count": 27,
-      "whale_tx_volume_btc": 31247.56,
-      "avg_whale_fee_btc": 0.000153,
-      "max_whale_tx_btc": 19689.26
+      "whale_tx_count": 16,
+      "whale_tx_volume_btc": 6746.43,
+      "avg_whale_fee_btc": 0.000223,
+      "max_whale_tx_btc": 705.66
     },
     {
       "date": "2026-01-12",
-      "whale_tx_count": 20,
-      "whale_tx_volume_btc": 8082.66,
-      "avg_whale_fee_btc": 0.000126,
-      "max_whale_tx_btc": 704.55
+      "whale_tx_count": 10,
+      "whale_tx_volume_btc": 4220.71,
+      "avg_whale_fee_btc": 0.000157,
+      "max_whale_tx_btc": 497.02
     },
     {
       "date": "2026-01-11",
-      "whale_tx_count": 11,
-      "whale_tx_volume_btc": 5210.76,
+      "whale_tx_count": 10,
+      "whale_tx_volume_btc": 4886.88,
       "avg_whale_fee_btc": 0.000108,
-      "max_whale_tx_btc": 1000.5
+      "max_whale_tx_btc": 928.7
     },
     {
       "date": "2026-01-10",
-      "whale_tx_count": 15,
-      "whale_tx_volume_btc": 8853.92,
-      "avg_whale_fee_btc": 0.000195,
-      "max_whale_tx_btc": 2104.76
+      "whale_tx_count": 13,
+      "whale_tx_volume_btc": 6517.07,
+      "avg_whale_fee_btc": 0.000221,
+      "max_whale_tx_btc": 1000.5
     },
     {
       "date": "2026-01-09",
-      "whale_tx_count": 18,
-      "whale_tx_volume_btc": 23594.01,
-      "avg_whale_fee_btc": 0.000229,
-      "max_whale_tx_btc": 13084.66
+      "whale_tx_count": 13,
+      "whale_tx_volume_btc": 7916.34,
+      "avg_whale_fee_btc": 0.000218,
+      "max_whale_tx_btc": 992.0
     },
     {
       "date": "2026-01-08",
-      "whale_tx_count": 21,
-      "whale_tx_volume_btc": 9983.22,
-      "avg_whale_fee_btc": 0.000244,
+      "whale_tx_count": 15,
+      "whale_tx_volume_btc": 7537.59,
+      "avg_whale_fee_btc": 0.0003,
       "max_whale_tx_btc": 1300.0
     },
     {
       "date": "2026-01-07",
-      "whale_tx_count": 18,
-      "whale_tx_volume_btc": 42429.8,
-      "avg_whale_fee_btc": 0.000463,
-      "max_whale_tx_btc": 26139.38
+      "whale_tx_count": 12,
+      "whale_tx_volume_btc": 8023.91,
+      "avg_whale_fee_btc": 0.000435,
+      "max_whale_tx_btc": 1777.64
     },
     {
       "date": "2026-01-06",
-      "whale_tx_count": 15,
-      "whale_tx_volume_btc": 7058.65,
-      "avg_whale_fee_btc": 0.000133,
-      "max_whale_tx_btc": 786.08
+      "whale_tx_count": 11,
+      "whale_tx_volume_btc": 5380.12,
+      "avg_whale_fee_btc": 0.000152,
+      "max_whale_tx_btc": 552.0
     },
     {
       "date": "2026-01-05",
-      "whale_tx_count": 16,
-      "whale_tx_volume_btc": 20122.02,
-      "avg_whale_fee_btc": 0.000181,
-      "max_whale_tx_btc": 8498.33
+      "whale_tx_count": 7,
+      "whale_tx_volume_btc": 3069.78,
+      "avg_whale_fee_btc": 0.000328,
+      "max_whale_tx_btc": 505.4
     },
     {
       "date": "2026-01-04",
-      "whale_tx_count": 6,
-      "whale_tx_volume_btc": 21539.65,
-      "avg_whale_fee_btc": 7.1e-05,
-      "max_whale_tx_btc": 19637.63
+      "whale_tx_count": 2,
+      "whale_tx_volume_btc": 457.8,
+      "avg_whale_fee_btc": 0.000133,
+      "max_whale_tx_btc": 249.86
     },
     {
       "date": "2026-01-03",
-      "whale_tx_count": 8,
-      "whale_tx_volume_btc": 4614.88,
-      "avg_whale_fee_btc": 7.1e-05,
-      "max_whale_tx_btc": 1413.0
+      "whale_tx_count": 2,
+      "whale_tx_volume_btc": 1012.4,
+      "avg_whale_fee_btc": 0.00015,
+      "max_whale_tx_btc": 506.6
     },
     {
       "date": "2026-01-02",
-      "whale_tx_count": 21,
-      "whale_tx_volume_btc": 76617.11,
-      "avg_whale_fee_btc": 0.000107,
-      "max_whale_tx_btc": 19685.51
+      "whale_tx_count": 9,
+      "whale_tx_volume_btc": 4655.83,
+      "avg_whale_fee_btc": 0.000173,
+      "max_whale_tx_btc": 1000.0
     },
     {
       "date": "2026-01-01",
-      "whale_tx_count": 9,
-      "whale_tx_volume_btc": 24254.13,
-      "avg_whale_fee_btc": 0.000331,
-      "max_whale_tx_btc": 19707.71
+      "whale_tx_count": 6,
+      "whale_tx_volume_btc": 3673.3,
+      "avg_whale_fee_btc": 0.000468,
+      "max_whale_tx_btc": 998.0
     },
     {
       "date": "2025-12-31",
-      "whale_tx_count": 23,
-      "whale_tx_volume_btc": 17846.82,
-      "avg_whale_fee_btc": 0.000228,
+      "whale_tx_count": 21,
+      "whale_tx_volume_btc": 17404.95,
+      "avg_whale_fee_btc": 0.000236,
       "max_whale_tx_btc": 2000.0
     },
     {
       "date": "2025-12-30",
-      "whale_tx_count": 10,
-      "whale_tx_volume_btc": 4923.95,
-      "avg_whale_fee_btc": 0.00081,
+      "whale_tx_count": 5,
+      "whale_tx_volume_btc": 3489.74,
+      "avg_whale_fee_btc": 0.001548,
       "max_whale_tx_btc": 1996.84
     },
     {
       "date": "2025-12-29",
-      "whale_tx_count": 27,
-      "whale_tx_volume_btc": 31134.46,
-      "avg_whale_fee_btc": 0.000105,
-      "max_whale_tx_btc": 19662.69
+      "whale_tx_count": 15,
+      "whale_tx_volume_btc": 7044.72,
+      "avg_whale_fee_btc": 0.000114,
+      "max_whale_tx_btc": 1568.0
     },
     {
       "date": "2025-12-28",
-      "whale_tx_count": 4,
-      "whale_tx_volume_btc": 2416.47,
-      "avg_whale_fee_btc": 9.2e-05,
-      "max_whale_tx_btc": 1350.11
+      "whale_tx_count": 2,
+      "whale_tx_volume_btc": 750.67,
+      "avg_whale_fee_btc": 0.00017,
+      "max_whale_tx_btc": 510.67
     },
     {
       "date": "2025-12-27",
-      "whale_tx_count": 5,
-      "whale_tx_volume_btc": 2632.09,
-      "avg_whale_fee_btc": 5.1e-05,
-      "max_whale_tx_btc": 1369.04
+      "whale_tx_count": 2,
+      "whale_tx_volume_btc": 783.03,
+      "avg_whale_fee_btc": 6.3e-05,
+      "max_whale_tx_btc": 509.63
     },
     {
       "date": "2025-12-26",
-      "whale_tx_count": 11,
-      "whale_tx_volume_btc": 4972.75,
-      "avg_whale_fee_btc": 8.6e-05,
+      "whale_tx_count": 7,
+      "whale_tx_volume_btc": 3294.42,
+      "avg_whale_fee_btc": 8.7e-05,
       "max_whale_tx_btc": 1029.53
     },
     {
-      "date": "2025-12-25",
-      "whale_tx_count": 2,
-      "whale_tx_volume_btc": 683.76,
-      "avg_whale_fee_btc": 5.8e-05,
-      "max_whale_tx_btc": 383.76
-    },
-    {
       "date": "2025-12-24",
-      "whale_tx_count": 26,
-      "whale_tx_volume_btc": 29195.68,
-      "avg_whale_fee_btc": 0.000312,
+      "whale_tx_count": 23,
+      "whale_tx_volume_btc": 27397.75,
+      "avg_whale_fee_btc": 0.000347,
       "max_whale_tx_btc": 1999.85
     },
     {
       "date": "2025-12-23",
-      "whale_tx_count": 22,
-      "whale_tx_volume_btc": 37467.36,
-      "avg_whale_fee_btc": 9.1e-05,
-      "max_whale_tx_btc": 19628.07
+      "whale_tx_count": 14,
+      "whale_tx_volume_btc": 9455.38,
+      "avg_whale_fee_btc": 0.000108,
+      "max_whale_tx_btc": 3003.0
     },
     {
       "date": "2025-12-22",
-      "whale_tx_count": 20,
-      "whale_tx_volume_btc": 7263.45,
-      "avg_whale_fee_btc": 0.000401,
+      "whale_tx_count": 15,
+      "whale_tx_volume_btc": 5999.65,
+      "avg_whale_fee_btc": 0.000509,
       "max_whale_tx_btc": 528.17
     },
     {
       "date": "2025-12-21",
-      "whale_tx_count": 20,
-      "whale_tx_volume_btc": 6034.9,
-      "avg_whale_fee_btc": 0.000119,
+      "whale_tx_count": 11,
+      "whale_tx_volume_btc": 3410.44,
+      "avg_whale_fee_btc": 0.000127,
       "max_whale_tx_btc": 507.9
     }
   ]

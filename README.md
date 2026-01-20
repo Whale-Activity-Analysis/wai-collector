@@ -5,7 +5,7 @@ Minimalist Python collector for Bitcoin whale transactions (>threshold BTC).
 ## Features
 
 - 🐋 **Whale Tracking**: Captures Bitcoin transfers >threshold BTC
-- 📊 **Mempool.space API**: Analyzes last 10 blocks every 30 minutes  
+- 📊 **Mempool.space API**: Analyzes last 10 blocks every 10 minutes  
 - 💾 **Simple JSON Storage**: Single file, Top 500 whales, duplicate detection
 - 📈 **Daily Aggregations**: Daily metrics for backend/analytics
 - 🌐 **Proxy Support**: Works behind corporate proxies (optional)
@@ -38,7 +38,7 @@ python aggregate_daily.py
 ### Whale Collector
 
 ```bash
-# Default (200 BTC, 30 min, no proxy)
+# Default (200 BTC, 10 min, no proxy)
 python whale_collector.py
 
 # Custom threshold & interval
@@ -53,7 +53,7 @@ python whale_collector.py --help
 
 **Options:**
 - `-t, --threshold`: Whale threshold in BTC (default: 200)
-- `-i, --interval`: Collection interval in minutes (default: 30)
+- `-i, --interval`: Collection interval in minutes (default: 10)
 - `-p, --proxy`: Proxy URL if behind firewall (optional)
 - `--once`: Single collection run (for cron/GitHub Actions)
 - `--max-tx-per-block`: Max TXs per block (0 = all, default: 0)
@@ -103,14 +103,24 @@ python whale_collector.py --help
 
 ## How It Works
 
-1. **Every 30 minutes**: Queries Mempool.space API
+1. **Every 10 minutes**: Queries Mempool.space API
 2. **Analyzes**: Last 10 blocks for whale TXs (>200 BTC), all TXs per block
-3. **Duplicate check**: TX-ID already known? → Skip
-4. **Stores**: New whale TXs (Max 500, FIFO)
-5. **Aggregates**: Daily metrics from raw data
-6. **Retry mechanism**: 3 attempts with exponential backoff on API errors
+3. **Change Detection**: Outputs going back to input addresses are excluded (change outputs)
+4. **Net Transfer Calculation**: Only counts BTC actually transferred to NEW addresses
+5. **Duplicate check**: TX-ID already known? → Skip
+6. **Stores**: New whale TXs (Max 500, FIFO)
+7. **Aggregates**: Daily metrics from raw data
+8. **Retry mechanism**: 3 attempts with exponential backoff on API errors
 
-⚠️ **Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 30 min is essential!
+⚠️ **Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 10 min is essential!
+
+### Change Output Handling
+
+The collector now correctly handles Bitcoin's change mechanism:
+- **Problem**: A transaction with 2104 BTC input might have 2103.9906 BTC going back to the same address (change) and only 0.0094 BTC actually transferred
+- **Solution**: The collector identifies all input addresses and subtracts any outputs going back to those addresses
+- **Result**: Only the **net transfer** (actual amount moved to new addresses) is compared against the whale threshold
+- **Example**: In the case above, only 0.0094 BTC would be counted, so it wouldn't qualify as a whale transaction (< 200 BTC)
 
 ## GitHub Actions
 
@@ -119,7 +129,7 @@ The collector runs automatically in GitHub Actions - **no server needed!**
 **Setup:**
 1. Push repo to GitHub
 2. GitHub Actions automatically activates
-3. Runs every 30 minutes
+3. Runs every 10 minutes
 4. Commits data back to repo
 
 See `.github/workflows/collect.yml` for details.
