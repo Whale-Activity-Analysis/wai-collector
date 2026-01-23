@@ -53,7 +53,8 @@ MEMPOOL_API = "https://mempool.space/api"
 DATA_FILE = Path("data/whale_data.json")
 
 # Storage Config
-MAX_WHALE_TXS = 500  # Maximum number of whale TXs (FIFO when full)
+MAX_WHALE_TXS = 500  # Maximum number of whale TXs in active storage (older moved to archive)
+ARCHIVE_FILE = Path("data/whale_data_archive.json")  # Archive for historical data (ML training)
 EXCHANGES_FILE = Path("data/exchange_wallet_adresses.json")
 EXCHANGE_MAP = {}  # Will be loaded on first use
 
@@ -155,6 +156,26 @@ def save_whale_data(data):
     """Save whale TXs"""
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
+
+def load_archive_data():
+    """Load archived whale TXs"""
+    if not ARCHIVE_FILE.exists():
+        return {
+            "archived_transactions": [],
+            "metadata": {
+                "created_at": datetime.now().isoformat(),
+                "total_archived": 0
+            }
+        }
+    
+    with open(ARCHIVE_FILE, 'r') as f:
+        return json.load(f)
+
+def save_archive_data(data):
+    """Save archived whale TXs"""
+    ARCHIVE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(ARCHIVE_FILE, 'w') as f:
         json.dump(data, f, indent=2)
 
 def get_existing_txids():
@@ -309,10 +330,25 @@ def collect_whale_transactions():
                 reverse=True
             )
             
-            # FIFO: If more than MAX_WHALE_TXS, remove oldest
-            removed = 0
+            # FIFO: If more than MAX_WHALE_TXS, move oldest to archive
+            archived = 0
             if len(data["whale_transactions"]) > MAX_WHALE_TXS:
-                removed = len(data["whale_transactions"]) - MAX_WHALE_TXS
+                # Load archive
+                archive = load_archive_data()
+                
+                # Move oldest TXs to archive
+                txs_to_archive = data["whale_transactions"][MAX_WHALE_TXS:]
+                archive["archived_transactions"].extend(txs_to_archive)
+                archived = len(txs_to_archive)
+                
+                # Update archive metadata
+                archive["metadata"]["last_archived"] = datetime.now().isoformat()
+                archive["metadata"]["total_archived"] = len(archive["archived_transactions"])
+                
+                # Save archive
+                save_archive_data(archive)
+                
+                # Keep only newest in active storage
                 data["whale_transactions"] = data["whale_transactions"][:MAX_WHALE_TXS]
             
             # Update metadata
@@ -322,9 +358,11 @@ def collect_whale_transactions():
             
             save_whale_data(data)
             print(f"\n[SUCCESS] {len(new_whales)} new whale TXs saved!")
-            if removed > 0:
-                print(f"   FIFO: {removed} oldest TXs removed (Max: {MAX_WHALE_TXS})")
-            print(f"   Total: {len(data['whale_transactions'])} TXs in storage")
+            if archived > 0:
+                print(f"   FIFO: {archived} oldest TXs moved to archive (Max active: {MAX_WHALE_TXS})")
+                archive = load_archive_data()
+                print(f"   Archive: {len(archive['archived_transactions'])} TXs in {ARCHIVE_FILE}")
+            print(f"   Active: {len(data['whale_transactions'])} TXs in storage")
         else:
             # Update metadata even if no new TXs
             data["metadata"]["last_collection"] = datetime.now().isoformat()
