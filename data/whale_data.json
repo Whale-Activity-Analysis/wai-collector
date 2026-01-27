@@ -1,6 +1,65 @@
 {
   "whale_transactions": [
     {
+      "txid": "776e2bbaa3dff391004bd67cde106b1f95ff4dfa9a97b8cca350a69457c3eff8",
+      "value_btc": 246.68,
+      "fee_btc": 0.000369,
+      "timestamp": "2026-01-27T16:10:25",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 24.0
+        },
+        {
+          "address": "31pha48EDxPJ1XgmcKRqyLWLxpYYjrMsAb",
+          "value": 13.80989
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 13.9
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 24.0
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 34.7
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 41.67
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 23.5
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 23.7
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 23.8
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 23.6
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 11.92914221
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 234.75037904
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "70f5f6d50c2ea10a5e281ec528501140a495962a3ea58cf39b29d4f52dbdebf5",
       "value_btc": 511.18,
       "fee_btc": 0.000165,
@@ -17973,8 +18032,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-01-27T15:55:48.818668",
-    "total_collections": 2095,
-    "last_collection_found_new": 0
+    "last_collection": "2026-01-27T16:32:17.695858",
+    "total_collections": 2096,
+    "last_collection_found_new": 1
   }
 }
