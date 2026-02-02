@@ -1,6 +1,64 @@
 {
   "whale_transactions": [
     {
+      "txid": "bb6618ebf6e717048044e7836c92de9c045b7aadb9ad37d15bf754b17c1d1e72",
+      "value_btc": 581.81,
+      "fee_btc": 0.000206,
+      "timestamp": "2026-02-02T13:32:34",
+      "vin_addresses": [
+        {
+          "address": "1Ax6xwZJ3RmJTH9LtYashnvyLZ3ChBQWt2",
+          "value": 88.94378749
+        },
+        {
+          "address": "1Ax6xwZJ3RmJTH9LtYashnvyLZ3ChBQWt2",
+          "value": 174.06636899
+        },
+        {
+          "address": "1Ax6xwZJ3RmJTH9LtYashnvyLZ3ChBQWt2",
+          "value": 174.5426511
+        },
+        {
+          "address": "1Ax6xwZJ3RmJTH9LtYashnvyLZ3ChBQWt2",
+          "value": 41.69397179
+        },
+        {
+          "address": "1Ax6xwZJ3RmJTH9LtYashnvyLZ3ChBQWt2",
+          "value": 102.56205764
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1Eg2au33HuN2SkP8gP42S2ZMN329r55JbS",
+          "value": 581.80863121
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "532fe60ee62a88173b177c7ed6802735fbf3a19128395d5509ab74162f22ee7f",
+      "value_btc": 670.99,
+      "fee_btc": 1.3e-05,
+      "timestamp": "2026-02-02T13:22:40",
+      "vin_addresses": [
+        {
+          "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+          "value": 3122.29200496
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qwwwqj85nlgd4327t280hdvgz9rrq7d9npfq0du",
+          "value": 670.98585827
+        },
+        {
+          "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+          "value": 2451.30613401
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "96b98cb291c0671bf4efea569775d9097196b468a7ac694fd02d364d8f16032f",
       "value_btc": 574.36,
       "fee_btc": 0.000123,
@@ -19647,8 +19705,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-02-02T12:25:02.117576",
-    "total_collections": 2306,
-    "last_collection_found_new": 0
+    "last_collection": "2026-02-02T13:41:07.317563",
+    "total_collections": 2307,
+    "last_collection_found_new": 2
   }
 }
