@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T16:07:25.521466",
+  "generated_at": "2026-02-05T17:50:55.309998",
   "total_days": 45,
   "daily_metrics": [
     {
@@ -34,7 +34,7 @@
       "max_whale_tx_btc": 764.01,
       "exchange_inflow_btc": 500.0,
       "exchange_outflow_btc": 0.0,
-      "exchange_netflow_btc": -500.0,
+      "exchange_netflow_btc": 500.0,
       "exchange_flow_ratio": 1.0,
       "exchange_whale_tx_count": 1
     },
@@ -46,7 +46,7 @@
       "max_whale_tx_btc": 2697.76,
       "exchange_inflow_btc": 3698.76,
       "exchange_outflow_btc": 0.0,
-      "exchange_netflow_btc": -3698.76,
+      "exchange_netflow_btc": 3698.76,
       "exchange_flow_ratio": 1.0,
       "exchange_whale_tx_count": 2
     },
@@ -70,7 +70,7 @@
       "max_whale_tx_btc": 540.55,
       "exchange_inflow_btc": 0.0,
       "exchange_outflow_btc": 207.04,
-      "exchange_netflow_btc": 207.04,
+      "exchange_netflow_btc": -207.04,
       "exchange_flow_ratio": 0.0,
       "exchange_whale_tx_count": 1
     },
@@ -154,7 +154,7 @@
       "max_whale_tx_btc": 501.83,
       "exchange_inflow_btc": 351.0,
       "exchange_outflow_btc": 0.0,
-      "exchange_netflow_btc": -351.0,
+      "exchange_netflow_btc": 351.0,
       "exchange_flow_ratio": 1.0,
       "exchange_whale_tx_count": 1
     },
@@ -202,7 +202,7 @@
       "max_whale_tx_btc": 600.1,
       "exchange_inflow_btc": 514.84,
       "exchange_outflow_btc": 262.97,
-      "exchange_netflow_btc": -251.87,
+      "exchange_netflow_btc": 251.87,
       "exchange_flow_ratio": 0.6619,
       "exchange_whale_tx_count": 3
     },
@@ -226,7 +226,7 @@
       "max_whale_tx_btc": 998.0,
       "exchange_inflow_btc": 213.75,
       "exchange_outflow_btc": 0.0,
-      "exchange_netflow_btc": -213.75,
+      "exchange_netflow_btc": 213.75,
       "exchange_flow_ratio": 1.0,
       "exchange_whale_tx_count": 1
     },
@@ -454,7 +454,7 @@
       "max_whale_tx_btc": 1568.0,
       "exchange_inflow_btc": 242.71,
       "exchange_outflow_btc": 0.0,
-      "exchange_netflow_btc": -242.71,
+      "exchange_netflow_btc": 242.71,
       "exchange_flow_ratio": 1.0,
       "exchange_whale_tx_count": 2
     },
@@ -502,7 +502,7 @@
       "max_whale_tx_btc": 1999.85,
       "exchange_inflow_btc": 0.0,
       "exchange_outflow_btc": 481.0,
-      "exchange_netflow_btc": 481.0,
+      "exchange_netflow_btc": -481.0,
       "exchange_flow_ratio": 0.0,
       "exchange_whale_tx_count": 1
     },
@@ -526,7 +526,7 @@
       "max_whale_tx_btc": 528.17,
       "exchange_inflow_btc": 221.32,
       "exchange_outflow_btc": 560.65,
-      "exchange_netflow_btc": 339.33,
+      "exchange_netflow_btc": -339.33,
       "exchange_flow_ratio": 0.283,
       "exchange_whale_tx_count": 3
     },
@@ -538,7 +538,7 @@
       "max_whale_tx_btc": 507.9,
       "exchange_inflow_btc": 1753.42,
       "exchange_outflow_btc": 869.46,
-      "exchange_netflow_btc": -883.96,
+      "exchange_netflow_btc": 883.96,
       "exchange_flow_ratio": 0.6685,
       "exchange_whale_tx_count": 9
     }
