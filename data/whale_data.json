@@ -1,6 +1,65 @@
 {
   "whale_transactions": [
     {
+      "txid": "985d2acb817961f528d7e407c7ef7f856ba93dbf345b2fe2f3ff936921d2dc82",
+      "value_btc": 303.0,
+      "fee_btc": 0.000369,
+      "timestamp": "2026-02-07T02:35:16",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 34.0
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 35.99994778
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 29.39997
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 34.799879
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 30.3
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 17.999925
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 39.999964
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 24.9
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 25.9999685
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 29.6
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 2.99928553
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 300.0
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "4441d137927839a1d5f873b4b393c5e5286e6321e5a87341d804fb181107b9ba",
       "value_btc": 337.26,
       "fee_btc": 3.2e-05,
@@ -23407,8 +23466,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-02-07T01:59:55.854525",
-    "total_collections": 2426,
+    "last_collection": "2026-02-07T04:13:40.930525",
+    "total_collections": 2427,
     "last_collection_found_new": 1
   }
 }
