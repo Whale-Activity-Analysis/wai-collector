@@ -1,0 +1,49 @@
+name: Update Exchange Addresses
+
+on:
+  schedule:
+    # Jeden Sonntag um 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:  # Manuell triggern
+
+permissions:
+  contents: write  # Erlaubt commit & push
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Setup Chrome for Selenium
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Scrape Exchange Addresses
+        run: |
+          python exchange_wallet_scraper.py
+      
+      - name: Commit & Push Data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/exchange_wallet_adresses.json
+          
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            git commit -m "Auto-update exchange addresses: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Exchange addresses updated and pushed"
+          else
+            echo "No new exchange addresses found"
+          fi
