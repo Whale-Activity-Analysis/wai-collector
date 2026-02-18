@@ -88,7 +88,7 @@ def aggregate_daily_metrics():
 
         exchange_inflow_btc = round(exchange_inflow_btc, 2)
         exchange_outflow_btc = round(exchange_outflow_btc, 2)
-        exchange_netflow_btc = round(exchange_outflow_btc - exchange_inflow_btc, 2)
+        exchange_netflow_btc = round(exchange_inflow_btc - exchange_outflow_btc, 2)
         denom = exchange_inflow_btc + exchange_outflow_btc
         exchange_flow_ratio = round(exchange_inflow_btc / denom, 4) if denom > 0 else None
         
