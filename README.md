@@ -1,66 +1,66 @@
 # Bitcoin Whale Transaction Collector
 
-Minimalist Python collector for Bitcoin whale transactions (>threshold BTC).
+Minimalistischer Python Collector für Bitcoin Whale-Transaktionen (>Schwellenwert BTC).
 
-## Features
+## Funktionen
 
-- **Whale Tracking**: Captures Bitcoin transfers >threshold BTC
-- **Mempool.space API**: Analyzes last 10 blocks every 10 minutes  
-- **Simple JSON Storage**: Single file, Top 500 whales, duplicate detection
-- **Daily Aggregations**: Daily metrics for backend/analytics
-- **Proxy Support**: Works behind corporate proxies (optional)
-- **GitHub Actions Ready**: Runs automatically in the cloud
+- **Whale Tracking**: Erfasst Bitcoin-Transfers >Schwellenwert BTC
+- **Mempool.space API**: Analysiert alle 10 Minuten die letzten 10 Blöcke
+- **Einfache JSON-Speicherung**: Einzelne Datei, Top 500 Whales, Duplikaterkennung
+- **Tägliche Aggregationen**: Tägliche Metriken für Backend/Analytics
+- **Proxy-Unterstützung**: Funktioniert hinter Corporate-Proxies (optional)
+- **GitHub Actions Ready**: Läuft automatisch in der Cloud
 
-## Quick Start
+## Schnellstart
 
 ```bash
-# 1. Clone & Setup
+# 1. Klonen & Setup
 git clone https://github.com/Whale-Activity-Analysis/wai-collector.git
 cd wai-collector
 
-# 2. Virtual Environment
+# 2. Virtuelle Umgebung
 python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# 3. Dependencies
+# 3. Abhängigkeiten
 pip install -r requirements.txt
 
-# 4. Run
+# 4. Ausführen
 python whale_collector.py
 
-# 5. Generate daily metrics
+# 5. Tägliche Metriken generieren
 python aggregate_daily.py
 ```
 
-## Configuration
+## Konfiguration
 
 ### Whale Collector
 
 ```bash
-# Default (200 BTC, 10 min, no proxy)
+# Standard (200 BTC, 10 Min, kein Proxy)
 python whale_collector.py
 
-# Custom threshold & interval
+# Benutzerdefinierter Schwellenwert & Intervall
 python whale_collector.py -t 500 -i 15
 
-# With corporate proxy
+# Mit Corporate-Proxy
 python whale_collector.py -p http://proxy:8080
 
-# All options
+# Alle Optionen
 python whale_collector.py --help
 ```
 
-**Options:**
-- `-t, --threshold`: Whale threshold in BTC (default: 200)
-- `-i, --interval`: Collection interval in minutes (default: 10)
-- `-p, --proxy`: Proxy URL if behind firewall (optional)
-- `--once`: Single collection run (for cron/GitHub Actions)
-- `--max-tx-per-block`: Max TXs per block (0 = all, default: 0)
+**Optionen:**
+- `-t, --threshold`: Whale-Schwellenwert in BTC (Standard: 200)
+- `-i, --interval`: Erfassungsintervall in Minuten (Standard: 10)
+- `-p, --proxy`: Proxy-URL falls hinter Firewall (optional)
+- `--once`: Einzelner Erfassungslauf (für cron/GitHub Actions)
+- `--max-tx-per-block`: Max. TXs pro Block (0 = alle, Standard: 0)
 
-## Output
+## Ausgabe
 
-### 1. Whale Transactions (`data/whale_data.json`)
+### 1. Whale-Transaktionen (`data/whale_data.json`)
 
 ```json
 {
@@ -92,15 +92,15 @@ python whale_collector.py --help
 }
 ```
 
-**Top 500 Whales** (FIFO), sorted by timestamp (newest first).
+**Top 500 Whales** (FIFO), sortiert nach Zeitstempel (neueste zuerst).
 
-**Classification Types:**
-- `outflow` - BTC leaving an exchange
-- `inflow` - BTC entering an exchange
-- `mixed` - Both inputs and outputs to exchanges
-- `unknown` - No exchange involvement detected
+**Klassifizierungstypen:**
+- `outflow` - BTC verlässt eine Exchange
+- `inflow` - BTC geht zu einer Exchange
+- `mixed` - Sowohl Inputs als auch Outputs zu Exchanges
+- `unknown` - Keine Exchange-Beteiligung erkannt
 
-### 2. Daily Metrics (`data/daily_metrics.json`)
+### 2. Tägliche Metriken (`data/daily_metrics.json`)
 
 ```json
 {
@@ -118,75 +118,75 @@ python whale_collector.py --help
 }
 ```
 
-**Required metrics per day:**
-- `whale_tx_count` - Number of whale TXs
-- `whale_tx_volume_btc` - Total volume
-- `avg_whale_fee_btc` - Average fee
-- `max_whale_tx_btc` - Largest whale TX
- - `exchange_inflow_btc` - Whale → Exchange total BTC (sum of inflow TXs)
- - `exchange_outflow_btc` - Exchange → Whale total BTC (sum of outflow TXs)
- - `exchange_netflow_btc` - Outflow − Inflow (positive = net leaving exchanges)
- - `exchange_flow_ratio` - Inflow / (Inflow + Outflow), null if no flow
- - `exchange_whale_tx_count` - Count of whale TXs with exchange involvement (inflow, outflow, mixed)
+**Erforderliche Metriken pro Tag:**
+- `whale_tx_count` - Anzahl der Whale-TXs
+- `whale_tx_volume_btc` - Gesamtvolumen
+- `avg_whale_fee_btc` - Durchschnittliche Gebühr
+- `max_whale_tx_btc` - Größte Whale-TX
+ - `exchange_inflow_btc` - Whale → Exchange gesamt BTC (Summe der inflow TXs)
+ - `exchange_outflow_btc` - Exchange → Whale gesamt BTC (Summe der outflow TXs)
+ - `exchange_netflow_btc` - Outflow − Inflow (positiv = Netto-Abfluss von Exchanges)
+ - `exchange_flow_ratio` - Inflow / (Inflow + Outflow), null falls kein Flow
+ - `exchange_whale_tx_count` - Anzahl der Whale-TXs mit Exchange-Beteiligung (inflow, outflow, mixed)
 
-## How It Works
+## Funktionsweise
 
-1. **Every 10 minutes**: Queries Mempool.space API
-2. **Analyzes**: Last 10 blocks for whale TXs (>200 BTC), all TXs per block
-3. **Change Detection**: Outputs going back to input addresses are excluded (change outputs)
-4. **Net Transfer Calculation**: Only counts BTC actually transferred to NEW addresses
-5. **Classification**: Checks inputs/outputs against 200+ known exchange addresses (Binance, OKX, etc.)
-6. **Duplicate check**: TX-ID already known? → Skip
-7. **Stores**: New whale TXs (Max 500, FIFO)
-8. **Aggregates**: Daily metrics from raw data
-9. **Retry mechanism**: 3 attempts with exponential backoff on API errors
+1. **Alle 10 Minuten**: Abfrage der Mempool.space API
+2. **Analysiert**: Letzte 10 Blöcke auf Whale-TXs (>200 BTC), alle TXs pro Block
+3. **Change-Erkennung**: Outputs, die zurück an Input-Adressen gehen, werden ausgeschlossen (Change-Outputs)
+4. **Netto-Transfer-Berechnung**: Zählt nur BTC, die tatsächlich an NEUE Adressen übertragen werden
+5. **Klassifizierung**: Prüft Inputs/Outputs gegen 200+ bekannte Exchange-Adressen (Binance, OKX, etc.)
+6. **Duplikatsprüfung**: TX-ID bereits bekannt? → Überspringen
+7. **Speichert**: Neue Whale-TXs (Max. 500, FIFO)
+8. **Aggregiert**: Tägliche Metriken aus Rohdaten
+9. **Retry-Mechanismus**: 3 Versuche mit exponentiellem Backoff bei API-Fehlern
 
-Notes on exchange metrics:
-- For `mixed` transactions (both input and output include exchanges), volume is not allocated to inflow/outflow to avoid double counting; they still increase `exchange_whale_tx_count`.
+Hinweise zu Exchange-Metriken:
+- Bei `mixed` Transaktionen (sowohl Input als auch Output beinhalten Exchanges) wird das Volumen nicht zu inflow/outflow zugeordnet, um Doppelzählungen zu vermeiden; sie erhöhen dennoch `exchange_whale_tx_count`.
 
-**Important**: Mempool data is ephemeral - TXs disappear after block inclusion. Therefore continuous collection every 10 min is essential!
+**Wichtig**: Mempool-Daten sind kurzlebig - TXs verschwinden nach Block-Einbindung. Daher ist kontinuierliche Erfassung alle 10 Min. essentiell!
 
-### Change Output Handling
+### Behandlung von Change-Outputs
 
-The collector now correctly handles Bitcoin's change mechanism:
-- **Problem**: A transaction with 2104 BTC input might have 2103.9906 BTC going back to the same address (change) and only 0.0094 BTC actually transferred
-- **Solution**: The collector identifies all input addresses and subtracts any outputs going back to those addresses
-- **Result**: Only the **net transfer** (actual amount moved to new addresses) is compared against the whale threshold
-- **Example**: In the case above, only 0.0094 BTC would be counted, so it wouldn't qualify as a whale transaction (< 200 BTC)
+Der Collector behandelt nun korrekt Bitcoins Change-Mechanismus:
+- **Problem**: Eine Transaktion mit 2104 BTC Input könnte 2103.9906 BTC zurück an dieselbe Adresse (Change) haben und nur 0.0094 BTC tatsächlich übertragen
+- **Lösung**: Der Collector identifiziert alle Input-Adressen und subtrahiert alle Outputs, die zurück an diese Adressen gehen
+- **Ergebnis**: Nur der **Netto-Transfer** (tatsächlich bewegter Betrag an neue Adressen) wird mit dem Whale-Schwellenwert verglichen
+- **Beispiel**: Im obigen Fall würden nur 0.0094 BTC gezählt, sodass es nicht als Whale-Transaktion qualifiziert (< 200 BTC)
 
 ## GitHub Actions
 
-The collector runs automatically in GitHub Actions - **no server needed!**
+Der Collector läuft automatisch in GitHub Actions - **kein Server benötigt!**
 
 **Setup:**
-1. Push repo to GitHub
-2. GitHub Actions automatically activates
-3. Runs every 10 minutes
-4. Commits data back to repo
+1. Repo zu GitHub pushen
+2. GitHub Actions aktiviert sich automatisch
+3. Läuft alle 10 Minuten
+4. Committed Daten zurück ins Repo
 
-See `.github/workflows/collect.yml` for details.
+Siehe `.github/workflows/collect.yml` für Details.
 
-## Project Structure
+## Projektstruktur
 
 ```
 wai-collector/
-├── whale_collector.py      # Main script - collects whale TXs
-├── aggregate_daily.py      # Generates daily metrics
-├── requirements.txt        # Dependencies
+├── whale_collector.py      # Hauptskript - erfasst Whale-TXs
+├── aggregate_daily.py      # Generiert tägliche Metriken
+├── requirements.txt        # Abhängigkeiten
 ├── README.md
 ├── .github/
 │   └── workflows/
-│       └── collect.yml     # GitHub Actions config
+│       └── collect.yml     # GitHub Actions Konfiguration
 └── data/
-    ├── whale_data.json     # Whale TXs (Top 500, FIFO)
-    └── daily_metrics.json  # Aggregated daily metrics
+    ├── whale_data.json     # Whale-TXs (Top 500, FIFO)
+    └── daily_metrics.json  # Aggregierte tägliche Metriken
 ```
 
-## Performance & Reliability
+## Performance & Zuverlässigkeit
 
-- **Batch API Requests**: 10 requests instead of 1000 (all TXs of a block at once)
-- **Retry Mechanism**: 3 attempts with exponential backoff (1s, 2s)
-- **Exception Handling**: Robust error handling for network issues
-- **FIFO Storage**: 500 whale TXs, oldest are automatically removed
-- **Duplicate Detection**: Set-based, O(1) lookup
+- **Batch-API-Anfragen**: 10 Anfragen statt 1000 (alle TXs eines Blocks auf einmal)
+- **Retry-Mechanismus**: 3 Versuche mit exponentiellem Backoff (1s, 2s)
+- **Exception Handling**: Robuste Fehlerbehandlung für Netzwerkprobleme
+- **FIFO-Speicherung**: 500 Whale-TXs, älteste werden automatisch entfernt
+- **Duplikaterkennung**: Set-basiert, O(1) Lookup
 
