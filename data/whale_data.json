@@ -1,6 +1,80 @@
 {
   "whale_transactions": [
     {
+      "txid": "8ba58e96f650f18359ec2728110015a87eab367a4fc397d2b93ae6d7d9ad7f95",
+      "value_btc": 668.96,
+      "fee_btc": 0.000167,
+      "timestamp": "2026-02-26T13:42:05",
+      "vin_addresses": [
+        {
+          "address": "1ANHwh11NgSZf59iMpvAeLcQw2JL5ritgS",
+          "value": 201.02469034
+        },
+        {
+          "address": "1ANHwh11NgSZf59iMpvAeLcQw2JL5ritgS",
+          "value": 168.9476886
+        },
+        {
+          "address": "1ANHwh11NgSZf59iMpvAeLcQw2JL5ritgS",
+          "value": 97.95900874
+        },
+        {
+          "address": "1ANHwh11NgSZf59iMpvAeLcQw2JL5ritgS",
+          "value": 201.02469034
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1CZcTv4teDNYTKE4LY8Ahq1xr3UCYjYenW",
+          "value": 668.95591107
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "5025e8462a190b1baa72d513cec63b4a2720db5b3d58c505a5bf18327ae3d443",
+      "value_btc": 663.8,
+      "fee_btc": 0.000284,
+      "timestamp": "2026-02-26T13:42:05",
+      "vin_addresses": [
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 82.03192291
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 53.3442836
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 39.32061614
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 200.6868234
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 112.52092656
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 32.98158802
+        },
+        {
+          "address": "1JybBgdb4hxiQ8yzLDJ2BLfzrEkVavjk6b",
+          "value": 142.90933843
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1KfVPcj3c8nXANPZ9cVyrW5PExSYcCMxZn",
+          "value": 663.79521556
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "aaa560a56779d7f0c20127777b19c6c1fc5ca84944378651929f34208ad469aa",
       "value_btc": 296.62,
       "fee_btc": 6.6e-05,
@@ -29025,8 +29099,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-02-26T12:30:18.818788",
-    "total_collections": 2978,
-    "last_collection_found_new": 0
+    "last_collection": "2026-02-26T13:54:18.758937",
+    "total_collections": 2979,
+    "last_collection_found_new": 2
   }
 }
