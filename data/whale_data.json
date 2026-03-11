@@ -1,6 +1,44 @@
 {
   "whale_transactions": [
     {
+      "txid": "eaba01cb4d455b48a4c43963e35ce4bc10f816f0df37f34a3df606da243e331d",
+      "value_btc": 350.0,
+      "fee_btc": 9.6e-05,
+      "timestamp": "2026-03-11T05:42:52",
+      "vin_addresses": [
+        {
+          "address": "bc1pdscqxcegedsmkwda427yzcwvszu0xeannh85jkzxfg4ehll2e9lqexmvgn",
+          "value": 350.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1pkd0e737hd0atphpzjruc7kkdp54et7aykz3r68g8lupa0v3mxesscdgj4f",
+          "value": 349.999904
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "96c422a3666b10478b03d23fe7870b5f826939d537da3a6c023f30677fc4a834",
+      "value_btc": 350.0,
+      "fee_btc": 9.6e-05,
+      "timestamp": "2026-03-11T05:42:52",
+      "vin_addresses": [
+        {
+          "address": "bc1pdscqxcegedsmkwda427yzcwvszu0xeannh85jkzxfg4ehll2e9lqexmvgn",
+          "value": 350.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1pkd0e737hd0atphpzjruc7kkdp54et7aykz3r68g8lupa0v3mxesscdgj4f",
+          "value": 349.999904
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "5aa7fadc2726dc52c9214a36bfe6e684f2200ee5ac91d103ccfca40e91121601",
       "value_btc": 350.0,
       "fee_btc": 9.6e-05,
@@ -2995,8 +3033,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -33850,8 +33888,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-03-11T05:28:44.830935",
-    "total_collections": 3397,
-    "last_collection_found_new": 0
+    "last_collection": "2026-03-11T06:09:18.448555",
+    "total_collections": 3398,
+    "last_collection_found_new": 2
   }
 }
