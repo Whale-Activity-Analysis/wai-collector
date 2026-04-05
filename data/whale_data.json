@@ -8111,8 +8111,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -11301,8 +11301,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -42156,8 +42156,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-04-05T21:50:04.382338",
-    "total_collections": 4085,
+    "last_collection": "2026-04-05T22:16:14.290494",
+    "total_collections": 4086,
     "last_collection_found_new": 0
   }
 }
