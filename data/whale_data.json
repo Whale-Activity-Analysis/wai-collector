@@ -1,6 +1,49 @@
 {
   "whale_transactions": [
     {
+      "txid": "d3f0950b1903a37a46fc2214564b264a809cee285b57b1b15b0977f83ee43d8a",
+      "value_btc": 1535.25,
+      "fee_btc": 1.8e-05,
+      "timestamp": "2026-05-02T20:49:57",
+      "vin_addresses": [
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1535.25261976
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1q8ecclmdxfgfpdctjyak6jhqy6stecy3lqrk7ag",
+          "value": 0.00051067
+        },
+        {
+          "address": "1SbcSeng1m2UbeBgzZcSRpAYQrv9nvZnB",
+          "value": 0.049574
+        },
+        {
+          "address": "bc1q8a727509c3fmq2s4lzdwst2wp3mhpjywfg5tuf",
+          "value": 0.0002754
+        },
+        {
+          "address": "bc1qcz8cday8tvkyk5qq937f5dzfcacpd6mgxjgfn7",
+          "value": 0.00068456
+        },
+        {
+          "address": "bc1qz5dk62jl24xhz3fmr6cw6anftukecmum73s2x3",
+          "value": 0.00220853
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1535.1993485
+        }
+      ],
+      "classification": "outflow",
+      "exchange_details": {
+        "exchange_address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+        "exchange_name": "Bybit"
+      }
+    },
+    {
       "txid": "15684098b20a80689abf3986161b6e5324651461a639f50a58ca14398aaff88c",
       "value_btc": 213.29,
       "fee_btc": 0.000264,
@@ -23267,8 +23310,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -26457,8 +26500,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -57312,8 +57355,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-02T20:01:10.010396",
-    "total_collections": 4593,
-    "last_collection_found_new": 0
+    "last_collection": "2026-05-02T20:57:27.668384",
+    "total_collections": 4594,
+    "last_collection_found_new": 1
   }
 }
