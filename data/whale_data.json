@@ -1,6 +1,85 @@
 {
   "whale_transactions": [
     {
+      "txid": "0e36b293d34d96a16abf03e8fcd04527bbe375440b3170ebaa266e9ca407f108",
+      "value_btc": 1464.14,
+      "fee_btc": 0.00014,
+      "timestamp": "2026-05-03T15:47:10",
+      "vin_addresses": [
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1464.14117029
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qatl35vfd2dkn8fn3a875nxml7mkwql2wlqzcfm",
+          "value": 2.53491535
+        },
+        {
+          "address": "bc1qf9jvhhgjvf7snjzcjlf9frspw8vsw4mjxwqmnq",
+          "value": 0.0104
+        },
+        {
+          "address": "bc1q0ztqkvzwtls7y0rrkzyw8rxumv6qd9qyseud2y",
+          "value": 0.001
+        },
+        {
+          "address": "bc1qfw0dxkv385hv8z0jg2tq7pvz8pspelps0lcd0d",
+          "value": 0.00022267
+        },
+        {
+          "address": "13mpXoWxDAr5ock9gTTUTdzPYVM2sgZaDk",
+          "value": 0.00034538
+        },
+        {
+          "address": "bc1qd9emdk4r246egx4s8rx76r3skhclh7k3d3842k",
+          "value": 0.00147128
+        },
+        {
+          "address": "bc1q90a2xwc55jcuu8qtavfc0u5dpffzn3eefqnkmv",
+          "value": 0.00494866
+        },
+        {
+          "address": "3Fzc6ReugD78g8Amb9McWdkecpPXwm17g9",
+          "value": 0.008479
+        },
+        {
+          "address": "3NzmD9YQRCqZKV9Xq7D181NLJ6oe8YRDBy",
+          "value": 0.0626015
+        },
+        {
+          "address": "3FaLj7UxfPTCfxkt9VLJUpEACLcPEeXrtD",
+          "value": 0.00109499
+        },
+        {
+          "address": "bc1qmysr8z8s5lrp5q6vyvnda448x95vuccmgplx6s",
+          "value": 0.00212474
+        },
+        {
+          "address": "bc1qjzzh00xdqgac9dqlxeyxw6n8d8ck4234vrj3dp",
+          "value": 0.00177185
+        },
+        {
+          "address": "3Q3Pouo7fyaKJUA1HgmQTjYK3nGAc3fUPx",
+          "value": 0.006916
+        },
+        {
+          "address": "bc1qlxsa2yndh2xt4rpmw5pt7eqaelkzd54psvx4xa",
+          "value": 0.00238588
+        },
+        {
+          "address": "bc1qk3wut2eq62jnc5w80z58pz7j9me5xshketys4s",
+          "value": 0.00125837
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1461.50109422
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "172a47b1198e231a76b822c6bb4c3d800dc8edc71cc8d554f2d3386f78f656fc",
       "value_btc": 1464.61,
       "fee_btc": 0.000147,
@@ -24347,8 +24426,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -27537,8 +27616,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -58392,8 +58471,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-03T15:28:27.477825",
-    "total_collections": 4608,
-    "last_collection_found_new": 2
+    "last_collection": "2026-05-03T16:11:36.297997",
+    "total_collections": 4609,
+    "last_collection_found_new": 1
   }
 }
