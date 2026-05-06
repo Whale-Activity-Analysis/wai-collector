@@ -1,6 +1,37 @@
 {
   "whale_transactions": [
     {
+      "txid": "17fe4075988997a8672ed3b8001ab1992420fbffd9782bba42d39be3a0362d34",
+      "value_btc": 453.34,
+      "fee_btc": 8.3e-05,
+      "timestamp": "2026-05-06T14:02:56",
+      "vin_addresses": [
+        {
+          "address": "bc1qqn45h5fexmcmct44c4n2lfzhrj99u3xsnve380",
+          "value": 41.9999918
+        },
+        {
+          "address": "bc1q7sj5l0phh9upugueda6v8wyjrma3yws2ycxyyx",
+          "value": 0.00221463
+        },
+        {
+          "address": "bc1q7sj5l0phh9upugueda6v8wyjrma3yws2ycxyyx",
+          "value": 412.2
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3Jm1EbMHcwrF6QnKmngsXf6hqDaMSM8stU",
+          "value": 453.34
+        },
+        {
+          "address": "bc1q7sj5l0phh9upugueda6v8wyjrma3yws2ycxyyx",
+          "value": 0.86212303
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "87e74eaca42bee6e80de2bd6b87ad6a374c47bcf51c66046234feebcb09a1d17",
       "value_btc": 272.54,
       "fee_btc": 2e-05,
@@ -62071,8 +62102,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-06T13:12:38.470455",
-    "total_collections": 4648,
-    "last_collection_found_new": 0
+    "last_collection": "2026-05-06T15:37:01.022754",
+    "total_collections": 4649,
+    "last_collection_found_new": 1
   }
 }
