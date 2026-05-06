@@ -1,6 +1,33 @@
 {
   "whale_transactions": [
     {
+      "txid": "24039737a036d967b862385174bd3fc74180f4cf72be3ecea00e9ebf44934865",
+      "value_btc": 1469.99,
+      "fee_btc": 5e-06,
+      "timestamp": "2026-05-06T18:39:43",
+      "vin_addresses": [
+        {
+          "address": "bc1qlupspe4hp6sxef2fp7n0w9y4x447ysclk4xg30",
+          "value": 0.00044934
+        },
+        {
+          "address": "bc1qlupspe4hp6sxef2fp7n0w9y4x447ysclk4xg30",
+          "value": 13.98997652
+        },
+        {
+          "address": "bc1qlupspe4hp6sxef2fp7n0w9y4x447ysclk4xg30",
+          "value": 1456.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1BtuEmkpzVgJKUP1Pmj9ogqwqChzjg2Js2",
+          "value": 1469.99042092
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "17fe4075988997a8672ed3b8001ab1992420fbffd9782bba42d39be3a0362d34",
       "value_btc": 453.34,
       "fee_btc": 8.3e-05,
@@ -28057,8 +28084,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -31247,8 +31274,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -62102,8 +62129,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-06T17:11:01.895085",
-    "total_collections": 4650,
-    "last_collection_found_new": 0
+    "last_collection": "2026-05-06T19:02:19.496891",
+    "total_collections": 4651,
+    "last_collection_found_new": 1
   }
 }
