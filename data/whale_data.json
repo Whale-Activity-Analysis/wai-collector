@@ -1,6 +1,33 @@
 {
   "whale_transactions": [
     {
+      "txid": "3e677e59fef6810ec9c796615c6a4cb3f02c74b54413b1eea7809956db3543e1",
+      "value_btc": 273.76,
+      "fee_btc": 0.000179,
+      "timestamp": "2026-05-14T20:59:18",
+      "vin_addresses": [
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 209.2495365
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 93.4308753
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 28.9238933
+        },
+        {
+          "address": "17aoxXuaHDtRprwUMMEM9P4jUtQjPrEWX",
+          "value": 273.75634
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "1ea05cae8563b26b8639ce4a241290222021e33abb78aa6d869c858f821c66ed",
       "value_btc": 1087.94,
       "fee_btc": 1.6e-05,
@@ -30764,8 +30791,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -33954,8 +33981,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -64809,8 +64836,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-14T20:26:34.269850",
-    "total_collections": 4760,
-    "last_collection_found_new": 0
+    "last_collection": "2026-05-14T21:44:39.001024",
+    "total_collections": 4761,
+    "last_collection_found_new": 1
   }
 }
