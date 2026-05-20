@@ -1,6 +1,33 @@
 {
   "whale_transactions": [
     {
+      "txid": "56893418fe5193e6dfeffd73c689c586e7eefccbed7ad71fc49a2b908425bfef",
+      "value_btc": 649.0,
+      "fee_btc": 0.0001,
+      "timestamp": "2026-05-20T15:45:04",
+      "vin_addresses": [
+        {
+          "address": "15giTcLo1d2BVmymUMb5pBFeyyxoqiMYtq",
+          "value": 648.9998
+        },
+        {
+          "address": "15giTcLo1d2BVmymUMb5pBFeyyxoqiMYtq",
+          "value": 0.39580951
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "33aVBjX4uYjBCD9p2drkBMDQeYt5iyBed4",
+          "value": 648.9999
+        },
+        {
+          "address": "15giTcLo1d2BVmymUMb5pBFeyyxoqiMYtq",
+          "value": 0.39560951
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "c47f01f512a1a513245aaf90a41c208ca1ded10201ec54ff640fe8bcd9b1e79e",
       "value_btc": 300.0,
       "fee_btc": 2.1e-05,
@@ -31721,8 +31748,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -34911,8 +34938,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -65766,8 +65793,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-05-20T14:15:56.881383",
-    "total_collections": 4833,
-    "last_collection_found_new": 0
+    "last_collection": "2026-05-20T17:34:17.614862",
+    "total_collections": 4834,
+    "last_collection_found_new": 1
   }
 }
