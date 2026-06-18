@@ -1,6 +1,33 @@
 {
   "whale_transactions": [
     {
+      "txid": "90dff3e6353eeee66d14fcf5d07cfa7b4e28ce79b5e9e74687ea01ac818a4166",
+      "value_btc": 200.0,
+      "fee_btc": 0.0001,
+      "timestamp": "2026-06-18T00:10:21",
+      "vin_addresses": [
+        {
+          "address": "33orXrdG44b7uexFP7Yxdqy1m3FirNtdTE",
+          "value": 499.9119
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1FWQiwK27EnGXb6BiBMRLJvunJQZZPMcGd",
+          "value": 200.0
+        },
+        {
+          "address": "33orXrdG44b7uexFP7Yxdqy1m3FirNtdTE",
+          "value": 299.9118
+        }
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "1FWQiwK27EnGXb6BiBMRLJvunJQZZPMcGd",
+        "exchange_name": "Bitget"
+      }
+    },
+    {
       "txid": "338de98d3d248c8fcae38aa01e4de7aa113964d6698f256a86240028127aeb40",
       "value_btc": 1354.17,
       "fee_btc": 2.6e-05,
@@ -74877,8 +74904,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-06-17T23:01:59.480494",
-    "total_collections": 5105,
-    "last_collection_found_new": 0
+    "last_collection": "2026-06-18T01:37:26.991049",
+    "total_collections": 5106,
+    "last_collection_found_new": 1
   }
 }
