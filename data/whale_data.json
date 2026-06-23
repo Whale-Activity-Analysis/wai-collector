@@ -1,6 +1,73 @@
 {
   "whale_transactions": [
     {
+      "txid": "746e66b9fea243480fda461e81862acbb54f523c79b7f3130e7505b41a739194",
+      "value_btc": 273.45,
+      "fee_btc": 0.000439,
+      "timestamp": "2026-06-22T23:44:33",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 43.8
+        },
+        {
+          "address": "3DJEmfZNyKhxjMJmLE5j9UfmCkBYtdR2H6",
+          "value": 5.0
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 43.9
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 51.3
+        },
+        {
+          "address": "3N1cBEBBqwsPFay1in2vKEyV5FzPqWJD3x",
+          "value": 4.089
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 5.12270889
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 5.68844085
+        },
+        {
+          "address": "32ACqiS8fbYSRRHTM5MT9d6HBtY61L9ST4",
+          "value": 62.1
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 4.52044294
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 3.99960495
+        },
+        {
+          "address": "3E84unqnU4xaH4JmuJm9rK3AVJdVMLHRZc",
+          "value": 4.70660927
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 43.1
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 3.88049543
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 273.44587272
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "d25837ab50590f2ed31a8205d1c839cff110e08e7f750c42b9434e8b93a60d33",
       "value_btc": 200.0,
       "fee_btc": 1.1e-05,
@@ -75150,8 +75217,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-06-22T23:05:07.971241",
-    "total_collections": 5151,
-    "last_collection_found_new": 0
+    "last_collection": "2026-06-23T00:18:08.127484",
+    "total_collections": 5152,
+    "last_collection_found_new": 1
   }
 }
