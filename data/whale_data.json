@@ -1,6 +1,72 @@
 {
   "whale_transactions": [
     {
+      "txid": "f0b200ba4eb9c90f543c404775479a9fa972a8425a833d070b47902080117167",
+      "value_btc": 600.0,
+      "fee_btc": 7e-06,
+      "timestamp": "2026-06-24T22:51:25",
+      "vin_addresses": [
+        {
+          "address": "136QhLWFXgza1MJ2nPTB9y6zNUjQZACikN",
+          "value": 350.0
+        },
+        {
+          "address": "136QhLWFXgza1MJ2nPTB9y6zNUjQZACikN",
+          "value": 250.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h",
+          "value": 599.99999322
+        }
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h",
+        "exchange_name": "Binance"
+      }
+    },
+    {
+      "txid": "16eb3075a3779e086c585b6fc85210d6cf4d4a8c508d65fdd7292e95fa0898a6",
+      "value_btc": 361.0,
+      "fee_btc": 1.6e-05,
+      "timestamp": "2026-06-24T22:51:25",
+      "vin_addresses": [
+        {
+          "address": "1KbDEg1tDz2ErYgaDbaDhhawnLrSQFaFx5",
+          "value": 28.8
+        },
+        {
+          "address": "1KbDEg1tDz2ErYgaDbaDhhawnLrSQFaFx5",
+          "value": 97.8
+        },
+        {
+          "address": "1KbDEg1tDz2ErYgaDbaDhhawnLrSQFaFx5",
+          "value": 96.29999559
+        },
+        {
+          "address": "1KbDEg1tDz2ErYgaDbaDhhawnLrSQFaFx5",
+          "value": 69.499932
+        },
+        {
+          "address": "1KbDEg1tDz2ErYgaDbaDhhawnLrSQFaFx5",
+          "value": 68.599932
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h",
+          "value": 360.99984387
+        }
+      ],
+      "classification": "inflow",
+      "exchange_details": {
+        "exchange_address": "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h",
+        "exchange_name": "Binance"
+      }
+    },
+    {
       "txid": "6a7332347dd19ba2ac2ff5270328e3018f709073546a21a7f5714e85100ebf43",
       "value_btc": 300.0,
       "fee_btc": 0.002819,
@@ -75633,8 +75699,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-06-24T21:44:56.339638",
-    "total_collections": 5170,
-    "last_collection_found_new": 1
+    "last_collection": "2026-06-24T22:54:45.217565",
+    "total_collections": 5171,
+    "last_collection_found_new": 2
   }
 }
