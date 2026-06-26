@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-26T20:45:42.167252",
+  "generated_at": "2026-06-26T21:55:17.110703",
   "total_days": 173,
   "daily_metrics": [
     {
       "date": "2026-06-26",
-      "whale_tx_count": 13,
-      "whale_tx_volume_btc": 9837.27,
-      "avg_whale_fee_btc": 0.000345,
+      "whale_tx_count": 14,
+      "whale_tx_volume_btc": 10637.27,
+      "avg_whale_fee_btc": 0.000325,
       "max_whale_tx_btc": 2200.0,
       "exchange_inflow_btc": 0.0,
       "exchange_outflow_btc": 0.0,
