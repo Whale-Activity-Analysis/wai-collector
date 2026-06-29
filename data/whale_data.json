@@ -1,6 +1,65 @@
 {
   "whale_transactions": [
     {
+      "txid": "bb9276107286664f1efabea9c38d30d63b8a0f9442f5a446a5c72299ae1fb75f",
+      "value_btc": 270.19,
+      "fee_btc": 0.000369,
+      "timestamp": "2026-06-29T10:50:24",
+      "vin_addresses": [
+        {
+          "address": "3N1cBEBBqwsPFay1in2vKEyV5FzPqWJD3x",
+          "value": 4.25999412
+        },
+        {
+          "address": "3N1cBEBBqwsPFay1in2vKEyV5FzPqWJD3x",
+          "value": 4.22999559
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 49.9
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 47.0
+        },
+        {
+          "address": "3N1cBEBBqwsPFay1in2vKEyV5FzPqWJD3x",
+          "value": 4.40294
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 48.8
+        },
+        {
+          "address": "3MHANbU5fFyM6G2tTkeXoZNeM4WGK2stxJ",
+          "value": 4.499935
+        },
+        {
+          "address": "3MHANbU5fFyM6G2tTkeXoZNeM4WGK2stxJ",
+          "value": 4.999928
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 53.3
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 48.8
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 1.10843254
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 269.08399142
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "fb3a88989405b9d5a19a672c48519d7c79d520746d7f81f1b895d3894f0d4c4f",
       "value_btc": 222.6,
       "fee_btc": 0.000194,
@@ -77032,8 +77091,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-06-29T06:53:36.947999",
-    "total_collections": 5221,
-    "last_collection_found_new": 0
+    "last_collection": "2026-06-29T11:58:13.801105",
+    "total_collections": 5222,
+    "last_collection_found_new": 1
   }
 }
