@@ -1,6 +1,37 @@
 {
   "whale_transactions": [
     {
+      "txid": "2ce7916a9f7773c85247ba0089c82d8af3ed2324bf8ec295852fe223efe44981",
+      "value_btc": 257.73,
+      "fee_btc": 3.2e-05,
+      "timestamp": "2026-07-02T17:03:26",
+      "vin_addresses": [
+        {
+          "address": "33d2Lx747j9kCPd2jq6MpgjrDmSL1Tp5Ni",
+          "value": 0.018523
+        },
+        {
+          "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+          "value": 230.69126669
+        },
+        {
+          "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+          "value": 230.49395137
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qmakjy7ns2z8vwgptf9vs8fndp304fg0p9xafm2",
+          "value": 257.73178124
+        },
+        {
+          "address": "3MqUP6G1daVS5YTD8fz3QgwjZortWwxXFd",
+          "value": 203.47192823
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "5308617f1be6ab7bbf2e7ebd13394cf3a6fd965e7acb9f069fde5fa669085589",
       "value_btc": 500.0,
       "fee_btc": 0.00057,
@@ -43189,8 +43220,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -46379,8 +46410,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -77234,8 +77265,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-07-02T15:34:23.830880",
-    "total_collections": 5253,
+    "last_collection": "2026-07-02T17:14:49.540465",
+    "total_collections": 5254,
     "last_collection_found_new": 1
   }
 }
