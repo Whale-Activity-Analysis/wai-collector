@@ -1,6 +1,61 @@
 {
   "whale_transactions": [
     {
+      "txid": "02bfedc4b7ab6e17cb14a4dad042a70c03bb3fee1ca64997bb3c9d8b105012b7",
+      "value_btc": 397.72,
+      "fee_btc": 1.4e-05,
+      "timestamp": "2026-07-14T08:58:58",
+      "vin_addresses": [
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 8.95021391
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 15.5
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 82.80820066
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 36.551903
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 82.68682631
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 81.87884411
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 70.00009032
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 19.99991032
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 0.00158631
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qm7cp64az98rswxxpsulezzefdeenq92dxe3xmj3q8fm90cufxmaquduf0s",
+          "value": 397.717797
+        },
+        {
+          "address": "147eNpjsS46W8Knri18Kzzz6KpwGXLGcm8",
+          "value": 0.65976375
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "e2890ab2d0ee6f932fcbd6a563bc7bc45467522c87c7ed4f31bbb364f096b06e",
       "value_btc": 213.5,
       "fee_btc": 0.000194,
@@ -79003,8 +79058,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-07-14T08:37:15.253378",
-    "total_collections": 5405,
-    "last_collection_found_new": 0
+    "last_collection": "2026-07-14T10:22:55.475886",
+    "total_collections": 5406,
+    "last_collection_found_new": 1
   }
 }
