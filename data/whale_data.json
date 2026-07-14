@@ -1,6 +1,45 @@
 {
   "whale_transactions": [
     {
+      "txid": "e2890ab2d0ee6f932fcbd6a563bc7bc45467522c87c7ed4f31bbb364f096b06e",
+      "value_btc": 213.5,
+      "fee_btc": 0.000194,
+      "timestamp": "2026-07-14T00:55:28",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 46.0
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 47.2
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 45.3
+        },
+        {
+          "address": "3F2sBzXWhrbLbf3pzbvRHbUxZAgpokN7YL",
+          "value": 75.0
+        },
+        {
+          "address": "3F2sBzXWhrbLbf3pzbvRHbUxZAgpokN7YL",
+          "value": 0.0001
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 5.96757833
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 207.53232792
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "d7c09787d669be09f5e55646d0cdcaf5bf06876c5bb5035f23b48fea47111e99",
       "value_btc": 225.03,
       "fee_btc": 0.003239,
@@ -44919,8 +44958,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -48109,8 +48148,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -78964,8 +79003,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-07-13T23:32:02.748488",
-    "total_collections": 5401,
-    "last_collection_found_new": 0
+    "last_collection": "2026-07-14T01:00:22.786293",
+    "total_collections": 5402,
+    "last_collection_found_new": 1
   }
 }
