@@ -1,6 +1,1955 @@
 {
   "whale_transactions": [
     {
+      "txid": "5e40fa7214408c625bff7fa4e228929ec0a901f1998f51b5237ca5b481da2856",
+      "value_btc": 300.0,
+      "fee_btc": 0.009517,
+      "timestamp": "2026-07-20T12:54:29",
+      "vin_addresses": [
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.17143616
+        },
+        {
+          "address": "1KDqwxaGn1syKsFN2NrefQ9bggFEB6ncLX",
+          "value": 1.170007
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.16666195
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.16223086
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 1.15
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.12512609
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.12311381
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.09548511
+        },
+        {
+          "address": "19tB1PAJCVQgZugaiafPUhjeXZv6wb6dxm",
+          "value": 1.08211
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.08030826
+        },
+        {
+          "address": "18dUETRzMTUrryA96Vfq3biUbW7LN92njR",
+          "value": 1.06960677
+        },
+        {
+          "address": "126ZMPbCqHutthz6U5p7r3diyrPAWdVxRc",
+          "value": 1.05359
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.0193
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.01627749
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.01186602
+        },
+        {
+          "address": "1NFmK8BLc3UFEwCEsDb2VTv9fDWM2Bn8DR",
+          "value": 1.0
+        },
+        {
+          "address": "1JM4ambcFNf4DCtPbJ9zAocEHCywtoWL1d",
+          "value": 1.0
+        },
+        {
+          "address": "1YqMjpDo3grwuJYDRWCAh4cmsSSRiha5c",
+          "value": 1.0
+        },
+        {
+          "address": "1QBL3CMi2qSg4rAdgJU6oK9cdBXgTdGVmo",
+          "value": 1.0
+        },
+        {
+          "address": "17X2z7s1ZByzroPbwQFxYXZsTLW8obRQPN",
+          "value": 1.0
+        },
+        {
+          "address": "1LEnmBkWGX6xwyqq3dx4cjfB8scEYmVipf",
+          "value": 1.0
+        },
+        {
+          "address": "16m6NAQJDMTe2YCSugEVVyc8D2MR9NyPbL",
+          "value": 1.0
+        },
+        {
+          "address": "17V4tUBttKXyRQLu8ZR2BPaCbShqX238Cn",
+          "value": 1.0
+        },
+        {
+          "address": "16Pc2JDWhB2LqoRq9oDRP2xSAHETti2FHN",
+          "value": 1.0
+        },
+        {
+          "address": "1577xqqnaWh2uD12XBURcnJSdjYKrdq6nQ",
+          "value": 1.0
+        },
+        {
+          "address": "1Dsp51Q3hMy5iAtHidoSEdp2uDbnK2FTBW",
+          "value": 1.0
+        },
+        {
+          "address": "1Ej4tTLqnLAvCvBAKVrTJ7czzQg3TWKEVj",
+          "value": 1.0
+        },
+        {
+          "address": "1K37XLQQfGbgnNg4FvV4zKNfJZvWaTMt8y",
+          "value": 1.0
+        },
+        {
+          "address": "1CKkA4zcDX4U44DmtKEghckPKwymsDMhtg",
+          "value": 1.0
+        },
+        {
+          "address": "1Kd2rVrYTWUhFdwfyjD42SLNbqsDNkxHfN",
+          "value": 1.0
+        },
+        {
+          "address": "1L5DvGKSw5ZanFCN6KzTgLv2S73ehXm6q3",
+          "value": 1.0
+        },
+        {
+          "address": "1GqA1kEhb89XbvDMJNDC64fM7wJo1iTAsU",
+          "value": 1.0
+        },
+        {
+          "address": "19UcNzp65GLcKNPQ1LCWS3v5ke3kg3UGmB",
+          "value": 1.0
+        },
+        {
+          "address": "1MqybfJPFoHXeJVCVCRAfpTNuRHgQakt8e",
+          "value": 1.0
+        },
+        {
+          "address": "1DQAaB38nBvvELiLN6BRxBX3zxMYKEWokS",
+          "value": 1.0
+        },
+        {
+          "address": "1Lezg9dDeCRsP3JuqMDPpHWGtd48esam7D",
+          "value": 1.0
+        },
+        {
+          "address": "1Dsp51Q3hMy5iAtHidoSEdp2uDbnK2FTBW",
+          "value": 1.0
+        },
+        {
+          "address": "19BNPZpagyoWvXYwpQj688wjaNsDBK9A77",
+          "value": 1.0
+        },
+        {
+          "address": "1BCSCNXQRraFYwjgmUsAVx4BMsvtTiU5zk",
+          "value": 1.0
+        },
+        {
+          "address": "19BNPZpagyoWvXYwpQj688wjaNsDBK9A77",
+          "value": 1.0
+        },
+        {
+          "address": "1CYqgK8QTRjoLuATUb1kkDJdMwcLwcEa2s",
+          "value": 1.0
+        },
+        {
+          "address": "1Ao9wRxAy9qHCw6ZvK23ADArSZMc2FC2Vr",
+          "value": 1.0
+        },
+        {
+          "address": "1GYBut4pA8wKt84pmBHP6o4YN9MUAhhv9g",
+          "value": 1.0
+        },
+        {
+          "address": "1Dsp51Q3hMy5iAtHidoSEdp2uDbnK2FTBW",
+          "value": 1.0
+        },
+        {
+          "address": "1KL5vDtFzN5pgy7xZWr3oJdU8W7VqxrEpe",
+          "value": 1.0
+        },
+        {
+          "address": "1EQah1r1sbP5ZU7c4RueFtdWh1UyB2V1hH",
+          "value": 1.0
+        },
+        {
+          "address": "1PyYbhPA29zsVNUJG8RgX5Bd5vd225nJK3",
+          "value": 1.0
+        },
+        {
+          "address": "1AUvH2xBTPdDWVRvYZgRq6CdnymmC2Riq6",
+          "value": 1.0
+        },
+        {
+          "address": "127g8HYn29DKfCjs37TPrDA8u5D8sXFBX3",
+          "value": 0.99999548
+        },
+        {
+          "address": "1Md8Zt9owm5hXu2PQGQnddLbYFqySZxrhe",
+          "value": 0.9999916
+        },
+        {
+          "address": "1LVDRjFgQkVRz3AbgjDPJ1mB86wYJsdU85",
+          "value": 0.999991
+        },
+        {
+          "address": "1LVDRjFgQkVRz3AbgjDPJ1mB86wYJsdU85",
+          "value": 0.999989
+        },
+        {
+          "address": "1Es5Qs2BVbfzMXrQS2sqYg4pMGKd6tV6JC",
+          "value": 0.9999877
+        },
+        {
+          "address": "15Z6SE2fw6ZgwC3JFG3s2QHTkHqV44PUhb",
+          "value": 0.999986
+        },
+        {
+          "address": "19krMABJkjn3s3EPswrKg2WrUkNmHytP7f",
+          "value": 0.99998549
+        },
+        {
+          "address": "1M2aVYNGXB8YcbwprtFFJCtMVhsAgs7svA",
+          "value": 0.999985
+        },
+        {
+          "address": "1M2aVYNGXB8YcbwprtFFJCtMVhsAgs7svA",
+          "value": 0.999985
+        },
+        {
+          "address": "1NePyp56py4N5TK5VLJm54QeuiTbHgrxcL",
+          "value": 0.99998418
+        },
+        {
+          "address": "15Z6SE2fw6ZgwC3JFG3s2QHTkHqV44PUhb",
+          "value": 0.999984
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M2aVYNGXB8YcbwprtFFJCtMVhsAgs7svA",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1QYbHTsTifZeaWwgCaUHQRsGoEEkAPqBX",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1MyouSVPyU5mNfLUjaxmGtGowA6hWdH4K6",
+          "value": 0.99998
+        },
+        {
+          "address": "16D1VHXw5EEGszVTm4fopcAczZ3JjpHvjh",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99998
+        },
+        {
+          "address": "1GbzUD9gsYMZTy8Jx1L1qVt4oBasBF3fqq",
+          "value": 0.99998
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99997
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99997
+        },
+        {
+          "address": "1M3ftgxD3yuh2VU5CBMewFrV6PsSPvFuhb",
+          "value": 0.99997
+        },
+        {
+          "address": "15Z6SE2fw6ZgwC3JFG3s2QHTkHqV44PUhb",
+          "value": 0.999956
+        },
+        {
+          "address": "1M2aVYNGXB8YcbwprtFFJCtMVhsAgs7svA",
+          "value": 0.99994
+        },
+        {
+          "address": "1M2aVYNGXB8YcbwprtFFJCtMVhsAgs7svA",
+          "value": 0.99994
+        },
+        {
+          "address": "15Z6SE2fw6ZgwC3JFG3s2QHTkHqV44PUhb",
+          "value": 0.999926
+        },
+        {
+          "address": "1AwBccAJeECtjke6h3ZemLU9hQeFWNrrzj",
+          "value": 0.99992
+        },
+        {
+          "address": "1AwBccAJeECtjke6h3ZemLU9hQeFWNrrzj",
+          "value": 0.99992
+        },
+        {
+          "address": "1K37XLQQfGbgnNg4FvV4zKNfJZvWaTMt8y",
+          "value": 0.99971731
+        },
+        {
+          "address": "1BN6YW4bMySj3HaoQ7vJUxkGDfvMREoR8M",
+          "value": 0.999
+        },
+        {
+          "address": "166aznmpwJTMcnRnBhF6Z7j2vCsEzvYTDC",
+          "value": 0.99875936
+        },
+        {
+          "address": "1H1rJqWKVqqRBVkruFLa6ritbVcQjQ9N7S",
+          "value": 0.99857132
+        },
+        {
+          "address": "1CxrXxRrr3rfYMxoAFMC56KB2DEWXWifVX",
+          "value": 0.9984311
+        },
+        {
+          "address": "17hzPM87PTp6M2K3XLz3xhmnPUwjejHPxY",
+          "value": 0.9974
+        },
+        {
+          "address": "1MSuQ91D6L4czvuFBLHvycGhEi69vBpuvk",
+          "value": 0.99725049
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.99434006
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.99216768
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.99187825
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.9915306
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.991505
+        },
+        {
+          "address": "1Ppz8APmPNJqGbvkChzTAFfurf2W8SF3vu",
+          "value": 0.99
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.98873449
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.98769964
+        },
+        {
+          "address": "1LLVKQk17gFrGnJkoFc3fcmYozR2HN7f1w",
+          "value": 0.98759324
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.98551133
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.98371771
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.98313172
+        },
+        {
+          "address": "1EeDJFuU6nQZPpjQZknLku9RqCZbmR1Sgm",
+          "value": 0.9831
+        },
+        {
+          "address": "1LEnmBkWGX6xwyqq3dx4cjfB8scEYmVipf",
+          "value": 0.98211412
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.98209335
+        },
+        {
+          "address": "1CxFyozEkSgTJcEmGkjaNfXMvwunPAE8M7",
+          "value": 0.98158804
+        },
+        {
+          "address": "18mkrGxr5aPsbsCesnGoUG4g6V5iVVBzUA",
+          "value": 0.98084568
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 0.98
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.979286
+        },
+        {
+          "address": "1faYfYQxydnzRH9nj2McMAVLPYVHZu2mv",
+          "value": 0.97864717
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.976
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.97500257
+        },
+        {
+          "address": "1B4BynuuY5BJHFUNNmL3HvFs8gmHg7Q9RQ",
+          "value": 0.97405414
+        },
+        {
+          "address": "1QF4W17AksLDUrDigEqjDcW7sv9nJkn3LR",
+          "value": 0.97344697
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.97256741
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.9723
+        },
+        {
+          "address": "1KL5vDtFzN5pgy7xZWr3oJdU8W7VqxrEpe",
+          "value": 0.97
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.9684
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.96789722
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.96756005
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.96732394
+        },
+        {
+          "address": "19u7ZvcdXPu3oYuzf3M2BM1vRfL8BVjCix",
+          "value": 0.96646386
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.96356941
+        },
+        {
+          "address": "13kVcsinNWfp2JUxhdKowdQCNtPXwfjhHx",
+          "value": 0.96133
+        },
+        {
+          "address": "13VwFySqoruPb9jmvE357zJanRivQ8Tz9C",
+          "value": 0.96121
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.96114435
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.96005951
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.95532339
+        },
+        {
+          "address": "1L5ckv41FBa4pHtwU61x5LaY1PUxumjv78",
+          "value": 0.95359746
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.95306126
+        },
+        {
+          "address": "1GEwTJ2H8v2vK7TL7AeoZQRyWqqa8b6eg4",
+          "value": 0.95288423
+        },
+        {
+          "address": "13VwFySqoruPb9jmvE357zJanRivQ8Tz9C",
+          "value": 0.95222
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.95137972
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.94941747
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.94887019
+        },
+        {
+          "address": "1DekkVHkuKZqCorGcJ8h7KeLzCNq83ig5P",
+          "value": 0.94843073
+        },
+        {
+          "address": "18SHsCNLXRdkDJ4NspycprXXwhPGm32Wsr",
+          "value": 0.94727477
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.9468913
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.94627197
+        },
+        {
+          "address": "1DzYjXyPSFWZaqiDZDoYMyKzzaanZrMLTm",
+          "value": 0.94
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.93908184
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.93759447
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.9364381
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.93568371
+        },
+        {
+          "address": "1HcmTmdkbmVbuof1vurum74PMcmC5Lf7PM",
+          "value": 0.93386283
+        },
+        {
+          "address": "166aznmpwJTMcnRnBhF6Z7j2vCsEzvYTDC",
+          "value": 0.93207441
+        },
+        {
+          "address": "166aznmpwJTMcnRnBhF6Z7j2vCsEzvYTDC",
+          "value": 0.93197057
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.93184317
+        },
+        {
+          "address": "1GhznUJZVC1oxyZq4V8zr14nbPpfbCJqiX",
+          "value": 0.93161126
+        },
+        {
+          "address": "13Dg3rngGXquSrwVbrhnVxk1s3x85Rf1vg",
+          "value": 0.93
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.92995401
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.92914867
+        },
+        {
+          "address": "1GNbKFnZSgcsyD9DuiWhJU2VfzTTJXg5y5",
+          "value": 0.92856234
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.92805706
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.9278418
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.9269
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.9227798
+        },
+        {
+          "address": "14QjBdNisU4xG1RNDS2kR9sRXwturTfStk",
+          "value": 0.91986373
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.918135
+        },
+        {
+          "address": "1MSuQ91D6L4czvuFBLHvycGhEi69vBpuvk",
+          "value": 0.91544659
+        },
+        {
+          "address": "1JfUa1sY9sxCFMZzNwQsjde31fWPKEyb1F",
+          "value": 0.91538992
+        },
+        {
+          "address": "1DQAaB38nBvvELiLN6BRxBX3zxMYKEWokS",
+          "value": 0.9135
+        },
+        {
+          "address": "1HKXuygR3Ed2C3toFJx3ju7Sa72KyXLRf3",
+          "value": 0.91325937
+        },
+        {
+          "address": "1Jmq44fJCqN6uxYmKxc1wJmnCWj2KRjeAU",
+          "value": 0.91230286
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.9115
+        },
+        {
+          "address": "1FNu3jFrVZVNRgNswCbaJ2soWz3FVx9m7j",
+          "value": 0.91071384
+        },
+        {
+          "address": "1HqCkbCWyyRzFsCXb3QfJ2k7E7QP1JcwcJ",
+          "value": 0.91031939
+        },
+        {
+          "address": "14F9QnLPkoVe7wa6crnagxbcqNLtJB8bFR",
+          "value": 0.90856906
+        },
+        {
+          "address": "1DsgHiiefKTgs7V87fQcU7fx6WEAfiR2nK",
+          "value": 0.90761268
+        },
+        {
+          "address": "14VsgspKtwJhJcMonS8Z524bpd47YDcD4d",
+          "value": 0.90461689
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.904572
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.90391538
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.90317869
+        },
+        {
+          "address": "1HKXuygR3Ed2C3toFJx3ju7Sa72KyXLRf3",
+          "value": 0.90280594
+        },
+        {
+          "address": "1A3MiS4X93zqPaUpCuR8rqekTAwkP2qq4d",
+          "value": 0.90217837
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.90206081
+        },
+        {
+          "address": "1HiUD39o3p7jnsNUfrUGdpmwjx8JpUj4LW",
+          "value": 0.9003413
+        },
+        {
+          "address": "1Pzs3BL7hHtpJgTUa6iuDg39xcbsbgc53",
+          "value": 0.9
+        },
+        {
+          "address": "13woSk5kRYYDDR8KYSMrFpC9LzY4bfSoGA",
+          "value": 0.9
+        },
+        {
+          "address": "1KL5vDtFzN5pgy7xZWr3oJdU8W7VqxrEpe",
+          "value": 0.9
+        },
+        {
+          "address": "1N3A341kR3WsDQrCigJa7QVhikjF8Qxh4G",
+          "value": 0.89999618
+        },
+        {
+          "address": "16sVi2NnGKNLtGJwFDqt8vry7tyNPpqj27",
+          "value": 0.89942211
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.89904
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.89745922
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.89654588
+        },
+        {
+          "address": "13VwFySqoruPb9jmvE357zJanRivQ8Tz9C",
+          "value": 0.8945
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.8937
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.89292669
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 0.89
+        },
+        {
+          "address": "19tB1PAJCVQgZugaiafPUhjeXZv6wb6dxm",
+          "value": 0.889935
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.88910774
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.88897606
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.88877
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.888378
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.88796118
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.8873
+        },
+        {
+          "address": "1DuQTLJ5fKGsqVpqsJg1Cd79dsJRuEy9yn",
+          "value": 0.88566725
+        },
+        {
+          "address": "14uqd932r9gcL8aoLvDk36bSBwBagFemnp",
+          "value": 0.88520071
+        },
+        {
+          "address": "1BaV6G13QNKmrk3APdUFGNo5qxAYzxpyHz",
+          "value": 0.88449079
+        },
+        {
+          "address": "1Pvz18GebCVr5BX3eiVU7gohJqp8FAP88b",
+          "value": 0.8842783
+        },
+        {
+          "address": "1KgDfQBn4esC68xnRkf6N75jYiTjfG1FD7",
+          "value": 0.88305467
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.88173562
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.88031493
+        },
+        {
+          "address": "13sZGFMjn74ekkzmVT7haMEAp76oToM8bC",
+          "value": 0.87797035
+        },
+        {
+          "address": "1NhcRf1FPnKoLLq5Ubkeoj7EvLsm6dqZEy",
+          "value": 0.87668625
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.87624258
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.87569725
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.87526309
+        },
+        {
+          "address": "1DzYjXyPSFWZaqiDZDoYMyKzzaanZrMLTm",
+          "value": 0.875
+        },
+        {
+          "address": "114a3tz1nswdWqf7DC7ZWWSTF23evquY76",
+          "value": 0.87361221
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 0.86940293
+        },
+        {
+          "address": "14Fj2NAZx6Fn1PRwCUS8ghuf5sKBUyihRz",
+          "value": 0.869
+        },
+        {
+          "address": "1DEzJe6TVNzumfDYHpCT3yTG37DdAkZQid",
+          "value": 0.86848223
+        },
+        {
+          "address": "1AJ7mZk2HLRmi2vNA91p5AcfybfUveip1q",
+          "value": 0.86757
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.86587403
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.86546025
+        },
+        {
+          "address": "1DzYjXyPSFWZaqiDZDoYMyKzzaanZrMLTm",
+          "value": 0.865
+        },
+        {
+          "address": "1HqCkbCWyyRzFsCXb3QfJ2k7E7QP1JcwcJ",
+          "value": 0.86235897
+        },
+        {
+          "address": "17H4xSsfdj5h25dym8cZmd7bSHaaCMxzFG",
+          "value": 0.859985
+        },
+        {
+          "address": "19tB1PAJCVQgZugaiafPUhjeXZv6wb6dxm",
+          "value": 0.859924
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.85966158
+        },
+        {
+          "address": "1LEnmBkWGX6xwyqq3dx4cjfB8scEYmVipf",
+          "value": 0.858585
+        },
+        {
+          "address": "178irZKxn8wy6pBUGJNn8cyCPonWwAJmSs",
+          "value": 0.85824963
+        },
+        {
+          "address": "1KEpY4iCMYMyK9YCWmMTBoDgeZcSPsz1Fa",
+          "value": 0.857329
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.85585548
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.85358387
+        },
+        {
+          "address": "1MdsFMLQmNLPUpwZgjbcRQUhaQsm6MHLGe",
+          "value": 0.85301306
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.85228084
+        },
+        {
+          "address": "1Gp8B3ieAHLwV8v6H3gDZ3TLNUkABBBauT",
+          "value": 0.85221442
+        },
+        {
+          "address": "1Lped5Z9PNDX82zYqVeattyBTms8fqPaWA",
+          "value": 0.851621
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.85151084
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.850911
+        },
+        {
+          "address": "1BoyDpzCLNXmD83yYXb8Ccpy5QWuAdHZk2",
+          "value": 0.85090823
+        },
+        {
+          "address": "12CSPi3T2k1LUYfoqveWiFWBcAdSSq6Ru6",
+          "value": 0.84998
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.84835991
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.84798252
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.8453
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.84526
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 0.84498113
+        },
+        {
+          "address": "1GCwnnAuS1hMvrzHVqedMR71VrgVRtdJsg",
+          "value": 0.84487266
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.84391834
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.84333545
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.84294271
+        },
+        {
+          "address": "1P279UBChDFPAky8S4DcKGaaxKEMYBK9MM",
+          "value": 0.8414124
+        },
+        {
+          "address": "17xNnKwgFxhJcBBWgdkom5ueT8auEgMtLi",
+          "value": 0.8402336
+        },
+        {
+          "address": "1Ms7Sg9jv5HbqGtipNwCQ9BaVQP5dY2gzb",
+          "value": 0.84010759
+        },
+        {
+          "address": "1wTAfj6LQGTvbb3sRQHSfi2acp64K5FK4",
+          "value": 0.8395187
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.838423
+        },
+        {
+          "address": "18gJ2v3G8acsfzKcvUs6DqTHYe7F6TDTyR",
+          "value": 0.8375456
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.83721048
+        },
+        {
+          "address": "1MzLDQghGuXj6b7R35E7qCrQhFVXmoTB9q",
+          "value": 0.83673606
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.83672979
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.83621102
+        },
+        {
+          "address": "1PHRdR1oWiaZfXvjuLJhhBD7pWJw16yec9",
+          "value": 0.83609244
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.8357771
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.83555779
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.83424941
+        },
+        {
+          "address": "19tB1PAJCVQgZugaiafPUhjeXZv6wb6dxm",
+          "value": 0.833922
+        },
+        {
+          "address": "18zbyyaKAef2a9kX9ZfNGKX6tSzQ5McHLr",
+          "value": 0.833046
+        },
+        {
+          "address": "1BdjhJrm5WXzPGFRt9ibCD6w2EA9yzuvqY",
+          "value": 0.83167509
+        },
+        {
+          "address": "1LVDRjFgQkVRz3AbgjDPJ1mB86wYJsdU85",
+          "value": 0.83118
+        },
+        {
+          "address": "1KEpY4iCMYMyK9YCWmMTBoDgeZcSPsz1Fa",
+          "value": 0.831
+        },
+        {
+          "address": "1LVDRjFgQkVRz3AbgjDPJ1mB86wYJsdU85",
+          "value": 0.830385
+        },
+        {
+          "address": "188ZZG3TH9kk33pRWZQJaCaDxTjTooZVAf",
+          "value": 0.82909224
+        },
+        {
+          "address": "1LVDRjFgQkVRz3AbgjDPJ1mB86wYJsdU85",
+          "value": 0.828135
+        },
+        {
+          "address": "1Hqt8M2XRo93maNU9S1t67GAVSMBsZJovx",
+          "value": 0.828108
+        },
+        {
+          "address": "1NcmCLwPoC24f7AocVn1AppPNJg7SKBX5m",
+          "value": 0.82797723
+        },
+        {
+          "address": "18zbyyaKAef2a9kX9ZfNGKX6tSzQ5McHLr",
+          "value": 0.827532
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.8262565
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.82445212
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.82415656
+        },
+        {
+          "address": "16TouSKN8hSHRc8rQexQtNK8Z1qGEgWXzK",
+          "value": 0.8223435
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.82211949
+        },
+        {
+          "address": "1KL5vDtFzN5pgy7xZWr3oJdU8W7VqxrEpe",
+          "value": 0.82
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 0.82
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.81844818
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.81824326
+        },
+        {
+          "address": "1GnyTzH6iNwHGGCF1W9PW8MAb6kZ3LvWsi",
+          "value": 0.81814925
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.81701974
+        },
+        {
+          "address": "188ZZG3TH9kk33pRWZQJaCaDxTjTooZVAf",
+          "value": 0.81680307
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.81662153
+        },
+        {
+          "address": "12T93eQGVWxDF8V5PA5z8V5cE3f9Z6fynx",
+          "value": 0.81647216
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.81455587
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.81348988
+        },
+        {
+          "address": "14oHyRRtz97o8LA7G2iYzNQPYwHNoShth9",
+          "value": 0.81222725
+        },
+        {
+          "address": "1P7PM81ub7WxYFHAVhAmJue6LunTUnmtWM",
+          "value": 0.81136091
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.81132463
+        },
+        {
+          "address": "1Gp8B3ieAHLwV8v6H3gDZ3TLNUkABBBauT",
+          "value": 0.81123528
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.81076417
+        },
+        {
+          "address": "1867iMDMPxFUG516xReZgcraHHL3DHaECE",
+          "value": 0.80997
+        },
+        {
+          "address": "1867iMDMPxFUG516xReZgcraHHL3DHaECE",
+          "value": 0.80997
+        },
+        {
+          "address": "1628YfKYJvn6GWt9noAUkpPAVk47pw3XBy",
+          "value": 0.80995
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 0.80910242
+        },
+        {
+          "address": "1PQvaDVM2A1qR2n61nMekLBKSs9JGqmSCA",
+          "value": 0.80890392
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 0.80768874
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 0.80668463
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qqc0h2sxt9lvrsqt90rtpjqnjj7qcwv457g28h2",
+          "value": 300.0
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.20954695
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        },
+        "inflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        }
+      }
+    },
+    {
+      "txid": "cf7f0ec3fe8ee398755be1de4cb4e58e2a8fba9df852a8426cdae8edccb5eba2",
+      "value_btc": 300.0,
+      "fee_btc": 0.000608,
+      "timestamp": "2026-07-20T12:45:27",
+      "vin_addresses": [
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 51.41031359
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 42.12645517
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 30.02347973
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 22.88598428
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 20.16418609
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 18.89109316
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 16.19888915
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 14.48370092
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 14.40080801
+        },
+        {
+          "address": "1Q5v5JTbd8KPY276hxe12kudpbyJqLpJn8",
+          "value": 9.00748774
+        },
+        {
+          "address": "1JAYqe9jdvWfgsmQ6tq13JKf4bydZjNg8n",
+          "value": 8.75510505
+        },
+        {
+          "address": "17H4xSsfdj5h25dym8cZmd7bSHaaCMxzFG",
+          "value": 7.25980959
+        },
+        {
+          "address": "1ErajVxuizuugzbzTqWt6iELJkYc5AZ4Dy",
+          "value": 7.22192
+        },
+        {
+          "address": "17H4xSsfdj5h25dym8cZmd7bSHaaCMxzFG",
+          "value": 7.13478206
+        },
+        {
+          "address": "1LCdC8odQWKkCQtmXDaGsC7DR8nhT14syZ",
+          "value": 6.999985
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 6.6704809
+        },
+        {
+          "address": "1GoDiXDhxej1vns3WhPkSrvX7sE3uTLYAU",
+          "value": 5.81998
+        },
+        {
+          "address": "1KDqwxaGn1syKsFN2NrefQ9bggFEB6ncLX",
+          "value": 5.0000009
+        },
+        {
+          "address": "1FtuVsDwhZbmBAniKLJ7UG3QiPmwaAwwai",
+          "value": 4.99998813
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 4.82804566
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qqc0h2sxt9lvrsqt90rtpjqnjj7qcwv457g28h2",
+          "value": 300.0
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 4.28188753
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        },
+        "inflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        }
+      }
+    },
+    {
+      "txid": "15ab38d3798186848ce2d55dc748ffbb400039904cea0c7f098be284da70954e",
+      "value_btc": 300.0,
+      "fee_btc": 0.003745,
+      "timestamp": "2026-07-20T12:45:27",
+      "vin_addresses": [
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 4.56967294
+        },
+        {
+          "address": "17H4xSsfdj5h25dym8cZmd7bSHaaCMxzFG",
+          "value": 4.51158959
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 4.46755307
+        },
+        {
+          "address": "1DzYjXyPSFWZaqiDZDoYMyKzzaanZrMLTm",
+          "value": 4.42
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 4.17831175
+        },
+        {
+          "address": "1AzAhdwDJgL23W2fGFMCQ5x1hyXZ3FMrE6",
+          "value": 4.08941038
+        },
+        {
+          "address": "17H4xSsfdj5h25dym8cZmd7bSHaaCMxzFG",
+          "value": 4.02799559
+        },
+        {
+          "address": "1AzAhdwDJgL23W2fGFMCQ5x1hyXZ3FMrE6",
+          "value": 4.0
+        },
+        {
+          "address": "14Fj2NAZx6Fn1PRwCUS8ghuf5sKBUyihRz",
+          "value": 4.0
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 3.96476287
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 3.8596638
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 3.85749359
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 3.84059237
+        },
+        {
+          "address": "14Fj2NAZx6Fn1PRwCUS8ghuf5sKBUyihRz",
+          "value": 3.84
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 3.77129961
+        },
+        {
+          "address": "19zsD7GAHRoD6SX9NcwNCNMb31713QoTNg",
+          "value": 3.7353
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 3.57608494
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 3.41921219
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 3.37296171
+        },
+        {
+          "address": "1ErajVxuizuugzbzTqWt6iELJkYc5AZ4Dy",
+          "value": 3.315
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 3.1790454
+        },
+        {
+          "address": "1BERfQvdXU4QrXBSj5VF489Q4VXQe2rA8x",
+          "value": 3.1679
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 3.14942288
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 3.09920387
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 3.08554218
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 3.05510183
+        },
+        {
+          "address": "1L6nBXQ7w8LteUGfkgKGjt7r4iTCP99uxD",
+          "value": 3.00050507
+        },
+        {
+          "address": "1Q34fRBKKRDsuSJGD387rgiH1WcmBEQpG5",
+          "value": 3.0
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.98879593
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.93627194
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.89381187
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.89369935
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.87688033
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.85705309
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.8139077
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.80186517
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.77599708
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.7530346
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.75119966
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.74421954
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 2.7
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.69962117
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 2.67310992
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.5766158
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 2.49859655
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.45106522
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.43571661
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.40326721
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 2.37347988
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.36057121
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.34980877
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.34661856
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.3248217
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.31565623
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.28982446
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.28526698
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 2.25301297
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.25145614
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.23713121
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.21320808
+        },
+        {
+          "address": "1BdjhJrm5WXzPGFRt9ibCD6w2EA9yzuvqY",
+          "value": 2.19999864
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.16977095
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 2.14738222
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.14589469
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 2.11562771
+        },
+        {
+          "address": "1JuCYYdNxiCw2AYS9WuxUvHom7XAGSjZBr",
+          "value": 2.10841549
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.1042378
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.0965373
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 2.08696664
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.08321692
+        },
+        {
+          "address": "16kLoVvbnq5SHPe5ib6QxSvCBCRJEsAt3U",
+          "value": 2.07570374
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 2.06325698
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 2.01143562
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 2.00505443
+        },
+        {
+          "address": "1CdKRmTGtHdZRY5Tn8ehbUt2wQZ47yqV1X",
+          "value": 1.99994587
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.98881314
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.97722211
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.96023975
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.95410886
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.95397247
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 1.94
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.90321142
+        },
+        {
+          "address": "1HdryeVyH2mXYv9i6ivs648X2CykiCigrQ",
+          "value": 1.9
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 1.88585071
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.88422406
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.86774166
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.8537925
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.84488781
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.83786682
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.81409915
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.7896716
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.76656912
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.74960232
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.71519044
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.70284508
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.6737005
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 1.67172223
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.6539876
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.65339138
+        },
+        {
+          "address": "1LrsMHnT2z7gpc7gADVPfS1naQsWvG4ee8",
+          "value": 1.64179489
+        },
+        {
+          "address": "1DCqXfuWByeMrgJZLTbXV9MM4MLXuNJWHY",
+          "value": 1.61822307
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.60432208
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.60186585
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.59786007
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.55165103
+        },
+        {
+          "address": "1Mo1UeNE4En6HbUZQPE8JdSa5489TkUzSG",
+          "value": 1.54696612
+        },
+        {
+          "address": "1DovZ2f12DvV4PmtHEumkytBDP1shtZsDi",
+          "value": 1.52928
+        },
+        {
+          "address": "1F7omNG7oonrLYpsySafVcgoXE1JgHvcGU",
+          "value": 1.52214979
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 1.51
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.49404455
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.49181491
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.48864869
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.47294313
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.45570383
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 1.42025882
+        },
+        {
+          "address": "1F3Ui6SEo4i6qDGK79p9n22J4idUcom7JG",
+          "value": 1.42
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.4187437
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.39627767
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.36694913
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.35561415
+        },
+        {
+          "address": "1HdAujUTC4VkQyAUUnJzdypAhEXgzhJaZ6",
+          "value": 1.35473254
+        },
+        {
+          "address": "146yKRa2bHxjSZaz2afmZBPcqCGGyzdu3R",
+          "value": 1.33100261
+        },
+        {
+          "address": "1DLeNApsHNNzUMNZJVoXeyEY5sdp8vzx3w",
+          "value": 1.32270913
+        },
+        {
+          "address": "1Mqn5dWEDwx5mSnuV4br2q3LVqPW35PkLe",
+          "value": 1.310423
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.30539035
+        },
+        {
+          "address": "12XZMdaAGmcHf4ocFSqpd8jFd1WH7RHUPs",
+          "value": 1.27742227
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qqc0h2sxt9lvrsqt90rtpjqnjj7qcwv457g28h2",
+          "value": 300.0
+        },
+        {
+          "address": "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC",
+          "value": 0.43841247
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        },
+        "inflow_exchanges": {
+          "1GrwDkr33gT6LuumniYjKEGjTLhsL5kmqC": "Bybit"
+        }
+      }
+    },
+    {
       "txid": "43e9014b12c3dea836b9b0ca6b1b26c75a189ec4bc9a6c0a0651b68af216e757",
       "value_btc": 311.2,
       "fee_btc": 0.000264,
@@ -46666,8 +48615,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -49856,8 +51805,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -80711,8 +82660,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-07-20T11:05:58.424141",
-    "total_collections": 5501,
-    "last_collection_found_new": 0
+    "last_collection": "2026-07-20T13:15:12.020539",
+    "total_collections": 5502,
+    "last_collection_found_new": 3
   }
 }
