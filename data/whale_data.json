@@ -1,6 +1,61 @@
 {
   "whale_transactions": [
     {
+      "txid": "e35532b5ee850b2a519fbacc5b50540c77afffe6fb4f7eecb00d2de9cf8ef351",
+      "value_btc": 210.89,
+      "fee_btc": 0.000334,
+      "timestamp": "2026-08-15T05:36:33",
+      "vin_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 88.62167917
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 5.5456
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 23.12522625
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 39.9935
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 30.44259189
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 56.67
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 2.7493
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 3.1675
+        },
+        {
+          "address": "3CTpBmp8uWTcHJBjmyVe8VPPyCHTzj2hBH",
+          "value": 15.6419
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 55.06300974
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 210.89395382
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "f8ec4753fabf45fa62554987e994e471687182a095f4c91006cc5184034a5e8d",
       "value_btc": 849.48,
       "fee_btc": 8e-06,
@@ -1002,8 +1057,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
         }
       }
     },
@@ -89600,8 +89655,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-08-15T05:09:54.584776",
-    "total_collections": 5935,
-    "last_collection_found_new": 0
+    "last_collection": "2026-08-15T05:40:36.725542",
+    "total_collections": 5936,
+    "last_collection_found_new": 1
   }
 }
