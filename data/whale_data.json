@@ -1,6 +1,37 @@
 {
   "whale_transactions": [
     {
+      "txid": "3d0af89cfe3357113b254e1de03636c7262d1f9777b40f4110a9032c3b427fb0",
+      "value_btc": 353.56,
+      "fee_btc": 0.001,
+      "timestamp": "2026-08-17T07:16:53",
+      "vin_addresses": [
+        {
+          "address": "bc1qchctnvmdva5z9vrpxkkxck64v7nmzdtyxsrq64",
+          "value": 3e-06
+        },
+        {
+          "address": "bc1qchctnvmdva5z9vrpxkkxck64v7nmzdtyxsrq64",
+          "value": 21.66841893
+        },
+        {
+          "address": "bc1qchctnvmdva5z9vrpxkkxck64v7nmzdtyxsrq64",
+          "value": 7268.06123508
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1q89zqat5x9cye7v2uwun2ds7980p25n02g7g90w",
+          "value": 353.56445541
+        },
+        {
+          "address": "bc1qchctnvmdva5z9vrpxkkxck64v7nmzdtyxsrq64",
+          "value": 6936.1642016
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "75e7d2db937ec4aa0aa0151aeb6aea9675e321d8798b2b65df106dd73a97449a",
       "value_btc": 300.0,
       "fee_btc": 0.000264,
@@ -55680,8 +55711,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -58870,8 +58901,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         }
       }
     },
@@ -89725,8 +89756,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-08-17T06:22:40.944486",
-    "total_collections": 6035,
-    "last_collection_found_new": 0
+    "last_collection": "2026-08-17T07:31:47.550900",
+    "total_collections": 6036,
+    "last_collection_found_new": 1
   }
 }
