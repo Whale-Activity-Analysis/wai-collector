@@ -1,6 +1,49 @@
 {
   "whale_transactions": [
     {
+      "txid": "8840990f63d46d18999c9ff94708d206686bbb6af81ddd89fd9c5cd4b10d6306",
+      "value_btc": 260.9,
+      "fee_btc": 0.000229,
+      "timestamp": "2026-08-21T00:30:46",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 53.299931
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 38.3
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 64.9
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 41.4
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 39.0
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 24.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 47.27859552
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 213.62110673
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "9b06b8b69be6a8a1d5bfb7664e21cacbc42bf564e64f2fa89dbcbb033f029954",
       "value_btc": 253.22,
       "fee_btc": 0.001,
@@ -2248,8 +2291,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
         }
       }
     },
@@ -90846,8 +90889,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-08-21T00:02:32.388092",
-    "total_collections": 6184,
-    "last_collection_found_new": 0
+    "last_collection": "2026-08-21T01:54:10.938334",
+    "total_collections": 6185,
+    "last_collection_found_new": 1
   }
 }
