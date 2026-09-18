@@ -1,6 +1,29 @@
 {
   "whale_transactions": [
     {
+      "txid": "d242f4a508fd021c7c0e8e9a1fc8a3d6031db81787d3ca95e49600035dfa0802",
+      "value_btc": 524.1,
+      "fee_btc": 7e-06,
+      "timestamp": "2026-09-18T13:33:23",
+      "vin_addresses": [
+        {
+          "address": "37ygBDktZrW4xqiHqTwNyZmURd4wNJQpu1",
+          "value": 524.09745079
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qht3ua6740e2uu89ht5gu2n8xuetnjxq27xr05y",
+          "value": 0.13058705
+        },
+        {
+          "address": "3KrqmiURPUkCyFdJWz4RDhTtF8VvrMdf5U",
+          "value": 523.96685666
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "136cf5b357c6ac5e09549d723a3f119507d91c5040b02a28c93ed8e40fad6df8",
       "value_btc": 261.4,
       "fee_btc": 0.000264,
@@ -4804,8 +4827,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -61317,8 +61340,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -64507,8 +64530,8 @@
           "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
         },
         "inflow_exchanges": {
-          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance",
-          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance",
+          "bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h": "Binance"
         }
       }
     },
@@ -95362,8 +95385,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-09-18T10:38:44.804272",
-    "total_collections": 6547,
-    "last_collection_found_new": 0
+    "last_collection": "2026-09-18T14:38:31.144629",
+    "total_collections": 6548,
+    "last_collection_found_new": 1
   }
 }
