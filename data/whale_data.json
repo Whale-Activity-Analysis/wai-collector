@@ -1,6 +1,65 @@
 {
   "whale_transactions": [
     {
+      "txid": "1ef9e405112620bb358694bfcec0fc3085531a8344a4284109b8c5ccc503bae7",
+      "value_btc": 300.0,
+      "fee_btc": 0.000369,
+      "timestamp": "2026-09-18T17:32:56",
+      "vin_addresses": [
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 22.9
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 31.8
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 34.8
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 36.8
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 34.7
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 145.66764104
+        },
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 93.27812267
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 35.2
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 19.1
+        },
+        {
+          "address": "339eE2Psesw6UbEuHU1sZfnvVCtLA6DpLd",
+          "value": 35.7
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3CdVzfAe6Aw9K4oSPYXC7BR1xLxCPkxAUs",
+          "value": 189.94539496
+        },
+        {
+          "address": "324H9uyTV9bPgAVgmdJNxPKKKZmowk5CYq",
+          "value": 300.0
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "d242f4a508fd021c7c0e8e9a1fc8a3d6031db81787d3ca95e49600035dfa0802",
       "value_btc": 524.1,
       "fee_btc": 7e-06,
@@ -95385,8 +95444,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-09-18T14:38:31.144629",
-    "total_collections": 6548,
+    "last_collection": "2026-09-18T17:52:31.952653",
+    "total_collections": 6549,
     "last_collection_found_new": 1
   }
 }
