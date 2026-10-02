@@ -1,6 +1,178 @@
 {
   "whale_transactions": [
     {
+      "txid": "a8f074994b18fcbfdf1eba7073ed850587284ece313d9b7b306520c4d5e44d0d",
+      "value_btc": 205.01,
+      "fee_btc": 0.000182,
+      "timestamp": "2026-10-02T14:45:08",
+      "vin_addresses": [
+        {
+          "address": "bc1q2yxhzrt2nvqqflssk8eacdv40dc4ktqkxg6n6pr33x4drd8cldasa4tz7j",
+          "value": 5.015
+        },
+        {
+          "address": "bc1qkd39d6cefhxgrgz4dfeax0jeyrjyteutgujzdcqahn563gn28p7q9xznma",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q7q3suar6zwgkvd9yhmrc2k6m7w6wurrzczgr992y0wuyty44r6wqm0a3az",
+          "value": 100.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1q7jmsw5jgxfyp80y2gef7nhcl2r2ssn96sfljwmffvrptpduhhh5qmsk84q",
+          "value": 60.0
+        },
+        {
+          "address": "bc1qwyvathj3wk9q72apm0ax49p362hxz9gl6u2z4znexdayr9vmh7cslfmtp8",
+          "value": 60.0
+        },
+        {
+          "address": "bc1qven7g25lu6j0ht6gy3efrjus00fce3w48lu5gq26wtm9g883g3cqw0653c",
+          "value": 85.014818
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "125075de64a358702a5a5766ab0e64d47f256e95cd2b51eca17ad6c4fb050aca",
+      "value_btc": 305.01,
+      "fee_btc": 0.000276,
+      "timestamp": "2026-10-02T14:23:03",
+      "vin_addresses": [
+        {
+          "address": "bc1qhsdrhtcf4xtaaghzsay5xkvmyd0mhd4f7ra4gt2hqgcdv00nk25qss8vmx",
+          "value": 5.0147072
+        },
+        {
+          "address": "bc1q9xgnp9fgdph77h4zzum3fnt2j6tq8w043x25j7u4p9rsvuxyadgqr2z3fy",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q66hm5ewx5nx5fk2hmtg9a5kpu4vmw4x9e8uylhhxxpkutg4d4v9qk0aeyh",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q49mr6mt485z555gtpley606wk2hrq9py7afuzxulxtrmw3v058cqhdpjw8",
+          "value": 100.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qy9kw327g835kuzaftay45363v847t8xafqx67gp3rkqztpk27lwsf2gn5m",
+          "value": 60.0
+        },
+        {
+          "address": "bc1qnu53hk9jwmy9tyd0jkacs5xt036q68y87wrsv4930srq7x03e0jqgyw5np",
+          "value": 60.0
+        },
+        {
+          "address": "bc1qaexr3dxxl9hummyhpaujrs8dcz6zucquc3yy85ngj98mwz2dmpjs7u9r09",
+          "value": 60.0
+        },
+        {
+          "address": "bc1qaz983e6m3e77aajqxfpxct7awa5qvjw7ltfpjdjgc099r3vtswpsclmd3k",
+          "value": 60.0
+        },
+        {
+          "address": "bc1q6nck3kqfl5h43qwfe52tgq20twzd395nxukn9waemgm0sgpxazese7pdkl",
+          "value": 60.0
+        },
+        {
+          "address": "bc1q78tsqkny7swzzkm96xrtu90t4j8smk6vq2s5esgxhud8hejaux7qxxj9n8",
+          "value": 5.0144316
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "d700d2ec175518f517e624010f7d87835b72000450f136ea90c73a2a8973912d",
+      "value_btc": 205.01,
+      "fee_btc": 0.000182,
+      "timestamp": "2026-10-02T14:23:03",
+      "vin_addresses": [
+        {
+          "address": "bc1qmjxj70ds0zs4eqy8j0003h596ma30dccqn6dds5c4wtl5sfg6g6swu5efj",
+          "value": 5.015
+        },
+        {
+          "address": "bc1qjla7wnrhwvxg2fwydlv45y7xssd3kt4ntpz3579rsdnavd2rn7lsr7syye",
+          "value": 100.0
+        },
+        {
+          "address": "bc1qh2fh8fl80wucvjqmqwpkze6qjdu7kzg7fh4awkaqqaf3etnudf4qxslwne",
+          "value": 100.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qq0y2vnxu44yakd9jx0a9zv9ywrkdjphwhzqftsle6xxav0668wrs5w8689",
+          "value": 60.0
+        },
+        {
+          "address": "bc1q454fppvyu56ywhegrt947aksw3q4w85vzqjmyzxm6q036lucrpesu49rl0",
+          "value": 60.0
+        },
+        {
+          "address": "bc1q9xj47lq2eecrtcmtm20juykpamzell2mshzkt4t40pzkgnu2elhsagqrp0",
+          "value": 85.014818
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "3f43837dfc94ae658698c30e64573d59b24ef6ac6b42c2780b48afef209cfa2c",
+      "value_btc": 305.01,
+      "fee_btc": 0.000276,
+      "timestamp": "2026-10-02T14:12:54",
+      "vin_addresses": [
+        {
+          "address": "bc1qttyxpsfrzus8d4gpxtlj3l40602ethpy7ak32lqjd8hw82t8aulq2dm62k",
+          "value": 5.0147072
+        },
+        {
+          "address": "bc1q4d69x6mud3nc840epd6dvexcw6l6swka5vasa7ecv675hqj9fnes937l6n",
+          "value": 100.0
+        },
+        {
+          "address": "bc1q8jl4sp7pst3d808lk0szsyfwcp9zd7kv3nsnx0wk2zejcsysmpcsl643yc",
+          "value": 100.0
+        },
+        {
+          "address": "bc1qgek2kdpwdd33luu8tajc3cr545h7nyh80vnwf6etl7wgrkfx4r0ql6eeee",
+          "value": 100.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qx52kwm8gjeeth2vrudk0tyjlvchxatz8vev2pwnkenq0t8a9cpdsdlvllm",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qv628lg4d2dfrjkcj3k8f8cfrrc8gvz55tey6tkts3pvgtn6s8hdslqzn7q",
+          "value": 50.0
+        },
+        {
+          "address": "bc1q7448nskqpeze24evl6zmrxh6eavua60dwcwuwc6hkyk92lv7jgcsazjsuj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1q7qlz9hc2vmdmdvdjxyn040vlnvvknmvy9luk9kygjulwksgznjfsx8uwqu",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qm8358krtumqflv68qfdqr7m3w24xdcstfchgl6amyp2kxdc29qrsxd0ufk",
+          "value": 50.0
+        },
+        {
+          "address": "bc1q73en7f79x3mvues03nh0gst20sxgkxw3ctzqsfc8ypyequp2wysqueqvmw",
+          "value": 55.0144316
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "faf73661a3a961aaf1e19cb1da95f8e1d5dc3f72285a22810a0127819bfd490f",
       "value_btc": 305.01,
       "fee_btc": 0.000293,
@@ -7857,8 +8029,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
         }
       }
     },
@@ -96455,8 +96627,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-10-02T08:59:06.825029",
-    "total_collections": 6629,
-    "last_collection_found_new": 0
+    "last_collection": "2026-10-02T15:41:44.337523",
+    "total_collections": 6630,
+    "last_collection_found_new": 4
   }
 }
