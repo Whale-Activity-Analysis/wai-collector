@@ -8515,8 +8515,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         }
       }
     },
@@ -97113,8 +97113,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-10-11T16:33:37.386267",
-    "total_collections": 6673,
+    "last_collection": "2026-10-11T20:32:46.205855",
+    "total_collections": 6674,
     "last_collection_found_new": 0
   }
 }
