@@ -1,6 +1,46 @@
 {
   "whale_transactions": [
     {
+      "txid": "5689fe7c4952cadd2595d4d4d928485bf10ead8337933763125617a9f907499b",
+      "value_btc": 827.8,
+      "fee_btc": 2.5e-05,
+      "timestamp": "2026-10-30T22:24:10",
+      "vin_addresses": [
+        {
+          "address": "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g",
+          "value": 356.10376685
+        },
+        {
+          "address": "3Hozcs83J6MGz3fjhnoSPLpJGH7E1frrpw",
+          "value": 1.87493484
+        },
+        {
+          "address": "36L6GXF5meYpd73XjG3iaZsuu3DfhiJNnC",
+          "value": 750.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j",
+          "value": 827.79782
+        },
+        {
+          "address": "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g",
+          "value": 280.18085699
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
+        },
+        "inflow_exchanges": {
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
+        }
+      }
+    },
+    {
       "txid": "a820d684547190c4225ec9b989401cf7374c55f171587604f3771068063c4b09",
       "value_btc": 330.72,
       "fee_btc": 0.000789,
@@ -10576,8 +10616,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         }
       }
     },
@@ -99174,8 +99214,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-10-30T20:25:44.955436",
-    "total_collections": 6783,
+    "last_collection": "2026-10-30T23:57:01.261512",
+    "total_collections": 6784,
     "last_collection_found_new": 1
   }
 }
