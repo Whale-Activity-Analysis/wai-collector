@@ -1,6 +1,63 @@
 {
   "whale_transactions": [
     {
+      "txid": "d46e8a091730e437ef4ec4d25e5eb995a357ceba64d3f59a22f1b46ac171c563",
+      "value_btc": 400.0,
+      "fee_btc": 9e-05,
+      "timestamp": "2026-11-11T10:02:19",
+      "vin_addresses": [
+        {
+          "address": "19E6hW9MYANPsVZytqL3yizUef3RMNFbcn",
+          "value": 399.99984
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1KeRHeCiYMSAK1PWyyyRPE5ahVUV5Ba5w1",
+          "value": 399.99975
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "e1b5ca2cfe74dfcbecc6767676de76353b042c173b3f69f7d3f666692d909771",
+      "value_btc": 305.0,
+      "fee_btc": 9e-05,
+      "timestamp": "2026-11-11T10:02:19",
+      "vin_addresses": [
+        {
+          "address": "19E6hW9MYANPsVZytqL3yizUef3RMNFbcn",
+          "value": 305.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "1KeRHeCiYMSAK1PWyyyRPE5ahVUV5Ba5w1",
+          "value": 304.99991
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
+      "txid": "989d8cb01b9044eee81b0d7d351940d6aefafd175dbc10034c8313b76a362b63",
+      "value_btc": 400.0,
+      "fee_btc": 1e-05,
+      "timestamp": "2026-11-11T09:43:25",
+      "vin_addresses": [
+        {
+          "address": "bc1qrqacvvwwwfes8d9jnryujklxsrdfgprfacjrnv",
+          "value": 399.99985
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "19E6hW9MYANPsVZytqL3yizUef3RMNFbcn",
+          "value": 399.99984
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "622f24e51c2ddd2b97c4de8e6269d6e0e53142db77a484106c3bdfd22f241cce",
       "value_btc": 669.99,
       "fee_btc": 6.4e-05,
@@ -1715,8 +1772,8 @@
           "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         },
         "inflow_exchanges": {
-          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex",
-          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex"
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         }
       }
     },
@@ -100894,8 +100951,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-11T02:50:47.612543",
-    "total_collections": 6829,
-    "last_collection_found_new": 0
+    "last_collection": "2026-11-11T10:23:48.222900",
+    "total_collections": 6830,
+    "last_collection_found_new": 3
   }
 }
