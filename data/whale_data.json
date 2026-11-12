@@ -1772,8 +1772,8 @@
           "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         },
         "inflow_exchanges": {
-          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
-          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex",
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex"
         }
       }
     },
@@ -12353,8 +12353,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
         }
       }
     },
@@ -100951,8 +100951,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-11T17:59:18.448827",
-    "total_collections": 6831,
+    "last_collection": "2026-11-12T00:29:13.488113",
+    "total_collections": 6832,
     "last_collection_found_new": 0
   }
 }
