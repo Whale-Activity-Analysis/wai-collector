@@ -1,6 +1,73 @@
 {
   "whale_transactions": [
     {
+      "txid": "ef189befa17c624eb60e6966a0e9688290c53240d6ca7a0959c059f1e7df3cf7",
+      "value_btc": 500.0,
+      "fee_btc": 0.000101,
+      "timestamp": "2026-11-16T04:59:03",
+      "vin_addresses": [
+        {
+          "address": "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7",
+          "value": 18458.50694669
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 50.0
+        },
+        {
+          "address": "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7",
+          "value": 17958.50684609
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+        },
+        "inflow_exchanges": {
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+        }
+      }
+    },
+    {
       "txid": "725b7624923ae990f054ea8e25b83fa1d75bad0f20b9f821f20e7dfd4a96f72a",
       "value_btc": 204.99,
       "fee_btc": 1.5e-05,
@@ -1978,8 +2045,8 @@
           "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         },
         "inflow_exchanges": {
-          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex",
-          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex"
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         }
       }
     },
@@ -101157,8 +101224,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-15T23:57:33.536866",
-    "total_collections": 6848,
-    "last_collection_found_new": 0
+    "last_collection": "2026-11-16T05:51:23.019413",
+    "total_collections": 6849,
+    "last_collection_found_new": 1
   }
 }
