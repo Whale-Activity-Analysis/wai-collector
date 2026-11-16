@@ -2045,8 +2045,8 @@
           "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         },
         "inflow_exchanges": {
-          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
-          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex",
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex"
         }
       }
     },
@@ -101224,8 +101224,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-16T05:51:23.019413",
-    "total_collections": 6849,
-    "last_collection_found_new": 1
+    "last_collection": "2026-11-16T14:54:37.435545",
+    "total_collections": 6850,
+    "last_collection_found_new": 0
   }
 }
