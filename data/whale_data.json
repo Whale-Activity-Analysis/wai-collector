@@ -1,6 +1,60 @@
 {
   "whale_transactions": [
     {
+      "txid": "f689d904dc0786fe74b013e5f67cbd583affcfddd22b1e9026bd1ad4e5f76ddf",
+      "value_btc": 550.0,
+      "fee_btc": 4.5e-05,
+      "timestamp": "2026-11-17T14:17:39",
+      "vin_addresses": [
+        {
+          "address": "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7",
+          "value": 16620.50671109
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qhp7n555hk5mxlp3pz0347nzah8gazwe7wp5fjj",
+          "value": 550.0
+        },
+        {
+          "address": "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7",
+          "value": 16070.50666629
+        }
+      ],
+      "classification": "mixed",
+      "exchange_details": {
+        "outflow_exchanges": {
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+        },
+        "inflow_exchanges": {
+          "1Pzaqw98PeRfyHypfqyEgg5yycJRsENrE7": "Binance"
+        }
+      }
+    },
+    {
+      "txid": "7e5f0f400da77299b62dcf841ee5ef43202e3eb82e7ce852779faec52281700f",
+      "value_btc": 300.0,
+      "fee_btc": 2.3e-05,
+      "timestamp": "2026-11-17T13:17:27",
+      "vin_addresses": [
+        {
+          "address": "3G9ax25CkLweN3sQzM1KfsR7Rv5Uwaa4xn",
+          "value": 404.9993924
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "3KZpzACo58HBK5mas1fbyQ8NzNZFpyhAFY",
+          "value": 299.999
+        },
+        {
+          "address": "3G9ax25CkLweN3sQzM1KfsR7Rv5Uwaa4xn",
+          "value": 105.0003698
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "ef189befa17c624eb60e6966a0e9688290c53240d6ca7a0959c059f1e7df3cf7",
       "value_btc": 500.0,
       "fee_btc": 0.000101,
@@ -12626,8 +12680,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         }
       }
     },
@@ -101224,8 +101278,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-17T05:14:13.431973",
-    "total_collections": 6852,
-    "last_collection_found_new": 0
+    "last_collection": "2026-11-17T14:36:47.682293",
+    "total_collections": 6853,
+    "last_collection_found_new": 2
   }
 }
