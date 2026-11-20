@@ -1,6 +1,45 @@
 {
   "whale_transactions": [
     {
+      "txid": "9e8148182c2d7ae14ff6a7785ccf60a2ade1e7910ed7b4960692f86939bb0eec",
+      "value_btc": 1102.0,
+      "fee_btc": 0.000204,
+      "timestamp": "2026-11-19T23:26:48",
+      "vin_addresses": [
+        {
+          "address": "bc1qe6h2swycn8kzvszhuelqafgpy6w0n5t55ryztp8pw8u3640h8tls5pv468",
+          "value": 221.0
+        },
+        {
+          "address": "bc1qmsga2sk5khy8nptt8vl73vgsgxwsrem8cxas9wur49spcgmjw5ksu5arsc",
+          "value": 221.0
+        },
+        {
+          "address": "bc1qfu3ygr2kcrq58qez9rj4xhv3hkkwc7r000ay894pqnayf73teq8sahxp7n",
+          "value": 220.0
+        },
+        {
+          "address": "bc1qjn4g774mp670dxlhxujru5c46n07ddz3nhhmusfqw866ss4cyauqvmpnqs",
+          "value": 220.0
+        },
+        {
+          "address": "bc1qvn5qx79t77x59hjhvxl3wyjnrz3nchcf5krd06t249fuyvzlcrxspxflfa",
+          "value": 220.0
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1q20xhhzw8kf498v7kfz6r4shvae5nz8r87znjf27el4dacy4d2vzslqwv0w",
+          "value": 1000.0
+        },
+        {
+          "address": "bc1qy45vqhlyrxnqfjz3qlk5s7rckxrl4xk7daq9asdtyyxdv7wjgndsjsz60y",
+          "value": 101.9997956
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "468aff3087091ee7aa14f051d9074be16b07c4884ec23793c1ad874a758e6331",
       "value_btc": 802.81,
       "fee_btc": 8e-06,
@@ -12726,8 +12765,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
         }
       }
     },
@@ -101324,8 +101363,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-19T19:07:09.343643",
-    "total_collections": 6860,
-    "last_collection_found_new": 0
+    "last_collection": "2026-11-20T01:14:07.520236",
+    "total_collections": 6861,
+    "last_collection_found_new": 1
   }
 }
