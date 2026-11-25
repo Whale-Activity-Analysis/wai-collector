@@ -1,6 +1,41 @@
 {
   "whale_transactions": [
     {
+      "txid": "d55ccc46fd6bc5587a2ab09cb0413c2a889c303f9c484d8df673a6d2a8f191d3",
+      "value_btc": 275.01,
+      "fee_btc": 0.000157,
+      "timestamp": "2026-11-25T18:23:02",
+      "vin_addresses": [
+        {
+          "address": "bc1qne4jyrj5wa28sufxt6r6mmgnd72jw7un09p9a0ezjrgjdedgs3gqawgm9w",
+          "value": 200.0
+        },
+        {
+          "address": "bc1q0dcg0ac5anevmdr82wt9aaxf5zqhuxtzqj03s6xj49enytle5f0sw9f88d",
+          "value": 75.01315578
+        }
+      ],
+      "vout_addresses": [
+        {
+          "address": "bc1qwtcyv2jwaxqsaaktl2sae559crmuz99h7v59mg5ffpwe2f4uyj5s8anhs7",
+          "value": 56.66666667
+        },
+        {
+          "address": "bc1qwt6y5hmrj06gq52u5xua7dwcm3ztjjqrg8crg6vhg8eqwmysr6gqpcewxg",
+          "value": 56.66666667
+        },
+        {
+          "address": "bc1qayaf2ruuxu3f832l8074suxnf3qpqlrewnq9phpxqcjzg8m7yqps9qr0lw",
+          "value": 56.66666666
+        },
+        {
+          "address": "bc1qevs35rs03zwx40ahd4kllktfskg4j7w6qmvt9n350jvemwq3ef2sn7rwzt",
+          "value": 105.01299858
+        }
+      ],
+      "classification": "unknown"
+    },
+    {
       "txid": "912c828d03b81b55d339c2ea134747820b2c01d409b2d3cf2db931b530099538",
       "value_btc": 445.0,
       "fee_btc": 4.5e-05,
@@ -2524,8 +2559,8 @@
           "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
         },
         "inflow_exchanges": {
-          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex",
-          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex"
+          "1Kr6QSydW9bFQG1mXiPNNu6WpJGmUa9i1g": "Bitfinex",
+          "3JZq4atUahhuA9rLhXLMhhTo133J9rF97j": "Bitfinex"
         }
       }
     },
@@ -13105,8 +13140,8 @@
           "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         },
         "inflow_exchanges": {
-          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate",
-          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate"
+          "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9": "Gate",
+          "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw": "Gate"
         }
       }
     },
@@ -101703,8 +101738,8 @@
     }
   ],
   "metadata": {
-    "last_collection": "2026-11-25T09:09:53.310613",
-    "total_collections": 6878,
-    "last_collection_found_new": 0
+    "last_collection": "2026-11-25T19:14:48.297713",
+    "total_collections": 6879,
+    "last_collection_found_new": 1
   }
 }
